@@ -1,0 +1,4831 @@
+\documentclass[9pt,a5paper]{extarticle}
+\def\version{June 5, 2012}
+\nonstopmode
+\renewcommand{\refname}{ }
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[russian,english]{babel}
+
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\lhead{}
+%\chead{}
+%\rhead{\qquad\qquad\thepage}
+%\lfoot{}
+%\cfoot{}
+%\rfoot{}
+%\renewcommand{\headrulewidth}{0pt}
+%\setlength{\footskip}{20pt}
+%\setlength{\footskip}{20pt}
+%\setlength{\headskip}{20pt}
+
+
+%    \makeatletter
+%    \renewcommand{\ps@plain}{%
+%    \renewcommand\@oddhead{KKK\hfil\normalfont\textrm{\thepage}}%
+%    \renewcommand\@evenhead{\normalfont\textrm{\thepage}\hfil ASDF}%
+%   \renewcommand\@evenhead{}%
+%    \renewcommand\@oddfoot{}%
+%    \renewcommand\@evenfoot{}%
+%    }
+%    \makeatother
+
+\usepackage[T2A]{fontenc}\usepackage[utf8]{inputenc}
+
+%\usepackage[russian,english]{babel}
+%\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[english]{babel}
+
+
+\usepackage{setspace}
+\usepackage[dvips]{epsfig}
+
+
+\usepackage{amssymb,latexsym,amsmath,url}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\newtheorem{theorem}{Theorem}
+
+\newcommand\notyet[1]{ }
+\setcounter{page}{0}
+%\pagestyle{myheadings}
+\pagestyle{plain}
+
+\textwidth 11.8cm
+\textheight 17cm
+\oddsidemargin -1cm
+\evensidemargin -1cm
+%\topmargin -2.2cm
+\topmargin -2.7cm
+
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+\ \vskip 1cm
+\includegraphics[height=15cm]{126256749-part.eps}
+\end{center}
+
+%\newpage
+%\thispagestyle{empty}
+%\phantom{a}
+
+\newpage
+\setcounter{page}{0}
+\thispagestyle{empty}
+\vskip 0.5cm
+
+\begin{center}
+Institute for Information Transmission Problems RAS
+
+
+            (Kharkevich Institute)
+
+\vskip 0.5cm
+
+     Lomonosov Moscow State University
+\end{center}
+
+
+\vskip 2cm
+
+\begin{center}
+
+{\huge\sc DIFFERENTIAL EQUATIONS}
+
+\vskip 0.2cm
+
+{\huge\sc AND APPLICATIONS}
+
+\vskip 0.5cm
+
+{\large
+International Conference}
+
+\vskip 0.2cm
+
+{\large
+in Honour of Mark Vishik}
+
+\vskip 0.2cm
+{\large
+On the occasion of his 90th birthday}
+
+\vskip 2cm
+
+{\large Moscow, June 4-7, 2012}
+
+\vskip 2cm
+
+{\large\sc Abstracts of talks}
+
+\vskip 1cm
+
+\underline{\large www.dynamics.iitp.ru/vishik}
+
+\end{center}
+
+\vfill
+
+\begin{center}
+Moscow 2012
+\end{center}
+
+\vskip 1cm
+\notyet{
+\includegraphics[height=2cm]{../ippi-logo-en.eps}
+\hfill
+\includegraphics[height=1cm]{../msulogo.eps}
+\hfill
+\includegraphics[height=1.5cm]{../rfbr-logo-en.eps}
+}%notyet
+
+\newpage
+\setcounter{page}{0}
+\thispagestyle{empty}
+
+\ \vskip 1cm
+
+\noindent
+УДК 517.95
+
+
+\vskip 2cm
+
+\noindent
+{\bf Differential Equations and Applications:} International conference in
+Honour of Mark Wishik on the occasion of his 90th birthday, Moscow, June 4-7,
+2012.
+
+\noindent
+Abstracts of talks / IITP RAS, MSU -- Moscow: IITP RAS, 2012. -- 59 p.
+
+\vskip 0.5cm
+
+\noindent
+ISBN 978-5-901158-18-0
+
+\vfill
+
+\noindent
+With the support by the Institute for Information Transmission Problems RAS
+(Kharkevich Institute),
+Lomonosov Moscow State University,
+and Russian Foundation for Basic Research.
+
+\vfill
+
+\noindent
+{\bf Organizing Committee:}
+\\
+A.\,Kuleshov (Chairman), A.\,Fursikov (Vice-chairman),
+N.\,Barinova,
+V.\,Chepyzhov,
+M.\,Chuyashkin,
+A.\,Demidov,
+G.\,Kabatyanskiy,
+A.A.\,Komech,
+A.I.\,Komech,
+\\
+E.\,Michurina,
+E.\,Sidorova,
+A.\,Sobolevski,
+M.\,Tsfasman,
+V.\,Venets.
+
+\medskip
+\medskip
+\medskip
+
+\noindent
+{\bf Program Committee:}
+\\
+A.\,Fursikov (Chairman), V.\,Chepyzhov, A.\,Demidov, A.A.\,Komech,
+A.I.\,Komech, S.\,Kuksin, A.\,Shnirelman, B.\,Vainberg.
+
+
+
+
+\vfill
+
+\noindent
+ISBN 978-5-901158-18-0
+\hfill
+© IITP RAS, 2012\quad\quad\phantom{a}
+
+\hfill
+© MSU, 2012 \qquad\quad\quad\phantom{a}
+
+
+\newpage
+
+
+
+\setcounter{page}{3}
+
+% 
+%\newpage
+
+\ \vskip 1cm
+
+\begin{center}
+{\Large\bf Mark Iosifovich Vishik}
+\end{center}
+
+\bigskip
+
+Mark Iosifovich Vishik was born on October 19, 1921 in Lw{\'o}w.
+He lost his father when he was 8.
+In 1939 he graduated from the Lw{\'o}w Classical Gymnasium
+and was accepted to the Department of Physics and Mathematics
+at Lw{\'o}w University. His professors there were
+Stephan Banach, Juliusz Schauder, Stanis{\l}aw Mazur, Bronislaw Knaster,
+and Edward Szpilrajn.
+In 1941 he went to Krasnodar and then to Makhachkala.
+In 1942 he moved to Tbilisi
+and in 1943 graduated with honours from Tbilisi University
+(its Dean at the time was Nikoloz Muskhelishvili).
+In 1943-1945 he took graduate studies
+at Tbilisi Mathematical Institute
+under the guidance of Ilia Vekua.
+
+In 1945 Mark Vishik transferred to continue his graduate studies
+in Moscow Mathematical Institute
+where took active part in the I.G. Petrovsky Seminar.
+In 1947 he completed his dissertation under the guidance of
+L.A. Lusternik.
+In 1951 he completed his habilitation.
+In 1953-1965 Mark Vishik taught at the Mathematics Department
+of Moscow Institute of Energy.
+From 1965 until 1993  he is a professor at the
+Chair of Differential Equations at Department of Mechanics and Mathematics
+of Moscow State University.
+Since 1993 he is the Leading Scientist
+at the Institute for Information Transmission Problems of Russian
+Academy of Sciences.
+In 1966-1991 he worked part-time
+at the Institute for Problems in Mechanics AS USSR,
+and from 1993 until now -- at the Chair
+of General Problems of Control Theory
+at the Department of Mechanics and Mathematics of Moscow State University.
+
+Mark Vishik is the world-renowned scientist
+working in the field of Partial Differential Equations and Functional Analysis,
+who significantly enriched the theory of elliptic and
+parabolic boundary value problems,
+the boundary layer problems,
+%%AC???
+nonlinear partial differential equations,
+pseudo-differential operators,
+equations with infinite number of variables,
+statistical hydrodynamics, attractors of dissipative equations,
+and others.
+He authored more than 250 research papers and 8 monographs.
+He created an excellent school which combines a large number of
+leading scientists, working in different branches of mathematics in
+many countries.
+He personally guided 57 PhD. students
+(with 30 of them having later finished habilitation),
+while influencing
+an incomparably larger number of mathematicians.
+
+
+\newpage
+\begin{center}
+
+{\Large\bf Remarks on strongly elliptic systems in Lipschitz domains}
+
+\medskip
+
+{\sc M.S. Agranovich}
+
+{\small\it Moscow Institute of Electronics and Mathematics, Moscow, Russia}
+
+{\small\rm magran@orc.ru}
+
+\end{center}
+
+\medskip
+
+We discuss some fundamental facts of the theory of strongly elliptic
+second-order systems in bounded Lipschitz domains. We propose a simplified
+choice of the right-hand side of the system and the conormal derivative in the
+Green formula. Using ``Weyl's decomposition'' of the space of solutions, we
+obtain two-sided estimates for solutions of the Dirichlet and Neumann problems.
+We remove the algebraic restriction in the generalized Savar\'e theorem on the
+regularity of solutions of these problems for systems with Hermitian principal
+part. The corollaries for potential type operators and Poincar\'e--Steklov
+operators on the boundary are strengthened. We consider the transmission
+problems for two systems in domains with common Lipschitz boundary without
+assumption of the absence of jumps in the coefficients on this boundary. We
+construct examples of strongly elliptic second-order systems, for which the
+Neumann problem does not have the Fredholm property.
+
+\vfill
+\newpage %agranovich.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf The parabolic Harnack
+inequality for integro-differential
+operators}
+
+\medskip
+
+%% Author 1:
+{\sc Svetlana Anulova} \footnote{The
+author is supported by RFBR grants
+10-01-00767 and 10-08-01068}
+
+%% Address:
+{\small\it Inst. Control Sci., Russian
+Acad. Sci., 65 Profsoyuznaya, Moscow,
+Russia}
+
+%% Email:
+{\small\rm anulovas@ipu.ru}
+
+
+\medskip
+
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+We generalize the elliptic Harnack
+inequality proved in \cite{F}.
+Additionally we relax the assumptions
+of \cite{F}: the integral term measure
+in it is absolutely continuous with
+respect to the Lebesgue measure. The
+proof exploits the basic construction
+of Krylov-Safonov for elliptic
+operators and its modernization for the
+purpose of adding integral terms by R.
+Bass.
+
+Let $B(x,r)$ denote $\{y\in \mathbb
+R^d:\,|y-x|< r\}$,\; $Q$\; be the
+cylinder $\{t\in [0,2),\, |x|\in
+B(0,1)\}$, and $W$ be the space of
+Borel measurable bounded non-negative
+functions on $\mathbb R^{d+1}$ with
+restriction on $Q$ belonging to the
+Sobolev space $W^{1,2}(Q)$. And let
+$\mathcal L$ be an operator with Borel
+measurable coefficients, acting on
+$u\in W$
+ according to the formula
+\begin{eqnarray}%\label{def:op}
+{\mathcal L}
+u(t,x)&=&\frac{1}{2}\sum_{i,j=1}^d
+a_{ij}(t,x)\frac{\partial^2u(t,x)}{\partial
+x_i\partial x_j}+\sum_{i=1}^d
+b_i(t,x)\frac{\partial u(t,x)}{\partial
+x_i} \nonumber\\
+&+&\int_{{\mathbb
+R}^d\backslash\{0\}}[u(t,x+h)-u(t,x)-1_{(|h|\leq1)}h\cdot
+\nabla u(t,x)]\mu(t,x;dh).\nonumber
+\end{eqnarray}
+
+
+
+
+ASSUMPTIONS There exist positive
+constants $\lambda,K,k$ and $\beta$
+such that for all $t,x$:
+
+  1) $\lambda
+|y|^2 \leq y^T a(t,x)y, \, y\in
+{\mathbb R}^d;$
+
+ 2) $\|a(t,x)\|+|b(t,x)| + \int_{{\mathbb
+R}^d}(|h|^2\wedge 1)\mu(t,x;dh)\leq K;$
+
+ 3)~ for any $r\in(0,1]$, $y_1,\,y_2\in
+B(x,r/2)\cap B(0,1)$ and borel $A$ with
+$\mathop{\mathrm {dist}}\nolimits
+(x,A)\ge r$ holds $\mu(t,y_1;\{h:\,
+y_1+h\in A\})\leq
+kr^{-\beta}\mu(t,y_2;\{h:\, y_2+h\in
+A\})$.
+\begin{theorem}
+There exists a positive constant
+$C(d,\;\lambda,\;K,\;k,\; \beta)$ s.t.
+for every $u\in W$ satisfying
+\[\frac{\partial}{\partial t} + \mathcal
+Lu=0 \mbox{ a.e. in }(t,x)\] holds: for
+all $|x|\;\le\;\frac{1}{2}$
+\[u_{0,x}\;\ge\;Cu_{1,0}.\]
+\end{theorem}
+
+
+
+The crucial point of the proof is the
+extension of Prop. 3.9   \cite{F} to
+the cylinder. %It bases on the
+%representation of the compensator of
+%the jump into a set $A$ through/by
+%means $\mu(t,x_t;\{h: |x_t +h|\in
+%A_t\})$.
+
+
+
+
+
+
+
+
+
+\medskip
+
+
+%% If you use BIBTEX to create bibliography, please use amsalpha:
+%\bibliographystyle{amsalpha}
+%\bibliography{physics}%% (if your BIBTEX entries are in physics.bib)
+%1
+%
+% 1
+%
+% 1
+%
+% 1
+\begin{spacing}{0.1}\begin{thebibliography}{xx}
+\bibitem{F} Foondun, M. \emph{Harmonic functions for a
+class of integro-differential
+operators}. Potential Anal., 31, 2009,
+21-44.
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %anulova.tex
+
+
+\begin{center}
+%% Title in English:
+{\large\bf Relativistic point dynamics and Einstein's formula as a property of localized solutions of a nonlinear Klein-Gordon equation}
+
+\smallskip
+
+%% Author 1:
+{\sc Anatoli Babin}
+
+%% Address:
+{\small\it UC -- Irvine, Irvine CA 92617, USA}
+
+%% Email:
+{\small\rm ababine@uci.edu}
+
+\smallskip
+
+%% Author 2:
+{\sc Alexander Figotin}
+
+{\small\it UC -- Irvine, Irvine CA 92617, USA}
+
+{\small\rm afigotin@uci.edu}
+\end{center}
+
+%\medskip
+
+%% Abstract in English:
+Relativistic mechanics includes the relativistic dynamics of a mass point
+and the relativistic field theory. In a relativistic field theory the
+relativistic field dynamics is derived from a relativistic covariant
+Lagrangian, such a theory allows to define the total energy and momentum,
+forces and their densities but does not provide a canonical way to define
+the mass, position or velocity for the system. For a closed system \emph{%
+without external forces} the total momentum has a simple form $\mathbf{P}=M%
+\mathbf{v}$ where $\mathbf{v}$ is a \emph{constant velocity}, allowing to
+define naturally the total mass $M$ and to derive from the Lorentz
+invariance Einstein's energy-mass relation $E=Mc^{2}$ with $M=m_{0}\gamma ,$
+with $\gamma $ the Lorentz factor and $m_{0}$ the rest mass;
+according to Einstein's formula the rest mass is determined by the internal
+energy of the system.
+
+The relativistic dynamics of a mass point is described by a relativistic
+version of Newton's equation where the rest mass $m_{0}$ of a point is
+prescribed; in Newtonian mechanics the mass $M$ reveals itself in \emph{%
+accelerated motion} as a measure of inertia which relates the point
+acceleration to the external force. The question which we address is the
+following: Is it possible to construct a mathematical model where the
+internal energy of a system affects its acceleration in an external force
+field as the inertial mass does in Newtonian mechanics? 
+
+We construct a model which allows to consider in the same framework the
+uniform motion in the absence of external forces (a closed system) and the
+accelerated motion caused by external fields; the internal energy is present
+both in uniform and accelerating regimes. The model is based on the
+nonlinear Klein-Gordon (KG)\ equation which is a part of our theory of
+distributed charges interacting with electromagnetic (EM) fields, \cite{BF5}-%
+\cite{BF8}. We prove that if a sequence of solutions of a KG\ equation
+concentrates at a trajectory $\mathbf{r}(t)$ and their local energies
+converge to $E(t)$ then the trajectory satisfies the relativistic version of
+Newton's equation where the mass is determined in terms of the energy by
+Einstein's formula, and the EM forces are determined by the coefficients of
+the KG equation. We prove that the concentration assumptions hold for the
+case of a general rectilinear accelerated motion.
+\ \vskip -0.6cm\ 
+
+\begin{spacing}{0.1}\begin{thebibliography}{9}
+\bibitem{BF5} Babin A. and Figotin A., J. Stat. Phys., \textbf{138}:
+912--954, (2010).
+
+\bibitem{BF6} Babin A. and Figotin A., DCDS A, \textbf{27}(4), 1283-1326,
+(2010).
+
+\bibitem{BF7} Babin A. and Figotin A., Found. Phys., \textbf{41}: 242--260,
+(2011).
+
+\bibitem{BF8} Babin A. and Figotin A., arXiv:1110.4949v3; Found. Phys, 2012.
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %babin.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf On the propagation of Monokinetic Measures with Rough Momentum Profile}
+
+\medskip
+
+%% Author 1:
+{\sc Claude Bardos}
+
+%% Address:
+{\small\it Universit{\'e} Pierre et Marie Curie, Laboratoire Jacques Louis Lions, Paris, France}
+
+%% Email:
+{\small\rm claude.bardos@gmail.com}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+This is a report on a work in progress jointly with Francois Golse, Peter Markowich and Thierry Paul.
+
+The analysis of the global flow defined by the Hamiltonian system
+$$
+\begin{aligned}
+\dot X_t&=\nabla_\xi H(X_t,\Xi_t)\quad X_0(x,\Xi)= x\\
+\dot \Xi_t&= \nabla_x H(X_t,\Xi_t) \quad \Xi_0(x,\xi)=\nabla_x U(x) \end{aligned}
+$$
+is a standard tool in the WKB asymptotics.
+
+In the present contribution  it will be interpreted as the propagation of a monokinetic measure:
+The push forward by the Hamiltonian flow of a measure of the form:
+$$\mu(x,\xi)=\rho^{\mathrm{in}}(x)\delta_{U(x)}(\xi)$$
+evolving according to the Liouville equation:
+$$ \partial_t\mu +\{H,\mu\}=0\,.$$
+This approach leads us to an estimate of the number of folds of the Lagrangian Manifold even for rough initial data.
+We also provide informations on the structure of the push-forward $\rho(t,x)$
+measure under the canonical projection of the space $\R_x\times\R_\xi$ on $\R_x\,.$
+\medskip
+
+
+\vfill
+\newpage %bardos.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf An asymptotic of a certain Riemann--Hilbert problem under singular deformation of a domain}
+
+\medskip
+
+
+%% Author 1:
+{\sc Sergey Bezrodnykh}
+
+%% Address:
+{\small\it Dorodnicyn Computing Centre, Moscow 119333, Russia}
+
+%% Email:
+{\small\rm sergeyib@pochta.ru}
+
+
+\medskip
+
+%% Author 2:
+{\sc Vladimir Vlasov}
+
+{\small\it Dorodnicyn Computing Centre, Moscow 119333, Russia}
+
+{\small\rm vlasov@ccas.ru}
+
+\end{center}
+
+\medskip
+
+%The considered Riemann--Hilbert problem appears when moddeling 
+%the effect of magnetic field reconnection [1-4]. The statement of
+%the problem is as follows. Let domain $G$ on complex plane $z = x + i y$
+%be an exteriour of a system of cuts $\Gamma = \Gamma_0 \cup \Gamma^- \cup \Gamma^+$,
+%where 
+%$\Gamma^+ := \bigl\{z:\, z = R + r\, t\, e^{\,i \pi \alpha},\,\, t \in [0,\, 1]\bigr\}$
+
+The Riemann--Hilbert problem is considered in a decagonal domain $G$ on complex plane,
+which is an exteriour of a system $\Gamma$ of cuts $\Gamma_j$ with excluded
+infinity. The sought analytic function $\mathcal{F}$ satisfies 
+to the boundary condition ${\rm Re} (h\, \mathcal{F}\,) = c$\, on $\Gamma$,
+where $h$ and $c$ are prescribed piece--wise constant functions;
+$\mathcal{F}$ is continuous in $\overline{G} \setminus \{\infty\}$
+and satisfies to a certain growth condition
+at infinity. The solution $\mathcal{F}$ has been constructed in analytic form.
+Asymptotics for function $\mathcal{F}$ have been found for two limit
+cases of geometry of $\Gamma$; first case corresponds to $|\Gamma_j| \to \infty$,
+and second case to $|\Gamma_j| \to 0$ for some numbers $j$.
+The Riemann--Hilbert problem under consideration originates from magnetic 
+hydrodinamics, in model \cite{S06}--\cite{BVS11} of the effect of magnetic field reconnection 
+in Solar flares. The model includes a current layer and shock--waves attached to 
+its end--points. The constructed solution $\mathcal{F}$ and its 
+asymptotics possess clear physical meaning. For construction the asymptotics
+we used an approach \cite{VMS89}, \cite{V87} and asymptotics
+for Schwarz --- Christoffel integral parameters, that have been found in \cite{BV02}.
+
+This work is supported by the RFBR proj. No. 10-01-00837,
+Program No. 3 of the Division of Mathematical Sciences of the RAS
+and the ''Contemporary Problems of Theoretical Mathematics`` 
+Program of the RAS.
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{S06}
+B.V.Somov, \emph{Plasma Astrophysics. Part I.} New York. Springer Science, 2006. 
+
+\bibitem{VMS89}
+V.I.Vlasov, S.A.Markovskii, B.V.Somov,
+\emph{On an analytical nodel of the magnetic reconnection in plasma} 
+Dep. v VINITI Jan. 6, 1989, No. 769-V89 (1989). 
+
+\bibitem{BV02}
+S.I.Bezrodnykh, V.I.Vlasov,
+\emph{The Riemann--Hilbert problem in a complicated domain 
+for the model of magnetic reconnection in plasma}, Comp. Math. Math. Phys.
+\textbf{42} 3 (2002), 277--312. 
+
+\bibitem{BVS11}
+S.I.Bezrodnykh, V.I.Vlasov, B.V.Somov,
+\emph{Generalized analytical models of Syrovatskii's current sheet},
+Astronomy Letters. \textbf{37} 2 (2011), 133--150. 
+
+\bibitem{V87}
+V.I.Vlasov,
+\emph{Boundary value problems in domains with a curvilinear boundary},
+Moscow. Vych. Tsentr Akad. Nauk SSSR, 1987. 
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %bezrodnykh-vlasov.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Inertial manifolds for strongly damped wave equations}
+
+\medskip
+
+%% Author 1:
+{\sc Natalya Chalkina}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119991, Russia}
+
+%% Email:
+{\small\rm chalkinan@mail.ru}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+Consider the boundary value problem for a semilinear strongly damped wave equation in a bounded
+domain~$\Omega$:
+\begin{align}\label{eq_sdwe}
+&u_{tt}-2\gamma\Delta u_t=\Delta u+f(u),\quad u\big|_{\partial\Omega}=0,\\
+\label{un_sdwe} &u\big|_{t=0}=u_0(x)\in H_0^1(\Omega),\quad u_t\big|_{t=0}=p_0 (x)\in L_2(\Omega).
+\end{align}
+Here $\gamma>0$ is a coefficient of strong dissipation, and the nonlinearity $f(u)$ satisfies the
+global Lipschitz condition:
+$$|f(v_1)-f(v_2)|\leqslant L\,|v_1-v_2|\qquad \forall v_1, v_2 \in \R.$$
+
+The following theorem gives sufficient condition for the existence of an inertial manifold for
+equation (1).
+
+\begin{theorem}\label{theorem}
+Let $\lambda_k$, $0<\lambda_1<\lambda_2\leqslant\dots\to+\infty$, be eigenvalues of the operator
+$-\Delta$ in the domain $\Omega$ under the Dirichlet boundary conditions. Suppose that there is an
+N such that the following inequalities hold
+$$
+\lambda_N < \lambda_{N+1} < 
+%AC\frac{1}{2\gamma^2}, \eqno(3)
+1/(2\gamma^2), \eqno(3)
+$$
+$$
+2L<\sup_{\gamma\lambda_N\leqslant\Phi<\gamma\lambda_{N+1}}\{(\gamma\lambda_{N+1}-\Phi)
+\min\{\varkappa_1(\Phi),\varkappa_N(\Phi),\varkappa_{N+1}(\gamma\lambda_{N+1})\}\}, \eqno(4)
+$$
+where we have used the notation
+$$
+\varkappa_k (\Phi)=\Phi-\gamma\lambda_k+\sqrt{\Phi^2-2\gamma\lambda_k\Phi+\lambda_k}.
+$$
+Then, in the phase space $H_0^1(\Omega)\times L_2(\Omega)$, there exists a $2N$-dimensional
+inertial manifold that exponentially attracts $($as $t\to+\infty)$ all the solutions of
+problem~\textup{(1), (2)}.
+\end{theorem}
+
+The proof is based on the construction of a new inner product in the phase space in which gap
+property holds and thus an inertial manifold exists (the corresponding general theorem for an
+abstract differential equation in a Hilbert space one can find,
+e.g., in \cite{gc-2005}).
+
+Remark. If $\gamma$, $\lambda_N$ and $\lambda_{N+1}$ are fixed and they satisfy (3), then we state
+the existence of an inetial manifold for sufficiently small $L$.
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{p9}
+
+\bibitem{gc-2005}
+A.\,Yu. Goritskii and V.\,V. Chepyzhov,
+\emph{The Dichotomy Property of Solutions of Quasilinear Equations
+in Problems on Inertial Manifolds}, Mat. Sb. \textbf{196} (2005), no. 4, 23--50.
+
+\bibitem{chalkina1}
+N.\,A. Chalkina,
+\emph{Sufficient Condition for the Existence
+of an Inertial Manifold for a Hyperbolic
+Equation with Weak and Strong Dissipation},
+Russ. J. Math. Phys. \textbf{19} (2012), 11--20.
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %chalkina.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Trajectory attractors for equations of mathematical physics}
+
+\medskip
+
+%% Author 1:
+{\sc Vladimir Chepyzhov}
+
+%% Address:
+{\small\it Institute for Information Transmission Problems, Moscow 101447, Russia}
+
+%% Email:
+{\small\rm chep@iitp.ru}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+The report is based on joint works with M.I.Vishik.
+
+We describe the method of trajectory dynamical systems and
+trajectory attractors and we apply this approach to the study of
+the limiting asymptotic behaviour of solutions of non-linear
+evolution equations. This method is especially useful in the study
+of dissipative equations of mathematical physics for which the
+corresponding Cauchy initial-value problem has a global (weak)
+solution with respect to the time but the uniqueness of this
+solution either has not been established or does not hold. An
+important example of such an equation is the 3D Navier--Stokes
+system in a bounded domain  (see \cite{CVbook}). In such a
+situation one cannot use directly the classical scheme of
+construction of a dynamical system in the phase space of initial
+conditions of the Cauchy problem of a given equation and find a
+global attractor of this dynamical system. Nevertheless, for such
+equations it is possible to construct a trajectory dynamical system
+and investigate a trajectory attractor of the corresponding
+translation semigroup.
+
+This universal method is applied for various types of equations
+arising in mathematical physics: for general dissipative
+reaction-diffusion systems, for the 3D Navier--Stokes system, for
+dissipative wave equations, for non-linear elliptic equations in
+cylindrical domains, and for other equations and systems. Special
+attention is given to using the method of trajectory attractors in
+approximation and perturbation problems arising in complicated
+models of mathematical physics.
+
+The work partially supported by the Russian Foundation of Basic
+Researches (Projects no.\ 11-01-00339 and 10-01-00293).
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{99}
+
+
+\bibitem{CVbook}V.V. Chepyzhov, M.I. Vishik, \emph{Attractors for
+Equations of Mathematical Physics} Amer. Math. Soc. Colloq.
+Publ., \textbf{49}, Amer.Math. Soc., Providence, RI, 2002.
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %chepyzhov.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Quantum dissipative Zakharov model in a bounded domain}
+
+\medskip
+
+
+%% Author 1:
+{\sc Igor Chueshov}
+
+%% Address:
+{\small\it Kharkov National University, Kharkov 61022, Ukraine}
+
+%% Email:
+{\small\rm  chueshov@univer.kharkov.ua}
+
+
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+We consider an initial boundary value problem for  a
+quantum version (introduced in  \cite{GHGO-2005}) of the  Zakharov system
+arising in plasma physics:
+\begin{equation*}
+\left\{\begin{array}{l}
+n_{tt}-\Delta\left(n+|E|^2\right)+h^2\Delta^2 n+\alpha n_t  =f(x),
+\quad x\in\Omega,\; t>0,
+\\ \\
+i E_t+\Delta E- h^2\Delta^2E  +i\gamma E - n E=g(x),\quad x\in\Omega,\; t>0.
+\end{array}\right.
+\end{equation*}
+Here $\Omega \subset \R^d$ is a bounded domain, $d\le 3$,
+$E(x,t)$ is a complex function
+and $n(x,t)$ is a real one, $h>0$,  $\alpha\ge 0$
+and $\gamma\ge 0$ are  parameters and $f(x)$, $g(x)$ are given
+(real and complex) functions. We also impose some boundary and initial conditions
+on $E$ and $n$.
+\par
+We prove the global well-posedness
+of this problem in some Sobolev type classes and study properties of
+solutions.  This result confirms the conclusion
+recently made in physical literature concerning
+the absence of collapse in the quantum Langmuir waves.
+(see a discussion in \cite{SSS-2009}). 
+In the dissipative case the existence of a
+finite dimensional global attractor
+is  established and regularity properties
+of this attractor are studied. For this we use the recently
+developed method of  quasi-stability estimates (see \cite{ChuLas,cl-book}).
+In the case when external loads are
+$C^\infty$ functions we show that every trajectory  from the attractor
+is $C^\infty$ both in time and spatial variables.
+This can be interpret as the absence of sharp coherent
+structures in the limiting dynamics.  For some details we refer to 
+\cite{Chu11}.
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+
+
+\bibitem{GHGO-2005}
+L. G. Garcia, F. Haas, J. Goedert and L. P. L. Oliveira,
+\emph{Modified Zakharov equations for plasmas with a quantum
+correction},  Phys. Plasmas {\bf 12} (2005), 012302. 
+
+\bibitem{SSS-2009}
+G. Simpson, C. Sulem, and P. L. Sulem,
+\emph{Arrest of Langmuir wave collapse by quantum effects},
+Phys. Review  {\bf 80} (2009),  056405. 
+\bibitem{ChuLas} I.
+Chueshov and I. Lasiecka, \textit{Long-Time Behavior of Second Order
+Evolution Equations with Nonlinear Damping}, Memoirs of AMS 912, AMS,
+Providence, 2008.
+\bibitem{cl-book}
+I. Chueshov and I. Lasiecka, {\it Von Karman  Evolution Equations},
+Sprin\-ger, New York, 2010.  
+\bibitem{Chu11}I. Chueshov, \emph{Quantum Zakharov model in a bounded domain},
+Preprint   arXiv:1110.1814v1,  9 October 2011.
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %chueshov.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Vishik--Lyusternik's method and the inverse problem for plasma equilibrium in a~tokamak}
+\medskip
+
+%% Author 1:
+{\sc Alexandre Demidov}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119992, Russia}
+
+%% Email:
+{\small\rm alexandre.demidov@mtu-net.ru}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+Control over thermonuclear fusion reactions
+(including suppression of instabilities of the plasma discharge)
+depends essentially on how well the information about the current
+density through plasma is taken into account. In the case
+cylindrical approximation (when the tokamak (toroidal magnetic)
+chamber and the resulting plasma discharge are modeled in the form
+of infinite cylinders ${\mathcal S}\times\R$ and~$\omega\times\R$
+with simply connected cross-sections ${\mathcal S}\Subset\R^2$
+and~$\omega\Subset{\mathcal S}$), the required current
+distribution is given by the mapping
+$
+f_{u}:\omega\ni (x,y)\mapsto f\bigl(u(x,y)\bigl)\ge 0,
+$
+where the \textit{required} functions $u\in C^2(\omega)$ and~$f$
+are as follows:
+\begin{equation*}\label{0.2}
+\frac{\partial^2 u(x,y)}{\partial x^2}+\frac{\partial^2 u(x,y)}{\partial y^2}=f\bigl(u(x,y)\bigl)
+\quad \ {\rm in}\quad \omega\,,\quad \ {\rm and}\quad \ u=0\quad {\rm on}\quad
+\gamma=\partial\omega,
+\end{equation*}
+\begin{equation*}\label{0.3}
+\sup\limits_{P\in\gamma}\Bigl|\frac{\partial
+u}{\partial\nu}(P)-~\Phi(P)\Bigl|\le\lambda\sup\limits_{P\in\gamma}\Bigl|\Phi(P)\Bigl|
+\,,\qquad \int_{\gamma}\frac{\partial u}{\partial \nu}\,d\gamma=1
+=\mbox{the total current}\,.
+\end{equation*}
+Here, $\gamma=\overline{\omega}\setminus\omega$ is the boundary of
+the domain $\omega$, $\lambda\ge 0$ is small parameter, $\nu$ is
+the outward  unit normal to the curve~$\gamma=\partial\omega$
+(with respect to the domain~$\omega)$. Both the function~$\Phi$
+and the curve $\gamma=\partial\omega$ (and hence the
+domain~$\omega$) may be regarded as known: they are determinable
+from measurements of the magnetic field at the tokamak chamber
+$\partial {\mathcal S}.$
+
+Within the class of affine functions~$f: u\mapsto f(u)=au+b$,
+Vishik--\allowbreak Lyusternik's method is capable of showing that
+\begin{equation*}\label{uasymp}
+\left|\frac{{\partial } u}{{\partial
+}\nu}\biggl|_{s\in\gamma}-\left(\frac1{|\gamma|}-
+\frac{k(s)-|\gamma|^{-1}\int_\gamma k(s)\,ds}{2|\gamma|\sqrt{a}}\right)\right|\le
+\frac{C_{\gamma}(a)}{\sqrt{a}}\,,
+\ C_{\gamma}(a)\to 0\;\; \text{as}\;\;
+a\to\infty\,,
+\end{equation*}
+\begin{equation*}\label{Vasump}
+\left|\frac{d}{d a}\frac{{\partial } u}{{\partial
+}\nu}\biggl|_{s\in\gamma}-\; \frac{k(s)-|\gamma|^{-1}\int_\gamma
+k(s)\,ds}{4|\gamma|\,{a}^{3/2}}\right|\le
+\frac{C_{\gamma}(a)}{a^{3/2}}\,,\quad C_{\gamma}(a)\to 0\quad
+\text{as}\quad
+a\to\infty\,,
+\end{equation*}
+where $k(s)$ is the curvature of~$\gamma$ at~$s\in\gamma$. Using
+these asymptotic relations, it follows that there is only one
+affine distribution $f_u$ (for a~large class of domains~$\omega$)
+if $\lambda\overset{}{=}0$. However, for any arbitrarily small
+$\lambda>0$, there is an infinite number
+$\{f^j_u\}_{j\in\mathbb{N}}$ of distributions, for which
+$\|f^{j_1}_u\|\ll\|f^{j_2}_u\|$, $j_1\ne j_2$, where $\|f^j_u\|=
+\max\limits_{(x,y)\in\omega}\left|f^j_u(x,y)\right|\,.$
+It is shown that all these different distributions are necessarily
+members of a~sequence converging to the $\delta$-function
+supported on~$\gamma$ (the so-called skinned current). Hence these
+distributions are not essentially different from the physical
+standpoint.
+
+Two truly physically essentially different current distributions
+$f^1_{u}$ and $f^2_{u}$ are found in the class of polynomials~$f:
+u\mapsto f(u)=\sum_{m=0}^3a_mu^m$ of third degree (see
+Russian J.~Math.\ Physics, {\bf 17}~(1), 56--65 (2010) and
+Asymptotic Analysis, {\bf 74}~(1), 95--121  (2011)).
+
+
+
+\vfill
+\newpage %demidov.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Pseudodifferential operator, adiabatic approximation and averaging of linear operators}
+
+\medskip
+
+%% Author 1:
+{\sc J. Br\"uning}
+
+{\small\it Humboldt Universit\"at zu Berlin, Berlin 12489, Germany}
+
+{\small\rm bruening@mathematik.hu-berlin.de}
+
+\medskip
+
+{\sc Viktor Grushin}
+
+{\small\it Moscow Institute of Electronics and Mathematics, Moscow 109028, Russia}
+
+{\small\rm vvgrushin@mail.ru}
+
+\medskip
+
+{\sc Sergey Dobrokhotov}
+
+%% Address:
+{\small\it Ishlinski Institute for Problems in Mechanics, Moscow 119526, Russia}
+
+%% Email:
+{\small\rm dobr@ipmnet.ru}
+
+%% Author 2:
+
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+One use the averaging methods for partial differential equations in the case when their coefficients are rapidly oscillating functions. There exists a great number of publications devoted to averaging, we mention well known monographes by V.Zhikov, S.Kozlov and O.Oleinik, N.Bakhvalov and G.Panasenko, E.Khruslov and V.Marchenko. As a rule averaging methods are used for  construction such asymptotic solutions that their leading term is quite smooth function. From the other hand there exist interesting. The several scale are  in this situation and it  reasonable to use the variant of adiabatic approximation based on the V.Maslov operator methods and pseudodifferential operators. We illustrate this approach using the Sr\"odiger and Klien-Gordon type equations with rapidly oscillating velocity and potential.
+
+This work was supported by RFBR grant 11-01-00973 and DFG-RAS project 436 RUS 113/990/0-1.
+
+\medskip
+
+%% Abstract in Russian (optional; could be shorter than English):
+
+%% If you use BIBTEX to create bibliography, please use amsalpha:
+%\bibliographystyle{amsalpha}
+%\bibliography{physics}%% (if your BIBTEX entries are in physics.bib)
+\vfill
+\newpage %dobrokhotov.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Statistical Hydrodynamics and Reynolds averaging}
+
+\medskip
+
+%% Author 1:
+{\sc Stamatis Dostoglou}
+
+%% Address:
+{\small\it University of Missouri, Columbia, MO 65211, USA}
+
+%% Email:
+{\small\rm dostoglous@missouri.edu}
+
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+We shall revisit the Reynolds method of averaging to obtain equations
+for turbulent flow in the spirit of M.I. Vishik and A.V. Fursikov's approach to statistical hydrodynamics. In particular, 
+for statistically homogeneous flows we shall examine how space averages over domains (as in the original Reynolds ideas) are close to statistical averages on a phase space of vector fields.
+
+We shall also examine Reynolds averages obtained from microscopic statistical mechanics at a hydrodynamic limit via measure disintegration.
+
+\begin{spacing}{0.1}\begin{thebibliography}{7}
+
+\bibitem{D1}
+Dostoglou, S.
+{\em Statistical mechanics for fluid flows.} 
+Spectral and Evolution
+Problems  vol. {\bf 20}; Proceedings of the 20th Crimean School \& Conference, 193-198, 2010.
+
+\bibitem{D2}
+Dostoglou, S.
+{\em On Hydrodynamic equations from Hamiltonian dynamics
+and 
+Reynolds averaging.} Submitted.
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf To be announced}
+
+\medskip
+
+%% Author 1:
+{\sc Julii Dubinskii}
+
+%% Address:
+{\small\it Moscow Power Engineering Institute, Moscow, Russia}
+
+%% Email:
+{\small\rm julii\_dubinskii@mail.ru}
+
+
+\end{center}
+
+\medskip
+
+\vfill
+\newpage %dubinskii.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Pseudovariational operators and Yang-Mills Millennium problem}
+
+\medskip
+
+\medskip
+
+%% Author 1:
+{\sc Alexander Dynin}
+
+%% Address:
+{\small\it Ohio State University, Columbus, OH, USA}
+
+%% Email:
+{\small\rm dynin@math.ohio-state.edu}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+The second quantization of a complexified Gelfand triple produces   the   Kree nuclear triple of sesqui-holomorphic functionals on it. Any continuous operator in the Kree triple  is a  pseudovariational operator, a strong limit of second quantized   pseudodifferential operators on  $\mathbb{R}^n,\ n\rightarrow \infty$. 
+
+
+A thorough  analysis of the Noether Yang-Mills energy functional of Cauchy data shows that it is  the anti-normal symbol of a selfadjoint elliptic operator in variational  derivatives. Such quantum Yang-Mills energy operator  has  a mass  gap at the bottom of its  spectrum. This is a solution of the Yang-Mills Millennium problem.
+
+\medskip
+\emph{Key words}: Second quantizations; infinite-dimensional pseudodifferential operators,  symbolic calculus;  infinite-dimensional ellipticity; essentially hyperbolic non-linear partial differential  equations; Yang-Mills Millennium problem.
+
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf Acoustic and optical black holes}
+
+\medskip
+
+%% Author 1:
+{\sc Gregory Eskin}
+
+%% Address:
+{\small\it UC -- Los Angeles, Los Angeles, CA 90095-1555, USA}
+
+%% Email:
+{\small\rm eskin@math.ucla.edu}
+
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+Acoustic and optical black holes  appear in the study of  wave equations 
+describing the wave propagation in the moving medium.  They include the black holes
+of the general relativity when the corresponding Lorentz metric is the solution
+of Einstein equation.
+
+We investigate the existence and the stability of the black and white holes
+in the case of two space dimensions and in the axisymmetric case. 
+The case of nonstationary, i.e. time-dependent metrics, also will be
+considered.  
+
+
+\vfill
+\newpage %eskin.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Perturbation theory for systems with multiple stationary regimes}
+
+\medskip
+
+%% Author 1:
+{\sc Mark Freidlin}
+
+%% Address:
+{\small\it University of Maryland, College Park, MD 20742, USA}
+
+%% Email:
+{\small\rm mif@math.umd.edu}
+
+\end{center}
+
+\medskip
+
+I 
+will 
+consider 
+deterministic 
+and 
+stochastic 
+perturbations 
+of 
+dynamical 
+systems 
+and 
+stochastic 
+processes 
+with 
+multiple 
+invariant 
+measures. 
+Long-time 
+evolution 
+of 
+the 
+perturbed 
+system 
+will 
+be 
+described 
+as 
+a 
+motion 
+on 
+the 
+cone 
+of 
+the 
+invariant 
+measures 
+of 
+the 
+non-perturbed 
+system. 
+
+
+Quasilinear 
+parabolic 
+equations 
+with 
+a 
+small 
+parameter 
+in 
+the 
+higher 
+derivatives 
+\cite{FK10}, 
+perturbations 
+of 
+non-linear 
+oscillators 
+\cite{FWen12b}, 
+\cite{BF00}, 
+and 
+of 
+the 
+Landau--Lifshitz 
+equation 
+for 
+magnetization 
+\cite{FH12}, 
+linear 
+elliptic 
+PDE's 
+with 
+a 
+small 
+parameter 
+\cite{FWeb04}, 
+\cite{FW12},
+\cite{FWen12b}
+will 
+be 
+considered 
+as 
+examples. 
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+\bibitem{BF00}
+M.Brin, M.Freidlin, 
+On stochastic behavior of perturbed Hamiltonian systems, 
+\emph{Ergodic Theory and Dynamical Systems}, 
+\textbf{20} (2000), 
+pp. 
+55--76.
+
+
+\bibitem{FH12}
+M.Freidlin, W.Hu, 
+On perturbations of generalized Landau-Lifshitz dynamics, 
+\emph{Journal of Statistical Physics}, 
+\textbf{14} (2012), 
+5, 
+978--1008.
+
+
+\bibitem{FK10}
+M.Freidlin, L.Koralov, 
+Nonlinear stochastic perturbations of dynamical systems 
+and quasilinear PDE's with a small parameter, 
+\emph{Probability Theory and Related Fields}, 
+\textbf{147} (2010), 
+273--301.
+
+
+\bibitem{FWeb04}
+M.Freidlin, M.Weber, Random perturbations of dynamical 
+systems and diffusion processes with conservation laws, 
+\emph{Probability Theory and Related Fields}, 
+\textbf{128} (2004), 
+441--466.
+
+
+\bibitem{FW12}
+M.Freidlin, A.Wentzell, 
+\emph{Random Perturbations of Dynamical Systems}, 
+Springer, 
+2012. 
+
+
+\bibitem{FWen12b}
+M.Freidlin, A.Wentzell,
+On the Neumann problem for PDE's with 
+a small parameter and the corresponding diffusion processes, 
+\emph{Probability Theory and Related Fields}, 
+\textbf{152} (2012), 
+101--140.
+
+\bibitem{DFK11}
+D.Dolgopyat, M.Freidlin, L.Koralov, 
+Deterministic and Stochastic perturbations of area preserving 
+flows on a two-dimensional torus, 
+\emph{Ergodic Theory and Dynamical Systems}
+(2011), 
+DOI: 10.1017/50143385710000970. 
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %freidlin.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Generic properties of eigenvalues of a family of operators}
+
+\medskip
+
+%% Author 1:
+{\sc Leonid Friedlander}
+
+%% Address:
+{\small\it University of Arizona, Tucson, AZ 85721}
+
+%% Email:
+{\small\rm friedlan@math.arizona.edu}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+Let $\Omega(t)$ , $0\leq t\leq 1$, be a smooth family of bounded Euclidean domains, and let $\Delta(t)$ be the Dirichlet Laplacian in $\Omega(t)$. We call a family spectrally simple
+if the spectrum of $\Delta(t)$ is simple for all $t$. We prove that spectrally simple
+families form a residual set in the space of all families. A similar result holds in other situations, e.g. Laplace--Beltrami operators that correspond to a family of Riemannian metrics on a manifold, a family of Schr\"odinger operators (the potential depends on $t$). 
+
+
+
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf Normal parabolic equation corresponding to 3D Navier--Stokes system}
+
+\medskip
+
+%% Author 1:
+{\sc Andrei Fursikov}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119991, Russia}
+
+%% Email:
+{\small\rm fursikov@mtu-net.ru}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+Energy estimate is very important tool to study 3D Navier--Stokes system.
+Absents of such bound in phase space $H^1$ is very serious obstacle to prove 
+nonlocal existence of smooth solutions.  
+
+Semilinear parabolic equation is called equation of normal type if its nonlinear term $B$
+satisfies the condition: vector $B(v)$ is collinear to vector $v$ for each $v$. Since the property
+$B(v)\perp v$ implies energy estimate, equation of normal type does not satisfies energy estimate 
+"`in the most degree"'. That is why we hope that investigation of normal parabolic equations should make
+more clear a number problems connected with existence of nonlocal smooth solutions to 3D Navier--Stokes equations.
+
+In the talk we will start from Helmholtz equations that is analog of 3D Navier--Stokes system in which the curl
+of fluid velocity is unknown function. We will derive normal parabolic equations (NPE) corresponding to Helmholtz equations and will prove that there exists explicit formula for solution to NPE with periodic boundary conditions.
+This helped us to investigate more less completely the structure of dynamical flow corresponding to NPE.
+Its phase space $V$ can be decomposed on the set of stability $M_-(\alpha ),\; \alpha >0$ (solutions with initial condition $\omega_0 \in M_-(\alpha )$ tends to zero with prescribed rate $e^{-\alpha t}$ as time $t\to \infty $), set of explosions $M_+$ (solutions with initial condition $\omega_0 \in M_+$ blow up during finite time),
+and intermediate set $M_I(\alpha )=V\setminus (M_-(\alpha)\cup M_+)$. The exact description of all these sets
+will be given.  
+
+
+
+\vfill
+\newpage %fursikov.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Relative version of the Titchmarsh convolution theorem}
+
+\medskip
+
+%% Author 1:
+{\sc Evgeny Gorin}
+
+%% Address:
+{\small\it Moscow State Pedagogical University, Moscow, Russia}
+
+%% Email:
+{\small\rm evgeny.gorin@mtu-net.ru}
+
+\medskip
+
+{\sc Dmitry Treschev}
+
+{\small\it Steklov Mathematical Institute}
+
+{\small\rm treschev@mi.ras.ru}
+
+\end{center}
+
+\medskip
+
+
+We consider the algebra
+$C_u = C_u (\R)$
+of uniformly continuous bounded complex functions on the real line $\R$
+with pointwise operations and sup-norm. Let $I$ be a closed ideal in $C_u$
+invariant with respect to translations, and let $\mathrm{ah}_I (f )$
+denote the minimal real number (if it exists)
+satisfying the following condition. If
+$\lambda > \mathrm{ah}_I (f )$, then $(\hat f - \hat g )|_V = 0$
+for some $g_I$ , where $V$ is
+a neighborhood of the point $\lambda$.
+The classical Titchmarsh convolution theorem is equivalent to the
+equality
+$\mathrm{ah}_I (f_1 \cdot f_2 ) = \mathrm{ah}_I (f_1 ) + \mathrm{ah}_I (f_2 )$,
+where $I = \{0\}$.
+We show that, for ideals $I$ of general
+form, this equality does not generally hold,
+but $\mathrm{ah}_I (f^n ) = n \cdot \mathrm{ah}_I (f )$ holds for any $I$.
+We present
+many nontrivial ideals for which the general form
+of the Titchmarsh theorem is true.
+
+
+\vfill
+\newpage %gorin.tex
+
+
+\begin{center}
+%% Title in English:
+{\Large\bf Negative eigenvalues of two-dimensional Schr\"{o}dinger operators}
+
+\medskip
+
+%% Author 1:
+{\sc Alexander Grigoryan}
+
+%% Address:
+{\small\it University of Bielefeld, 33501 Bielefeld, Germany}
+
+%% Email:
+{\small\rm grigor@math.uni-bielefeld.de}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+Given a non-negative $L_{loc}^{1}$ function $V\left( x\right) $ on $\mathbb{R%
+}^{n}$, consider the Schr\"{o}dinger operator
+$
+H_{V}=-\Delta -V
+$
+where $\Delta =\sum_{k=1}^{n}\frac{\partial ^{2}}{\partial x_{k}^{2}}$ is
+the Laplace operator. More precisely, $H_{V}$ is defined as a form sum of $%
+-\Delta $ and $-V$, so that, under certain assumptions about $V$, the
+operator $H_{V}$ is self-adjoint in $L^{2}\left( \mathbb{R}^{n}\right) $.
+
+Denote by $\mathrm{Neg}\left( V\right) $ the number of non-positive
+eigenvalues of $H_{V}$ (counted with multiplicity), assuming that its
+spectrum in $(-\infty ,0]$ is discrete. For example, the latter is the case
+when $V\left( x\right) \rightarrow 0$ as $x\rightarrow \infty $. We are are
+interested in obtaining estimates of $\mathrm{Neg}\left( V\right) $ in terms
+of the potential $V$ in the case $n=2.$
+
+For the operator $H_{V}$ in $\mathbb{R}^{n}$ with $n\geq 3$ a celebrated
+inequality of Cwikel-Lieb-Rozenblum says that%
+\begin{equation}
+\mathrm{Neg}\left( V\right) \leq C_{n}\int_{\mathbb{R}^{n}}V\left( x\right)
+^{n/2}dx.  \label{CLR}
+\end{equation}%
+For $n=2$ this inequality is not valid. Moreover, no weighted $L^{1}$-norm
+of $V$ can provide an upper bound for $\mathrm{Neg}\left( V\right) .$ In fact,
+in the case $n=2$ instead of the upper bounds, the lower bound in (\ref{CLR}%
+) is true.
+
+The main result is the estimate (\ref{NegIn}) below that was obtained
+jointly with N.Nadira\-shvili. For any $n\in \mathbb{Z}$, set 
+\[
+U_{n} =
+\left\{
+\begin{array}{l}
+\{e^{2^{n-1}}<\left\vert x\right\vert <e^{2^{n}}\},\ \ n>0, \\
+\{e^{-1}<\left\vert x\right\vert <e\}, \ \ n=0,
+\\
+\{e^{-2^{\left\vert n\right\vert }}<\left\vert x\right\vert
+<e^{-2^{\left\vert n\right\vert -1}}\},\ \ n<0.
+\end{array}
+\right.
+\]
+Define for any $n\in \mathbb{Z}$ the following quantities:%
+\begin{equation*}
+A_{n}=\int\limits_{U_{n}}V\left( x\right) \left( 1+\left\vert \ln \left\vert
+x\right\vert \right\vert \right) dx\ ,\ \ \text{ }\ B_{n}=\Big(
+\int\limits_{\left\{ e^{n}<\left\vert x\right\vert <e^{n+1}\right\}
+}V^{p}\left( x\right) \left\vert x\right\vert ^{2\left( p-1\right)
+}dx\Big) ^{1/p},
+\end{equation*}%
+where $p>1$ is fixed. Then the following estimate holds%
+\begin{equation}
+\mathrm{Neg}\left( V\right) \leq 1+C\sum_{\left\{ n\in \mathbb{Z}%
+:A_{n}>c\right\} }\sqrt{A_{n}}+C\sum_{\left\{ n\in \mathbb{Z}%
+:B_{n}>c\right\} }B_{n},  \label{NegIn}
+\end{equation}%
+where $C,c$ are positive constants depending only on $p$.
+
+For example, (\ref{NegIn}) implies the finiteness of $\mathrm{Neg}\left(
+V\right) $ provided $V$ is locally bounded and 
+%\begin{equation*}
+$
+V\left( x\right) =o\Big( \frac{1}{\left\vert x\right\vert ^{2}\ln
+^{2}\left\vert x\right\vert }\Big) \ \ \text{as }x\rightarrow \infty ,
+$
+%\end{equation*}%
+which cannot be seen by any previously known method. 
+
+\vfill
+\newpage %grigoryan.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Incompressible limit of the linearized Navier--Stokes equations}
+
+\medskip
+
+%% Author 1:
+{\sc Nikolay Gusev}
+
+%% Address:
+{\small\it Moscow Institute of Physics and Technology, Dolgoprudny 141700, Russia}
+
+%% Email:
+{\small\rm n.a.gusev@gmail.com}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+We consider initial--boundary value problem for linearized equations of viscous
+barotropic fluid motion in a bounded domain. We briefly discuss results on
+existence, uniqueness and estimates of weak solutions to this problem
+(see \cite{IKM,MZ02,G11}).
+Then we focus on the asymptotic behaviour of the solutions as the 
+compressibility tends to zero, i.e. on the passage to so-called
+\emph{incompressible limit} (see \cite{LM98,FN07}).
+Briefly, we show that
+\begin{itemize}
+\item in general case the velocity field converges \emph{weakly} in $L^2(0,T;H_0^1)$;
+\item if the initial condition for the velocity is divergence-free
+then the velocity converges \emph{strongly} and the pressure
+converges $*$-\emph{weakly} in $L^\infty(0,T;L^2)$;
+\item if, in addition, the \emph{initial condition} for the pressure
+is compatible with the \emph{initial value} of the pressure
+in the incompressible problem then the convergence of
+the pressure is \emph{strong}. (A similar compatibility condition
+was obtained in \cite{Sh99} as a \emph{necessary condition} of strong
+convergence of the solutions.)
+\end{itemize}
+We also demonstrate the necessity of these sufficient conditions using
+explicit solutions which are available for simplified data.
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{IKM}
+Ikehata R., Koboyashi T. and Matsuyama T.,
+Remark on the $L_2$ Estimates of the Density for the Compressible
+Navier--Stokes Flow in $R^3$,
+Nonlinear Analysis, {\bf 47} (2001), pp. 2519--2526
+
+\bibitem{MZ02}
+Mucha P.B. and Zajaczkowski W.M.,
+On a $L_p$-estimate for the linearized compressible Navier--Stokes
+equations with the Dirichlet boundary conditions,
+J. Differential Equations, {\bf 186} (2002), pp. 377--393
+
+\bibitem{G11}
+Gusev N.A.,
+Asymptotic Properties of Linearized Equations of Low Compressible Fluid Motion,
+J. Math. Fluid Mech. (2011), DOI: 10.1007/s00021-011-0084-8
+
+\bibitem{LM98}
+{Lions P.-L. and Masmoudi N.},
+Incompressible limit for a viscous compressible fluid,
+J. Math. Pures Appl., {\bf 77(6)} (1998), pp. 585--627
+
+\bibitem{FN07}
+Feireisl E. and Novotn\'{y} A.,
+The Low Mach Number Limit for the Full Navier--Stokes--Fourier
+System,
+Arch. Rational Mech. Anal., {\bf 186} (2007), pp. 77--107
+
+\bibitem{Sh99}
+Shifrin E.G.,
+Unsteady Flows of Viscous Slightly Compressible Fluids: the
+Condition of Continuous Dependence on Compressibility,
+Doklady Physics, {\bf 44}, No. 3 (1999), pp. 189--192
+
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %gusev.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf On a compactness problem}
+
+\medskip
+
+%% Author 1:
+{\sc Alain Haraux}
+
+%% Address:
+{\small\it Universit{\'e} Pierre et Marie Curie, Paris, France}
+
+%% Email:
+{\small\rm haraux@ann.jussieu.fr}
+
+
+
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+Let $V,  H $  be two real Hilbert spaces,  $V\subset H$ with compact and dense imbedding and let $A: V\rightarrow V' $ be bounded, self ajoint and coercive.  Under reasonable assumptions on $g$ , a  compactness property of the range is established for energy-bounded solutions of an abstract equation 
+$$ u'' + Au + g(u') = h(t), \quad t\ge 0$$ when $h$ is $S^1$-uniformly continuous with values in $H$. This property allows to deduce\,:\smallskip
+
+\noindent
+1) asymptotic almost-periodicity of all solutions of wave or plate equations in presence of an almost-periodic source term when the damping term is strong enough.
+\smallskip
+
+\noindent
+2) convergence to equilibrium of all solutions of some equations of the form 
+$$ u'' + Au + f(u) + g(u') = h(t), \quad t\ge 0$$ when f is the gradient of a potential satisfying the {\L}ojasiewicz gradient inequality, $g$ is sufficiently coercive globally and $h(t) \rightarrow 0$  sufficiently fast for $t$ tending to infinity. 
+
+\smallskip
+
+These results generalize, mainly to the case of non-local damping terms,  some previous works by the author and his colleagues and rely on methods developped during more than 30 years, cf. e.g. \cite{haraux1, haraux2, haraux3} for applications of type 1) and \cite{haraux4,haraux5} for applications of type 2). There are still challenging open problems in this direction which will be mentionned during the lecture.
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{7}
+\bibitem{haraux1} L. Amerio \& G. Prouse, \emph{Uniqueness and almost-periodicity theorems for a non linear wave equation}, Atti Accad. Naz. Lincei Rend. Cl. Sci. Fis. Mat. Natur. \textbf{8}, 46 (1969) 1--8.
+
+\bibitem{haraux2} M. Biroli, \& A. Haraux, \emph{Asymptotic behavior for an almost periodic, strongly dissipative wave equation}. J. Differential Equations \textbf{38}  (1980), no. 3, 422--440.
+
+\bibitem{haraux3}A. Haraux, \emph{Damping out of transient states for some semi-linear, quasi-autonomous systems
+of hyperbolic type}, Rc. Accad. Naz. Sci. dei 40 (Memorie di Matematica)  \textbf{101} 7, fasc.7 (1983), 89--136.
+
+\bibitem{haraux4}A. Haraux \& M.A. Jendoubi, \emph{Convergence of bounded weak solutions of the wave equation with dissipation and analytic nonlinearity.}
+Calc. Var. Partial Differential Equations \textbf{9} (1999), no. 2, 95--124.
+
+\bibitem{haraux5}
+I. Ben Hassen \& L.~Chergui, \emph{Convergence of global and bounded solutions of some nonautonomous second order evolution equations with nonlinear dissipation},  J. Dynam. Differential Equations \textbf{23}(2011), no. 2, 315--332.
+
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %haraux.tex
+\begin{center}
+
+%% Title in English:
+
+{\Large\bf Bony and thick attractors}
+%\footnote{
+%The research was supported by
+%part by the grants NSF 0700973, RFBR 10-01-00739-�, RFFI-CNRS
+%10-01-93115-NTSNIL-a.}
+%}
+
+\medskip
+
+%% Author 1:
+{\sc Yu.~S.~Ilyashenko}
+
+%% Address:
+{\small\it Moscow State and Independent Universities, Steklov Mathematics Institute,  National Research University Higher School of Economics, Cornell University}%MULTIPLE
+
+%% Email:
+{\small\rm yulijs@gmail.com}
+
+\end{center}
+
+\smallskip
+
+Understanding of the structure of attractors of generic dynamical systems
+is one of the major goals of the theory.
+%%AC of these systems.
+A vast general
+program suggested by Palis  presents numerous conjectures
+about this structure. Various particular cases of these conjectures are proved
+in numerous papers that we do not quote here.
+Main part of these investigations is related to diffeomorphisms  of closed manifolds.
+Our investigation is
+%%AC in a sense
+parallel to this direction of research. In the first part of the talk,
+attractors of  \emph{manifolds with boundary onto themselves} are studied. At present, locally generic
+properties of  attractors of such maps are established, that are not yet observed
+(and plausibly do not hold)  for the case of closed manifolds.
+For instance, an open set of diffeomorphisms  of manifolds with boundary onto themselves
+may have attractors with intermingled basins.
+The strongest result of this kind
+is
+% obtained
+% by Kleptsyn and Saltykov
+in
+\cite{KS}.
+
+Another property of this kind is \emph{having thick attractors}.
+It is a general belief that attractors of typical smooth dynamical systems
+(diffeomorphisms and flows) on closed manifolds
+either coincide with the whole phase space
+or have Lebesgue measure zero. In this talk we show that this is not the fact
+for diffeomorphisms  of manifolds with boundary onto themselves. Namely, in the space of diffeomorphisms  of
+%a product 
+$T^2  \times [0,1]$, there exists an open set such that  any map from a complement of this set
+to a countable number of hypersurfaces,  has a
+thick attractor: a transitive attractor that has positive Lebesgue measure together with its complement \cite{I11}.
+The problem whether
+%or not
+thick
+attractors exist for locally generic diffeomorphisms
+of a closed manifold remains  widely open.
+
+In the second part we study so called bony attractors. These are attractors of
+skew products over a Bernoulli shift with the following unexpected property:
+the map has an invariant manifold, and the intersection of the attractor with
+that manifold, called \emph{a bone}, is much larger than the attractor of the restriction of the map
+to the invariant manifold.  Bony attractors with one-dimensional bones
+were discovered in \cite{K10}.
+We construct bones of arbitrary dimension \cite{I12}.
+It is expected that bony attractors are in a sense locally generic.
+% in the space of diffeomorphisms  of a closed manifold.
+\vskip -0.6cm \ 
+
+\begin{spacing}{0.1}\begin{thebibliography}{7}
+
+\bibitem{I11} Yu. Ilyashenko,
+\emph{Thick attractors of boundary preserving diffeomorphisms},
+Indagationes Mathematicae
+\textbf{22} (2011), no. 3-4, 257--314.
+
+\bibitem{I12} Yu. Ilyashenko,
+\emph{Multidimensional bony attractors}, accepted to  Functional
+Analysis and applications (Russian).
+
+\bibitem{KS} V. Kleptsyn, P. Saltykov,
+\emph{On $ C^2$-robust atractors with intermingled basins
+for boundary preserving maps}, Proceedings of
+% the 
+MMS \textbf{72} (2011),
+% no. 2,
+249--280.
+
+\bibitem{K10}
+Yu.\,G\,Kudryashov, \emph{Bony attractors},
+Func. Anal. Appl. \textbf{44} (2010),
+no. 3, 
+73--76.
+
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %ilyashenko.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Sharp two-term Sobolev inequality and applications to the Lieb--Thirring estimates}
+
+\medskip
+
+%% Author 1:
+{\sc Alexei Ilyin}
+
+%% Address:
+{\small\it Keldysh Institute of Applied Mathematics, Moscow 125047, Russia}
+
+%% Email:
+{\small\rm ilyin@keldysh.ru}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+For a function $\varphi\in H^1(\mathbb{R})$ the following inequality
+is  well known
+$$
+\|\varphi\|_\infty^2\le \|\varphi\|\|\varphi'\|,
+$$
+where the norms on the right-hand side are the $L_2$-norms.
+The constant $1$ in the  inequality is  sharp
+and the unique extremal unction is
+$
+\varphi^*(x)=e^{-|x|}
+$.
+The same inequality clearly holds on a finite interval,
+that is, for $\varphi\in H^1_0(0,L)$. However, since
+$\varphi^*(x)>0$, no extremal functions exist.
+The following result provides a sharp correction term
+for this inequality (the correction term in the periodic case
+was found in \cite{Zelik}).
+
+\medskip
+\noindent
+{\bf Theorem 1.}
+{\it Let $f\in H^1_0(0,L)$. Then
+$
+\ \|\varphi\|^2_\infty\le\|\varphi\|\|\varphi'\|\bigl(1-2e^{-\frac{L\|\varphi'\|}{\|\varphi\|}}\bigr).
+$
+
+\noindent
+The  coefficients of the two terms on the right-hand side
+are sharp and no extremal functions exist.}
+\medskip
+
+
+
+As in the periodic case considered in~\cite{JST}, this theorem makes
+it possible to obtain a simultaneous bound for the negative
+trace and the number of negative eigenvalues for the
+1D Schr\"odinger eigenvalue problem on $(0,L)$
+\begin{equation}
+\label{Sch}
+-y''_j-Vy_j=\nu_jy_j
+\end{equation}
+with Dirichlet boundary conditions $y(0)=y(L)=0$
+and potential $V(x)\ge0$.
+
+\medskip
+\noindent
+{\bf Theorem 2.}
+{\it Suppose that there exist $N$ negative eigenvalues $\nu_j\le0$, %$\nu_j\ge0$,
+$j=1,\dots,N$ of the operator~\eqref{Sch}. Then
+both the negative trace and the number $N$ of negative
+eigenvalues satisfy for any $\varepsilon\ge0$
+$$
+\sum_{j=1}^N|\nu_j|+N\cdot\frac{\pi^2}{L^2}
+\biggl(\frac{c(\varepsilon)}{1+\varepsilon}\biggr)^{2}\le
+\frac{2}{3\sqrt{3}}\cdot
+(1+\varepsilon)\int_0^{L}V(x)^{3/2}dx,
+$$
+where
+$
+c(\varepsilon)=\min_{x\ge1}\bigl(\varepsilon x+2xe^{-\pi x}\bigr)
+$.
+}
+
+\medskip
+\noindent
+{\it Remark.} We have  $c(\varepsilon)\ge\varepsilon$, and the optimal
+$\varepsilon$ for the
+bound involving only the number of negative eigenvalues $N$
+is $\varepsilon=2$.
+
+
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{7}
+
+
+
+\bibitem{Zelik}M.V.\,Bartuccelli, J.\,Deane, and
+S.V.\,Zelik, \emph{Asymptotic expansions and extremals for
+the critical Sobolev and Gagliardo-Nirenberg inequalities on a
+torus.} arXiv:1012.2061 (2010).
+
+\bibitem{JST} A.A.Ilyin,
+\emph{Lieb--Thirring inequalities on some manifolds}, Journal
+of Spectral Theory
+\textbf{2}:1 (2012), 1--22.
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %ilyin.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Symplectic projection methods of deriving long-time asymptotics for nonlinear PDEs}
+
+\medskip
+
+%% Author 1:
+{\sc Valeriy Imaykin}
+
+%% Address:
+{\small\it Research Institute of Innovative Strategies for General Education Development, Moscow 109544, Russia}
+%%{\small\it Research Institute of Innovative Strategies for General Education Development, Mezhdunarodnaya str. 11, Moscow 109544, Russia}
+
+%% Email:
+{\small\rm ivm61@mail.ru}
+
+
+\medskip
+
+%% Author 2:
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+We consider some systems which describe a field-particle interaction, namely a charged particle coupled to the scalar wave field, to the Klein-Gordon field, and to the Maxwell field. Since the systems are Hamiltonian, methods of symplectic projection onto invariant finite-dimensional manifolds of soliton-type solutions turn to be helpful in deriving long-time asymptotics of solutions, \cite{IKV05,IKV06,IKS11,IKV11}.
+
+
+%% If you use BIBTEX to create bibliography, please use amsalpha:
+%\bibliographystyle{amsalpha}
+%\bibliography{physics}%% (if your BIBTEX entries are in physics.bib)
+
+\begin{spacing}{0.1}\begin{thebibliography}{4}
+
+\bibitem{IKV05} V.~Imaikin, A.~Komech, and B.~Vainberg,
+\emph{On scattering of solitons for the Klein-Gordon equation coupled to a particle}, 
+Comm. Math. Phys. \textbf{268} (2006), 321--367.
+
+\bibitem{IKV06} V.~Imaikin, A.~Komech, and B.~Vainberg,
+\emph{On scattering of solitons for wave equation coupled to a particle}, in ``CRM
+Proceedings and Lecture Notes'', \textbf{42} (2007).
+
+\bibitem{IKS11} V.~Imaikin, A.~Komech, and H.~Spohn, \emph{Scattering asymptotics for a charged particle coupled to the Maxwell field}, J. Math. Phys. \textbf{52}, (2011).
+
+\bibitem{IKV11} V.~Imaikin, A.~Komech, and B.~Vainberg, \emph{Scattering of Solitons for Coupled
+Wave-Particle Equations}, accepted in J. Math. Anal. Appl. (2011).
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %imaykin.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf On the uniform attractors of finite-difference schemes}
+
+\medskip
+
+%% Author 1:
+{\sc Valentina Ipatova}
+
+%% Address:
+{\small\it Moscow Institute of Physics and Technology, Dolgoprudny 141700, Russia}
+
+%% Email:
+{\small\rm ipatval@mail.ru}
+
+\end{center}
+
+\medskip
+
+The theory of global uniform attractors of non-autonomous differential systems has been constructed in \cite{ipatova1}. It is important in applications how close the attractors of discrete approximations to mathematical models are to their true attractors. For autonomous equations, this problem was studied in \cite{ipatova2}, where a theorem on the semicontinuous dependence of attractors of
+a family of semidynamical systems on the parameter was proved. A similar result was obtained in \cite{ipatova3} for uniform attractors of families of semiprocesses corresponding to non-autonomous evolution
+equations. It was assumed in \cite{ipatova2,ipatova3} that the considered families have a common time semigroup;
+therefore, when studying finite-difference, the grid increment was represented in the form $\tau =\tau_n=T_0/n$ where $T_0$ is some positive number and $n\in {\mathbb N}$.
+In this paper we prove a theorem on the upper semi-continuous dependence on the parameter of the uniform attractors of families of semiprocesses \cite{ipatova4} which allows us to investigate the convergence of the attractors of the numerical schemes in which the discretization parameter is not subjected to any law and can tend to zero in an arbitrary manner.
+This result is applied to the study of the uniform attractor of the explicit finite-difference scheme for the Lorenz system with time-dependent coefficients \cite{ipatova5}.
+
+The work was supported by the Federal Program "Scientific and Scientific-Educational Staff of Innovative Russia" for years 2009-2013.
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{ipatova1}
+V.V. Chepyshov and M.I. Vishik, \emph{Attractors of non-autonomous dynamical systems and their dimension}, J. Math. Pures Appl.   \textbf{73} (1994), 279--333.
+
+\bibitem{ipatova2}
+L.V. Kapitanskii and I.N. Kostin, \emph{Attractors of nonlinear evolution equations and their approximations}, Leningrad Math. J. \textbf{2} (1991),  No. 1, 97--117.
+
+\bibitem{ipatova3}
+V.M. Ipatova, \emph{Attractors of approximations to non-autonomous evolution equations},  Sbornik: Math.  \textbf{188} (1997),  No. 6,  843--852.
+
+\bibitem{ipatova4}
+V.M. Ipatova,  \emph{On uniform attractors of explicit approximations}, Differential Equations. \textbf{47} (2011), No. 4, 571--580.
+
+\bibitem{ipatova5}
+V.M. Ipatova,  \emph{Attractors of finite-difference schemes for the Lorenz system with time-dependent coefficients}, Procceedings of MIPT. \textbf{3} (2011), No. 1, 74--80.
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %ipatova.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Structure and regularity of the global attractor of reaction-diffusion equation with non-smooth nonlinear term}
+
+\medskip
+
+%% Author 1:
+{\sc Aleksey Kapustyan}
+
+%% Address:
+{\small\it Kyiv National Taras Shevchenko University, Kyiv, Ukraine}
+
+%% Email:
+{\small\rm alexkap@univ.kiev.ua}
+
+
+\medskip
+
+%% Author 2:
+{\sc Pavel Kasyanov}
+
+{\small\it  National Technical University of Ukraine, Kyiv, Ukraine}
+
+{\small\rm kasyanov@i.ua}
+
+\medskip
+
+%% Author 3:
+{\sc Jose Valero}
+
+{\small\it Universidad Miguel Hernandez de Elche,  Elche, Spain}
+
+{\small\rm jvalero@umh.es}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+In a bounded domain $\Omega\subset\mathbb{R}^{3}$ with sufficiently
+smooth boundary $\partial\Omega$ we consider the problem
+\begin{equation}
+\left\{
+\begin{array}
+[c]{l}%
+u_{t}-\Delta u+f(u)=h,\quad x\in\Omega,\ t>0,\\
+u|_{\partial\Omega}=0,
+\end{array}
+\right. \label{ka1}%
+\end{equation}
+where $f\in C(\mathbb{R})$ satisfies suitable growth and dissipative
+conditions, but there is no condition ensuring uniqueness of the
+Cauchy problem. When the nonlinear term $f$ is smooth and $f'$
+satisfies additional assumptions, it is well known
+\cite{BabinVishik1989}, that the problem (\ref{ka1}) generates semigroup,
+which has global attractor and it coincides with the unstable set,
+emanating from the set of stationary points and with stable one as
+well. In general case (2), when the uniqueness of Cauchy problem is
+not guaranteed, we have existence of trajectory attractor
+\cite{ChepVishik2002}, and existence of global attractor of
+multivalued semiflow \cite{KapValero2010}. Our aim is to study the
+structure of the global attractor in multi-valued case. We prove
+that the attractor of the multi-valued semiflow generated by all
+weak solutions of (\ref{ka1}) in the phase space $L^{2}\left( \Omega\right)
+$ is the closure of the union of all stable manifolds of the set of
+stationary points. Also,
+for multi-valued semiflow,
+generated by regular solutions,  we prove the existence of  global
+attractor,  which is compact in $H_{0}^{1}\left( \Omega\right) $ and
+we establish that it is the union of all unstable manifolds of the
+set of stationary points and of the stable ones as well.
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{BabinVishik1989} A.V. Babin and M.I. Vishik, \emph{Attractors of evolution
+equations}, Nauka, Moscow, 1989.
+
+\bibitem{ChepVishik2002} V.V. Chepyzhov and M.I. Vishik,
+\emph{Attractors for equations of mathematical physics},
+AMS, Providence, 2002.
+
+\bibitem{KapValero2010} O.V. Kapustyan and J. Valero,
+\emph{Comparison between trajectory and global attractors for evolution systems without uniqueness of solutions}, Int. J. Bif. and Chaos.
+\textbf{20} (2010), 2723--2734.
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %kapustyan.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf On global attractors  of  nonlinear hyperbolic PDEs}
+
+\medskip
+
+%% Author 1:
+{\sc Alexander Komech}
+
+%% Address:
+{\small\it IITP, Moscow, Russia and Vienna University}
+
+%% Email:
+{\small\rm akomech@iitp.ru}
+
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+We consider Klein-Gordon and Dirac equations
+coupled to U(1)-invariant nonlinear
+oscillators. Solitary waves of the coupled nonlinear system form
+two-dimensional submanifold in the Hilbert phase space of finite
+energy solutions. 
+\medskip
+
+\noindent
+{\bf Main Theorem.}
+Let all the oscillators be  strictly nonlinear.
+Then  any finite energy solution converges,
+in the long time limit,
+to the solitary manifold
+in the local energy seminorms.
+
+\medskip
+
+The investigation is inspired by Bohr's postulates on transitions to
+quantum stationary states.
+The results are obtained for:
+
+\medskip
+
+\noindent
+$\bullet$
+1D KGE coupled to one oscillator [1,2,3], and to finitely many
+oscillators [4];
+
+\medskip
+
+\noindent
+$\bullet$
+$n$D KGE  and Dirac coupled to one oscillator via mean field
+interaction [5,~6].
+
+\medskip
+
+\noindent
+[1] A.I. Komech, On attractor of a singular nonlinear
+$U(1)$- invariant Klein-Gordon equation, p. 599-611 in: Proc.
+$3^{rd}$ ISAAC Congress,  Berlin, 2003.
+
+\smallskip
+\noindent
+[2] A.I. Komech, A.A. Komech,
+On global attraction to solitary waves for the
+Klein-Gordon equation coupled to nonlinear oscillator,
+{\em C. R., Math., Acad. Sci. Paris} {\bf 343},  111-114.
+
+\smallskip
+\noindent
+[3] A.I. Komech, A.A. Komech,
+Global attractor for a nonlinear oscillator coupled
+to the Klein-Gordon field,
+{\em Arch. Rat. Mech. Anal.} {\bf 185} (2007), 105-142.
+
+\smallskip
+\noindent
+[4] A.I. Komech, A.A. Komech, On global attraction to solitary
+waves for the Klein-Gordon field coupled to several nonlinear
+oscillators, {\em J. Math. Pures Appl.},
+{\bf 93} (2010), 91-111. 
+
+\smallskip
+\noindent
+[5] A.I. Komech, A.A. Komech, Global attraction to solitary waves
+for Klein-Gordon equation with mean field interaction, {\em Annales
+de l'IHP-ANL} {\bf 26} (2009), no. 3,  855-868.
+arXiv:math-ph/0711.1131
+
+\smallskip
+\noindent
+[6] A.I. Komech, A.A. Komech, Global attraction to solitary waves
+for nonlinear Dirac equation with mean field interaction, 
+{\em SIAM J. Math. Analysis} {\bf 42} (2010), no.6, 2944-2964.
+
+\vfill
+\newpage %komech-alexander.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Weak attractor for the Klein-Gordon equation with a nonlinear oscillator in discrete space-time}
+
+\medskip
+
+
+\medskip
+
+%% Author 1:
+{\sc Andrey Komech}
+
+%% Address:
+{\small\it IITP, Moscow, Russia}
+{\small\it and}
+{\small\it Texas A\&M University, College Station, TX, USA}
+
+%% Email:
+{\small\rm andrey.komech@gmail.com}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+We consider the Klein-Gordon equation
+in the discrete space-time
+interacting with a nonlinear oscillator.
+In \cite{kg-discrete-arxiv},
+we prove that the weak attractor of all
+finite energy solutions
+coincides with the set of all
+multifrequency solitary waves,
+\[
+\sum\sb{j=1}\sp{N}\phi\sb j(x)e^{-i\omega\sb j t},
+\qquad
+(x,\,t)\in\Z^n\times\Z,
+\quad
+\phi\sb j\in l\sp 2(\Z^n),
+\quad
+\omega\sb j\in\R\mod 2\pi.
+\]
+More precisely, we show that
+there are only one-, two-, and four-frequency solitary waves.
+In the continuous limit,
+only the one-frequency solitary waves survive.
+The convergence to the attractor takes place weakly
+(on finite subsets or in the weighted norms).
+The proof is based on a version
+of the Titchmarsh convolution
+theorem proved for distributions
+supported on a circle \cite{titchmarsh-circle}.
+
+The result generalizes an earlier
+result for the Klein-Gordon equation
+in the continuous space-time \cite{ubk-arma}.
+
+%\bibliographystyle{amsplain}
+%\bibliography{comech}
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{kg-discrete-arxiv}
+Andrew Comech, \emph{Weak attractor of the {K}lein-{G}ordon field in discrete
+  space-time interacting with a nonlinear oscillator}, ArXiv e-prints
+  \textbf{1203.3233} (2012).
+
+\bibitem{ubk-arma}
+Alexander~I. Komech and Andrew~A. Komech, \emph{Global attractor for a
+  nonlinear oscillator coupled to the {K}lein-{G}ordon field}, Arch. Ration.
+  Mech. Anal. \textbf{185} (2007), 105--142.
+
+\bibitem{titchmarsh-circle}
+Alexander~I. Komech and Andrew~A. Komech, \emph{On the {T}itchmarsh convolution theorem for distributions on a
+  circle}, Funktsional. Anal. i Prilozhen. \textbf{46} (2012), to appear (see
+  arXiv:1108.2463).
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %komech-andrey.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Dispersive estimates for magnetic Klein-Gordon equation}
+
+\medskip
+
+
+
+%% Author 1:
+{\sc Elena Kopylova}
+
+%% Address:
+{\small\it Institute for Information Transmission Problems, Moscow 127994, Russia}
+
+%% Email:
+{\small\rm ek@iitp.ru}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+We obtain a dispersive long-time decay in weighted
+energy norms for solutions of  3D Klein-Gordon equation
+with magnetic and scalar potentials.
+The decay extends the results of \cite{kopylovaJK}, 
+\cite{kopylovaK} and \cite{kopylovaKK} for the  Schr\"odinger, wave 
+and Klein-Gordon equations  with  scalar potentials.
+For the proof we develop the spectral
+theory of Agmon, Jensen and Kato and minimal escape velocities 
+estimates of  Hunziker, Sigal and Soffer.
+
+\begin{spacing}{0.1}\begin{thebibliography}{}
+
+\bibitem{kopylovaA}
+S. Agmon, \emph{Spectral properties of Schr\"odinger operator 
+and scattering theory},
+Ann. Scuola Norm. Sup. Pisa, Ser. IV, \textbf{2} (1975), 151--218.
+
+\bibitem{kopylovaHSS}
+W. Hunziker, I.M. Sigal, A. Soffer,
+\emph{Minimal escape velocities},
+Comm. Partial Diff. Eqs., \textbf{24} (1999), no. 11-12, 2279--2295.
+
+\bibitem{kopylovaJK}
+A. Jensen, T. Kato,
+\emph{Spectral properties of Schr\"odinger operators and time-decay
+of the wave functions}, 
+Duke Math. J., \textbf{46} (1979), 583--611.
+
+\bibitem{kopylovaKK}
+A. Komech, E. Kopylova, 
+\emph{Weighted energy decay for 3D Klein-Gordon equation},
+J. Diff. Eqs., \textbf{248} (2010), no. 3, 501--520.
+
+\bibitem{kopylovaK}
+E. Kopylova,
+\emph{Weighed energy decay for 3D wave equation}, 
+Asymptotic Anal., \textbf{65} (2009), no. 1-2, 1--16.
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %kopylova.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Disprove of the commonly recognized belief that the foreign exchange currency market is self-stabilizing}
+
+\medskip
+
+%% Author 1:
+{\sc Victor Kozyakin}
+
+%% Address:
+{\small\it Institute for Information Transmission Problems, Moscow, Russia}
+
+%% Email:
+{\small\rm kozyakin@iitp.ru}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+In economics and finance, arbitrage is the practice of taking
+advantage of a price difference between two or more markets. The
+act of exploiting an arbitrage opportunity resulting from a pricing
+discrepancy among three different currencies in the foreign
+exchange market is called triangular arbitrage (also referred to as
+cross currency arbitrage or three-point arbitrage). The commonly
+recognized belief in economics and finance is that
+\begin{quote}
+\ldots Arbitrage has the effect of causing prices in different
+markets to converge. As a result of arbitrage, the currency
+exchange rates, the price of commodities, and the price of
+securities in different markets tend to converge\ldots
+\end{quote}
+see, e.g. \url{http://en.wikipedia.org/wiki/Arbitrage}.
+
+In the talk, the triangle arbitrage operations will be reformulated
+in terms of the so-called asynchronous systems. This will allow to
+disprove the above belief by a set of examples. It will be
+demonstrated that the foreign exchange currency market may exhibit
+periodical regimes and exponential growth of exchange rates but
+also unexpectedly strong instability: the so-called
+double-exponential growth of exchange rates.
+
+\medskip
+
+\vfill
+\newpage %kozyakin.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf The structure of the solution sets for generic operator equations}
+
+\medskip
+
+%% Author 1:
+{\sc Alexander Krasnosel'skii}
+
+%% Address:
+{\small\it Institute for Information Transmission Problems, Moscow, Russia}
+
+%% Email:
+{\small\rm amk@iitp.ru}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+Consider an abstract operator equation  $x=F(x,\lambda)$ in a Banach space $X$
+(all constructions are interesting even in $\R^{2}$) with
+compact and continuous operator $F$ depending on a parameter $\lambda\in\Lambda$.
+Here $\Lambda$ is a compact set, say an interval or the circle $S^{1}$.
+The set of all solutions of the equation  $x=F(x,\lambda)$ in the space
+$X\times\Lambda$ may have very complicated form (e.g. may have a fractal structure).
+However, these sets have some common properties,
+for example such sets are always compact.
+Under generic topological assumptions (partially, if $F$ satisfies the Schauder principle conditions:
+it maps some ball in its interior part) such equations
+always have large connected components.
+The first results in this direction were obtained by Mark Krasnosel'skii
+in 50's, later his ideas were continued and developed by various authors.
+
+In my talk I would like to present some new results
+on the structure of the solution sets for generic operator equations.
+Possible applications to boundary value problems are evident,
+as an example I present some statements on nontrivial asymptotic bifurcation
+points in the problems on periodic forced oscillations
+for higher order ODE.
+In these statements the set of all solutions
+in the space $X\times\Lambda$ is nonconnected and consists
+from the infinite sequence of bounded cyclic branches
+going to infinity.
+
+\medskip
+
+%% Abstract in Russian (optional; could be shorter than English):
+
+
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf Around the Cauchy-Kowalevski theorem}
+
+\medskip
+
+%% Author 1:
+{\sc Sergei Kuksin}
+
+%% Address:
+{\small\it Ecole Polytechnique, Paris}
+
+%% Email:
+{\small\rm kuksin@gmail.com}
+
+\end{center}
+
+\medskip
+
+I will present a general approach which allows to prove the propagation of
+analyticity for solutions of various classes of quasilinear and nonlinear PDEs.
+In particular, it implies that under  the assumptions of the Cauchy-Kowalevski
+or Ovsiannikov-Nirenberg theorems classical solutions stay analytic till they
++exist. This is a joint work with N. Nadirashvili.
+
+\vfill
+\newpage %kuksin.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Critical manifold in the space of contours in Stokes-Leibenson problem for Hele-Shaw flow}
+
+\medskip
+
+%% Author 1:
+{\sc A.S. Demidov}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119992, Russia}
+
+%% Email:
+{\small\rm alexandre.demidov@mtu-net.ru}
+
+\medskip
+
+%% Author 2:
+{\sc J.-P. Loh\'eac}
+
+{\small\it \'Ecole centrale de Lyon, Institut Camille-Jordan}
+
+{\small\rm Jean-Pierre.Loheac@ec-lyon.fr}
+
+\medskip
+
+%% Author 3:
+{\sc V. Runge}
+
+{\small\it \'Ecole centrale de Lyon, Institut Camille-Jordan}
+
+{\small\rm Vincent.Runge@ec-lyon.fr}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+We here deal with the Stokes-Leibenson problem for a
+punctual Hele-Shaw flow. By using a geometrical transformation
+inspired by Helmholtz-Kirchhoff method, we introduce an
+integro-differential problem which leads to the construction of
+a discrete model.
+We first give a short recall about the source-case: global in time
+existence and uniqueness result for an initial contour close to a
+circular one, investigation of the evolutionary structure of the solution.
+Our main subject concerns the development of a numerical model
+in order to get some qualitative properties of the motion.
+This model provides numerical experiments which confirm the
+existence of a critical manifold of codimension 1 in some space
+of contours.
+This manifold contains one attractive point in the source-case
+corresponding to a circular contour centered at the source-point.
+In the sink-case, every point of this manifold seems to be attractive.
+In particular, we present some numerical experiments linked to
+fingering effects.
+
+\begin{spacing}{0.1}\begin{thebibliography}{7}
+
+\bibitem{Ga}
+{L.A. Galin,}
+\emph{Unsteady filtration with a free surface}.
+Dokl. Akad. Nauk SSSR {\bf 47} (1945), 250--253.
+
+\bibitem{Le}
+{L.S. Leibenson,}
+\emph{Oil producing mechanics, Part II}.
+Moscow, Neftizdat,  1934.
+
+\bibitem{OH}
+{J.R. Ockendon, S.D. Howison,}
+\emph{Kochina and Hele-Shaw in
+modern mathematics, natural science and industry}.
+J. Appl. Math. Mech. {\bf 66} (2002), No~3, 505--512.
+
+\bibitem{P1}
+{Y.Ya. Polubarinova-Kochina,}
+\emph{On the motion of the oil contour}.
+{Dokl. Akad. Nauk SSSR} {\bf 47} (1945), 254--257.
+
+\bibitem{P2}
+{P.Ya. Polubarinova-Kochina,}
+\emph{Concerning unsteady motions in the theory of filtration}.
+{Prik. Mat. Mech.} {\bf 9} (1945), 79--90.
+
+\bibitem{St}
+{G.G. Stokes,}
+\emph{Mathematical proof of the identily of the
+stream-lines obtained by means of viscous film with those of a
+perfect fluid moving in two dimensions}.
+{Brit. Ass. Rep.} \textbf{143} (1898) (Papers, V, 278).
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %loheac.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf The trajectory attractor of the nonlinear hyperbolic equation, contain a small parameter by the second derivative with respect to time}
+
+\medskip
+
+%% Author 1:
+{\sc Andrey Lyapin}
+
+%% Address:
+{\small\it Russian State Technological University (MATI)}
+
+%%Email:
+{\small\rm andser2001@gmail.com}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+In many articles dealt with the convergence of the attractor of the nonlinear autonomous hyperbolic equation, contain a small parameter by the second derivative with respect to time, to the attractor of the limit ($\varepsilon = 0$) parabolic equation (for example: [1], [2], [3]). It was assumed that the Cauchy problem for the limit of the parabolic equation has a unique solution. In the present report focuses on the case when there is no uniqueness of solutions of the Cauchy problem for these equations. It is shown that the trajectory attractor of a hyperbolic equation converges to the trajectory attractor of the limit parabolic equation in an appropriate topology. 
+
+\medskip
+
+%% Abstract in Russian (optional; could be shorter than English):
+
+
+
+
+\noindent [1]
+V.V. Chepyzhov, M.I. Vishik, Perturbation of trajectory attractors for dissipative hyperbolic equations. \textit{Op. Theory: Adv. Appl. } \textbf{110} (1999), 33--54.
+\vspace{2ex}
+
+\noindent [2]
+V.V. Chepyzhov, M.I. Vishik, \textit{Attractors for equations of mathematical physics} Amer. Math. Soc., Colloquium publications vol. \textbf{49} (2002).
+\vspace{2ex}
+
+\noindent [3]
+A. Haraux,
+\emph{Two remarks on dissipative hyperbolic problems}. Nonlinear partial differential equations and their applications, \textit{College de France Seminar} \textbf{7} (1985), 161--179.
+\vspace{2ex}
+
+\noindent [4]
+Hale, G.Raugel. Upper semicontinuity of the attractors for singular perturbed
+hyperbolic equation, \textit{J. Diff. Eq.} \textbf{73} (1988), 197--214.
+\vspace{2ex}
+
+\noindent [5]
+S.V. Zelik. Asymptotic regularity of solutions of singularly perturbed damped wave equations 
+with supercritical nonlinearities, \textit{Discrete Contin. Dyn. Syst.} \textbf{11} (2004), 351--392.
+
+
+\vfill
+\newpage %lyapin.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Vishik's approach to general boundary value problems for elliptic operators. Recent development}
+
+\medskip
+
+%% Author 1:
+{\sc Mark Malamud}
+
+%% Address:
+{\small\it Institute of Applied Mathematics and Mechanics, Donetsk 83114, Ukraine}
+
+%% Email:
+{\small\rm mmm@telenet.dn.ua}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+
+%%Its influence and further development.
+
+In his pioneering paper \cite{Vis52} M.I. Vishik proposed a new
+approach to the extension theory of symmetric operators as well as
+dual pairs of operators in a Hilbert space. In the framework of
+this approach the proper extensions are parameterized in terms of
+(abstract) boundary conditions. Moreover, he applied
+general constructions to investigate  %%some spectral properties
+the properties of solvability and complete solvability  of
+boundary value problems for (not necessarily symmetric) elliptic
+operators on bounded domains.
+
+
+During three last decades this approach has been formalized in the
+concept of boundary triplets for dual pairs of operators and 
+elaborated in great detail.  The revival of interest to this
+approach  has been motivated by numerous applications to boundary
+value problems for differential and difference operators (see for
+instance publications \cite{Grubb68}, \cite{BroGruWoo09},
+\cite{KosMal10}, \cite{Mal10} and references therin).
+
+
+I plan to recall the main results and basic constructions of the
+Vishik's paper  \cite{Vis52} as well as  to discuss  its influence
+on development of the extensions theory.
+%%of symmetric operators as well as dual pairs of operators will be discussed.
+
+Next I plan to discuss  applications of to elliptic boundary value
+problems in domain with compact boundary. Some spectral properties
+of different realizations of elliptic differential expressions
+will be discussed too.
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{7}
+
+\bibitem{Vis52}
+M.I. Vishik. \emph{On general boundary problems for elliptic
+differential equations}. {Am. Math. Soc., Transl., II. Ser.}.
+\textbf{24}(1952), 107--172.
+
+\bibitem{Grubb68}
+G.~Grubb. \emph{A characterization of the non-local boundary value
+problems associated with an elliptic operator}.  {Ann. Scuola
+Norm. Sup. Pisa}. \textbf{3, 22}(1968), 425--513.
+
+
+\bibitem{BroGruWoo09}
+B. M. Brown, G.Grubb, I. G.Wood, \emph{M-functions for closed
+extensions of adjoint pairs of operators with applications to
+elliptic boundary problems}.  {Math. Nachr.} \textbf{282, No.3}
+(2009), 314--347.
+
+\bibitem{KosMal10}
+A.~S. Kostenko and M.~M. Malamud. \emph{1-D Schr\"odinger
+operators with local point interactions on a discrete set}. {J.
+Differ. Equations}. \textbf{249(2)}(2010), 253--304.
+
+
+\bibitem{Mal10}
+M.~M. Malamud.  \emph{Spectral theory of elliptic operators in
+exterior domains}. {Russ. J. Math. Phys.}, \textbf{17(1)}(2010),
+96--125.
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %malamud.tex
+\begin{center}
+%% Title in English:
+{\Large\bf New phenomena in large systems of ODE and classical models of DC} 
+
+\medskip
+
+%% Author 1:
+{\sc Vadim Malyshev}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119992, Russia}
+
+%% Email:
+{\small\rm malyshev2@yahoo.com}
+
+\end{center}
+
+\medskip
+
+
+%% Abstract in English:
+
+
+\vspace*{3mm}
+We consider the system
+\[
+M\frac{d^{2}x_{i}}{dt^{2}}=-\frac{\partial U}{\partial x_{i}}+F(x_{i})-A\frac{dx_{i}}{dt},i=1,...,N
+\]
+of $N$ ordinary differential equations describing Newtonian dynamics
+of $N$ particles (electrons), initially at the points 
+\[
+x_{1}(0)<x_{2}(0)<...<x_{N}(0),
+\]
+on the interval $[0,L)\in R$ with periodic boundary conditions, that
+is on the circle of length $L$. Here $M>0,A\geq0$ are the parameters,
+$F(x)$ is the external force, and 
+\[
+U(x_{1},...,x_{N})=\sum_{i=1}^{N}\frac{\alpha}{|x_{i+1}-x_{1}|}.\alpha>0,
+\]
+(where of course $x_{N+1}\equiv x_{1}$) is the Coulomb repulsive
+interaction between nearest neighbors.
+
+We review new results concerning this system: fixed points, quasi-homogeneous
+regime (Ohm's law) and very fast propagation of the ``effective''
+external field, which is initially zero on the most part of the circle.
+
+All these phenomena are closely related to many problems with DC (direct
+electric current), that the statistical physics was unable to understand.
+The following is a picturesque description of one of DC enigmas in
+the famous Feynman lectures, v. 6, pp. 33-34: ``The force pushes
+the electrons along the wire. But why does this move the galvanometer,
+whis is so far from the force? Because when the electrons which feel
+the magnetic force try to move, they push - by electric repulsion
+- the electrons a little farther down the wire; they, in turn, repel
+the electrons a little farther on, and so on for a long distance.
+An amazing thing. It was so amazing to Gauss and Weber - who first
+built a galvanometer - that they tried to see how far the forces in
+the wire would go. They strung the wire all the way across the city.''
+\vfill
+\newpage %malyshev.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Asymptotic solutions of the Navier-Stokes equations and scenario of turbulence development}
+
+\medskip
+
+%% Author 1:
+{\sc Victor Maslov}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119991, Russia}
+
+%% Email:
+{\small\rm v.p.maslov@mail.ru}
+
+\medskip
+
+%% Author 2:
+{\sc Andrei Shafarevich}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119991, Russia}
+
+%% Email:
+{\small\rm shafarev@yahoo.com}
+
+\end{center}
+
+\medskip
+
+
+We discuss asymptotic solutions of the Navier-Stokes equations,
+describing periodic collections of vortices in 3D space.
+These solutions are connected with topological invariants
+of divergence-free vector fields.
+Equations, describing evolution of vortices,
+are defined on a graph -- Reeb graph of the stream function
+or Fomenko molecule of the Liouville foliation.
+Homogenization with respect to
+the periodic structure leads to equations
+coinciding with Reynolds equations.
+It is well known that existence of the Reynolds stresses leads
+to the growth of the energy and entropy of the fluid.
+As the entropy reaches certain critical value,
+the molecules of the fluid have to form
+``clusters'' which leads to the occurrence of turbulence.
+
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf A Cahn--Hilliard model with dynamic boundary conditions}
+
+\medskip
+
+% Author 1:
+{\sc Alain Miranville}
+
+%% Address:
+%{\small\it Universit\'e de Poitiers, Math\'ematiques, SP2MI, 86962 Chasseneuil Futuroscope Cedex, France}
+{\small\it Universit{\'e} de Poitiers, SP2MI, 86962 Chasseneuil Futuroscope Cedex, France}
+
+%% Email:
+{\small\rm miranv@math.univ-poitiers.fr}
+
+\end{center}
+
+
+\medskip
+
+Our aim in this talk is to discuss the dynamical system associated with the Cahn-Hilliard equation with dynamic boundary conditions. Such boundary conditions take into account the interactions with the walls for confined systems. We are in particular interested in a model which accounts for the conservation of mass, both in the bulk and on the walls.        
+
+\vfill
+\newpage %miranville.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf The structure of the population inside the propagating front
+(the qualitative analysis of FKPP equation)
+}
+
+\medskip
+
+%% Author 1:
+{\sc Stanislav Molchanov}
+
+%% Address:
+{\small\it UNC -- Charlotte, Charlotte NC 28223, USA}
+
+%% Email:
+{\small\rm smolchan@uncc.edu}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+The talk will contain several results describing the local structure of the particles field near the front of the reaction in the classical FKPP model. The central fact is the fragmentation or intermittency of the field in the agreement with the experimental data.
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf Geometry of stream lines of ideal fluid}
+
+\medskip
+
+%% Author 1:
+{\sc Nikolai Nadirashvili}
+
+%% Address:
+{\small\it Institute for Information Transmission Problems, Moscow, Russia}
+
+%% Email:
+{\small\rm nnicolas@yandex.ru}
+
+\end{center}
+
+\medskip
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf On singular solutions of fully nonlinear elliptic equations}
+
+\medskip
+
+%% Author 1:
+{\sc Louis Nirenberg}
+
+%% Address:
+{\small\it Courant Institute, New York University, New York, NY 10024, USA}
+
+%% Email:
+{\small\rm nirenl@cims.nyu.edu}
+
+\end{center}
+
+\medskip
+
+Extensions are made of the strong maximum principle for
+solutions with singularities,
+including viscosity solutions.
+A number of
+other results will be presented :
+on removable singularities, and for
+parabolc operators.
+The talk will be expository.
+
+\vfill
+\newpage %nirenberg.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Structure of the minimum-time damping of a physical pendulum}
+
+\medskip
+
+%% Author 1:
+{\sc Alexander Ovseevich}
+
+%% Address:
+{\small\it Institute for Problems in Mechanics, Moscow 1119526, Russia}
+
+%% Email:
+{\small\rm ovseev@ipmnet.ru}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+We study the  minimum-time damping of a physical pendulum by means of a
+bounded control. In the similar problem for a linear oscillator each optimal trajectory possesses a
+finite number of control switchings from  the maximal to the minimal value. If one considers
+simultaneously all optimal trajectories with any initial state, the number of switchings can be
+arbitrary large. We show that for the nonlinear pendulum there is a uniform bound for the switching
+number for all optimal trajectories. We find asymptotics for this bound as the control amplitude
+goes to zero.
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{7}
+
+\bibitem{pont} {L.S. Pontryagin, V.G. Boltyanskii, and R. Gamkrelidze,}
+{\em Matematicheskaya teoriya optimalnykh protsessov},
+Nauka, Moscow, 1983.
+
+
+\bibitem{resh} {S.A. Reshmin},
+\emph{Bifurcation in the time-optimality problem for a second-order nonlinear system},
+Prikl. Mat. Mekh. \textbf{73} (2009), 562--572.
+
+\bibitem{flag} {\em Garcia Almuzara J.L., Fl\"ugge-Lots I.} Minimum time control of a nonlinear system. {\em J.
+Differential Equations.} 1968. Vol. 4, no. 1, pp. 12--39.
+
+
+\bibitem{akulenko}{Leonid Akulenko},
+\emph{Problems and methods of optimal control}, Nauka, Moscow, 1987; Kluwer, Dordrecht, 1994.
+
+\bibitem{akulenko2}{F.L. Chernousko, L.D. Akulenko, and B.N. Sokolov},
+\emph{Upravlenie kolebaniyami.} Nauka, Moscow, 1980.
+\end{thebibliography}\end{spacing}
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf A uniform reconstruction formula in integral geometry}
+
+\medskip
+
+%% Author 1:
+{\sc Victor Palamodov}
+
+%% Address:
+{\small\it Tel Aviv University, Israel}
+
+%% Email:
+{\small\rm palamodo@post.tau.ac.il}
+
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+We address the problem of reconstruction of a function on a manifold
+from data of its integrals over a family of hypersurfaces. The
+archetypes are reconstruction of a function on a sphere from data of big
+circle integrals  (Minkowski-Funk) and of a function in plane from
+data of line integrals (Radon).
+A general integral formula will be presented that covers all known
+cases where such an explicit reconstruction is known and also several
+unknown cases. Possibility of the uniform reconstruction method
+depends on vanishing of some singular integrals over a sphere.
+
+\medskip
+
+
+\vfill
+\newpage %palamodov.tex
+\begin{center}
+
+{\Large\bf On the general theory of multi-dimensional  linear functional operators with applications in Analysis}
+
+\medskip
+
+{\sc Boris Paneah} 
+
+{\small\it Technion, Haifa, Israel}
+
+{\small\rm peter@tx.technion.ac.il}
+
+\end{center}
+
+\medskip
+
+%% Abstract 
+The talk is devoted to the linear multi-dimensional functional operator
+$$
+(\mathcal{P}F)(x):=\sum^N_{j=1} c_j(x) (F\circ a_j)(x),\;\; x\in D\subset \mathbb{R}^n.
+$$
+Here $F\in C(I)$ with $I=(-1,1)$ and $|F|$ norm in $C$, {\it coefficients} $c_j$ and {\it arguments} $a_j$ of $\mathcal{P}$ are continuous functions $D\rightarrow \mathbb{R}$ and $D\rightarrow I$, respectively; $D$ is a domain with compact closure. These operators are of interest both in Analysis and in applying fields. If time allows I'll mention some problems in Integral geometry and PDE closely connected with them. As to the intrinsic problems relating to the operator $\mathcal{P}$ we'll discuss {\it the asymptotic behavior} of solutions to the equation $\mathcal{P}u=h_\varepsilon$ depending on a small parameter $\varepsilon\rightarrow 0$ under condition $h_\varepsilon=O(\varepsilon)$. Recent speaker's results make significally more precise analogous information based on the solution to well known Ulam problem. It turned out that this problem ( as it is formulated in his book "A Collection of  Mathematical Problems") is not well posed: the input information ($|\mathcal{P}F(x)|<\varepsilon $  for {\it all} $x\in D$) is redundant. As a matter of fact, to describe the asymptotic behavior of the function $F$ the latter relation should be valid only at points $x$ of some one-dimensional submanifold $\Gamma\subset D$ (subject to determining), but not everywhere in $D$. This result will be discussed together with a new Inverse problem for the equation $\mathcal{P}F=H_\varepsilon$ (reconstruction  of the operator $\mathcal{P}$ using the given asymptotic behavior of the solution $F$).
+
+
+\vfill
+\newpage %paneah.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf A uniform Gronwall-type lemma with parameter and applications to nonlinear wave equations}
+
+\medskip
+
+%% Author 1:
+{\sc Vittorino Pata}
+
+%% Address:
+{\small\it Politecnico di Milano, Milan 20133, Italy}
+
+%% Email:
+{\small\rm vittorino.pata@polimi.it}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+We discuss
+a uniform Gronwall-type lemma depending on a small parameter $\varepsilon>0$,
+based on an integral inequality that predicts blow up in finite time of the
+involved unknown function for any fixed
+$\varepsilon$.
+The result permits to establish uniform estimates
+even if the function itself
+depends on $\varepsilon$.
+
+\noindent
+As an application, we consider the asymptotics
+of the strongly damped nonlinear wave equation
+$$u_{tt}-\Delta u_t-\Delta u+f(u_t)+g(u)=h$$
+with Dirichlet boundary conditions, which serves as
+a model in the description of thermal evolution within the theory
+of type III heat conduction.
+In particular, the nonlinearity $f$ acting on $u_t$ is allowed
+to be nonmonotone and to exhibit a critical
+growth of polynomial order $5$.
+
+\begin{spacing}{0.1}\begin{thebibliography}{9}
+
+\bibitem[1]{pa-2011}
+V. Pata,
+\emph{Uniform estimates of Gronwall type},
+Journal of Mathematical Analysis and Applications
+\textbf{373} (2011), 264--270.
+
+
+\bibitem[2]{de-pa-2011}
+F. Dell'Oro, V. Pata,
+\emph{Long-term analysis of strongly damped nonlinear wave equations},
+Nonlinearity \textbf{24} (2011), 3413--3435.
+
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %pata.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Ground state asymptotics for a singularly perturbed second order elliptic operator with oscillating coefficients}
+
+\medskip
+
+%% Author 1:
+{\sc Andrey Piatnitski}
+
+%% Address:
+{\small\it Narvik Institute of Technology and Lebedev Physical Institute}
+
+%% Email:
+{\small\rm andrey@sci.lebedev.ru}
+
+\end{center}
+
+\medskip
+
+The talk will focus on the Dirichlet spectral problem
+in a smooth bounded domain
+for a singularly perturbed second order elliptic operator
+with locally periodic rapidly oscillating coefficients.
+We will study the limit behaviour of the first eigenvalue,
+the logarithmic asymptotics of the first eigenfunction
+and, for convection-diffusdion operators, the second term
+of the asymptotics.
+
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf Critical nonlinearities in Partial Differential Equations}
+
+\medskip
+
+%% Author 1:
+{\sc Stanislav Pohozhaev}
+
+%% Address:
+{\small\it Steklov Mathematics Institute, Moscow 119991, Russia}
+
+%% Email:
+{\small\rm pokhozhaev@mi.ras.ru}
+
+\end{center}
+
+\medskip
+
+
+\vfill
+\newpage %pohozhaev.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Longitudinal correlation functions and the intermittency}
+
+\medskip
+
+%% Author 1:
+{\sc Olga Pyrkova}
+
+%% Address:
+{\small\it Moscow Institute of Physics and Technology, Dolgoprudny 141700, Russia}
+
+%% Email:
+{\small\rm omukha@mail.ru}
+
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+A time dependence for second-order and third-order longitudinal
+correlation functions are considered in the intermittency model
+\cite{pyr1}, i.e. we use the following model: flow is considered as a
+mixture of turbulent and viscous regimes.
+Both regimes have Loitsyansky invariants and Kolmogorov's (for turbulent regime) and Millionshchikov's
+(for viscous regime) self-similarities.
+
+Gradient hypothesis of Lytkin and Chernykh \cite{pyr2} is used to make
+Karman-Howarth equation closed by the expression of the two-point
+third-order correlation moment  through the two-point second-order
+correlation moment  in the regime of Kolmogorov turbulence in the
+inertial range.
+
+A model dependence obtained for the longitudinal correlation
+coefficient has asymptotically  exponential form of decay and is in
+good agreement with the experimental data of
+Batchelor-Townsend-Stewart \cite{pyr3}.
+
+%% Abstract in Russian (optional; could be shorter than English):
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem[1] {pyr1} O.A. Pyrkova, A.A. Onufriev and A.T. Onufriev \emph{Initial time behavior of the velocity in a homogeneous and
+isotropic turbulent flow} [in Russian] Proceedings of MIPT
+\textbf{3} (2011),  No. 1,  127--131.
+
+\bibitem[2]{pyr2} Yu.M. Lytkin, G.G. Chernykh \emph{One method of closing the
+Karman-Howarth equation} [in Russian] Dynamics of Continuous Media
+\textbf{27} (1976), 124--130 .
+
+
+\bibitem[3]{pyr3} O.A. Pyrkova \emph{Behavior of the third-order longitudinal
+correlation functions in the intermittency model}  Materials tenth
+international summer school of the Kazan conference [in Russian]
+\textbf{43} (2011), 295--296.
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %pyrkova.tex
+
+\begin{center}
+{\Large\bf On global solutions to the Cauchy problem for discrete kinetic equations}
+
+\medskip
+
+%% Author 1:
+{\sc Evreny Radkevich}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119991, Russia}
+
+%% Email:
+{\small\rm evrad07@gmail.com}
+\end{center}
+
+\medskip
+
+The kinetic theory considers the gas as a collection of a huge number of randomly moving particles, in some way interacting with each other.
+As a result of these interactions the particles exchange momenta and energies.
+Interaction can be through direct collisions or by certain forces.
+To elucidate the mathematical scheme describing such phenomena,
+we consider \cite{radkevich1} the so-called discrete kinetic Boltsmann equations
+and give a phenomenological derivation of the Boltsmann equation
+for the model of gas with finitely many particle velocities
+and finitely many different interactions
+(Broadwell-type model \cite{radkevich2}):
+\[
+\p_tn_j+(\omega_{ix}\p_x+\omega_{iy}\p_y+\omega_{iz}\p_z)
+n_j=\sum_{k,l,j; k\ne i, l\ne i, j\ne  i}\sigma^{ij}_{kl}(n_kn_l-n_in_j),
+~~1\le i\le N.
+\]
+For the discrete kinetic equations \cite{radkevich3}
+(in dimensions $d=1,2,3$)
+we prove the existence of a global solution, its decomposition with respect to smoothness,
+and consider the influence of oscillations born by the interaction operator.
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+\bibitem[1]{radkevich1}
+S.K.\,Godunov and U.M.\,Sultangazin,
+\emph{Discrete models of the {B}oltzmann kinetic equation},
+Uspehi Mat. Nauk,
+{\bf 26} (1971), 3--51.
+
+
+\bibitem[2]{radkevich2}
+J.E.~Broadwell,
+\emph{Study of rarefied shear flow by the discrete velocity method},
+J. Fluid Mech. {\bf 19} (1964), 401--414.
+
+\bibitem[3]{radkevich3}
+E. Radkevich,
+\emph{On existence of global solutions
+to the Cauchy problem
+for discrete kinetic equations},
+Journal of Mathematical Sciences {\bf 181} (2012), 232--280.
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %radkevich.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Branching random motions, nonlinear hyperbolic systems and traveling waves}
+
+\medskip
+
+%% Author 1:
+{\sc Nikita Ratanov}
+
+%% Address:
+{\small\it Universidad del Rosario, Bogot\'a, Colombia}
+
+%% Email:
+{\small\rm nratanov@urosario.edu.co}
+
+\end{center}
+
+\medskip
+It is known that under certain assumptions for nonlinearities the 
+following coupled nonlinear hyperbolic equations
+\[
+\left\{
+\begin{aligned}
+\frac{\partial u_+}{\partial t}-c\frac{\partial u_+}{\partial x}
+=&\mu_+(u_--u_+)-\lambda_+u_++F_+(u_+, u_-),\\
+\frac{\partial u_-}{\partial t}+c\frac{\partial u_-}{\partial x}
+=&\mu_-(u_+-u_-)-\lambda_-u_-+\lambda_-F_-(u_+, u_-),
+\end{aligned}
+\right.
+\]
+have traveling-wave solutions. 
+
+We realize the McKean's program \cite{McK323} for the 
+Kolmogorov-Petrovskii-Piskunov equation in this hyperbolic case. 
+%The Feynman-Kac formula based on branching telegraph processes plays a key role.
+
+%% Abstract in English:
+A branching random motion on a line, 
+with abrupt changes of direction, is studied. 
+The
+branching mechanism, 
+being independent of random motion, and intensities of reverses are defined
+by a particle's current direction. 
+A solution of a certain hyperbolic system of coupled non-linear
+equations (Kolmogorov type backward equation)
+have a so-called McKean representation via such
+processes. Commonly this system possesses travelling-wave solutions. 
+The convergence of solutions
+with Heaviside terminal data to the travelling waves is discussed.
+
+The Feynman-Kac formula plays a key role, \cite{ratanov}.
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{McK323}
+H.P. McKean,  \emph{Application of Brownian motion to the equation of Kolmogorov-Petrovskii-Piskunov}, Comm. Pure Appl. Math.
+XXVIII (1975), 323-331.
+
+\bibitem{ratanov}
+N. Ratanov, \emph{Branching random motion,
+nonlinear hyperbolic systems and travelling waves}, ESAIM: Probability and Statistics, 
+{\bf{10}} (2006),  236-257
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %ratanov.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Periodic solutions of some quasilinear evolutionary equations}
+
+\medskip
+
+%% Author 1:
+{\sc I.A. Rudakov}
+
+%% Address:
+{\small\it Bryansk State University, Bryansk, Russia}
+
+%% Email:
+{\small\rm rudakov-bgu@mail.ru}
+
+
+\end{center}
+
+%\medskip
+
+%% Abstract in English:
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem[1]{rudakov1}
+I.A. Rudakov,
+\emph{Periodic solutions of a quasilinear wave equation with
+variable coefficients},
+Mat. Sb. \textbf{198} (2007), 83--100.
+
+\bibitem[2]{rudakov2}
+\emph{Periodic solutions of a quasilinear beam equation with homogeneous boundary conditions},
+Differential equations \textbf{48} (2012).
+\end{thebibliography}\end{spacing}
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf  Neurogeometry of vision and sub-Riemannian geometry}
+
+\medskip
+
+%% Author 1:
+{\sc Yuri Sachkov}
+
+%% Address:
+{\small\it Program systems institute, Pereslavl-Zalessky 152020,  Russia}
+
+%% Email:
+{\small\rm sachkov@sys.botik.ru}
+
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+The talk will be devoted to the following questions:
+\begin{itemize}
+\item 
+Image inpainting
+\item 
+The pinwheel model of the primary visual cortex V1 of a human brain,
+\item 
+Sub-Riemannian problem on the group of rototranslations of a plane  and its solution,
+\item 
+Image inpainting via sub-Riemannian length minimizers,
+\item 
+Curve cuspless reconstruction,
+\item 
+Image inpainting via hypoelliptic diffusion.
+\end{itemize}
+
+
+\medskip
+
+
+%% If you use BIBTEX to create bibliography, please use amsalpha:
+%\bibliographystyle{amsalpha}
+%\bibliography{physics}%% (if your BIBTEX entries are in physics.bib)
+
+\begin{spacing}{0.1}\begin{thebibliography}{Sch26}
+
+\bibitem[P1]{petitot}
+J.Petitot,
+ \emph{The neurogeometry
+	of pinwheels as a sub-Riemannian contact structure},
+J. Physiology - Paris,    \textbf{97} (2003), 265--309.
+
+\bibitem[P2]{petitot2}
+J.Petitot,
+ \emph{Neurogeometrie de la vision --- Modeles mathematiques et physiques des architectures fonctionnelles},
+  (2008), Editions de l'Ecole Polytechnique. 
+
+
+\bibitem[S1]{max_sre}
+Yuri L. Sachkov and Igor Moiseev,
+ \emph{Maxwell strata in sub-Riemannian problem  on the group of motions of a plane},
+ ESAIM: COCV,    \textbf{16} (2010), 380--399.
+
+\bibitem[S2]{cut_sre1}
+Yuri L. Sachkov,
+ \emph{Conjugate and cut time in the sub-Riemannian problem on the group of motions of a 
+plane},
+ ESAIM: COCV,    \textbf{16} (2010), 1018--1039.
+ 
+\bibitem[S3]{cut_sre2}
+Yuri L. Sachkov,
+ \emph{Cut locus and optimal synthesis in the sub-Riemannian problem  on the group of motions of a 
+plane},
+ ESAIM: COCV,    \textbf{17} (2011), 293--321.
+ 
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %sachkov.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf On the blow up phenomena in differential equations and dynamical systems}
+
+\medskip
+
+%% Author 1:
+{\sc Lyudmila Efremova}
+
+%% Address:
+{\small\it Nizhniy Novgorod State University, Nizhniy Novgorod 603950, Russia}
+
+%% Email:
+{\small\rm lefunn@gmail.com}
+
+
+\medskip
+
+%% Author 2:
+{\sc Vsevolod Sakbaev}
+
+{\small\it Moscow Institute of Physics and Technology, Dolgoprudny 141700, Russia}
+
+{\small\rm fumi2003@mail.ru}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+The comparison is given of the phenomena of the  $\Omega$-blow up in  dynamical systems and the phenomena of the blow up in the evolution differential equations. The comparison is based on the methods of multivalued analysis. 
+\newline
+The examples are considered. In particular,  the new example of $C^0$- $\Omega$-blow up in $C^1$-smooth simplest skew products in the plane is described (see \cite{suz06}).
+\newline
+The procedure is defined of the extension of the dynamical transformation  of the space of the initial conditions of Cauchy problem is the case of the destruction of a solution or in the case of the appearance of the singularities in a finite time (see \cite{TMP}).
+
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{suz06}
+E.V.~Blinova, L.S.~Efremova, \emph{On $\Omega $-blow ups in
+simplest $C^1$-smooth skew products of maps of an interval}, J. Math. Sci.
+\textbf{157} (2009), 456--465.
+
+\bibitem{TMP}
+V.Zh.~Sakbaev, \emph{On the averaging of quantum dynamical semigroups}, TMPh. {\textbf{164}} (2010),  455--463.
+
+
+
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %sakbaev.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Operators with symbolic hierarchies on stratified spaces}
+
+\medskip
+
+%% Author 1:
+{\sc Bert-Wolfgang Schulze}
+
+%% Address:
+{\small\it University of Potsdam, Potsdam 14469, Germany}
+
+%% Email:
+{\small\rm schulze@math.uni-potsdam.de}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+Manifolds $M$ with higher corners or edges of order  $k \in \mathbb{N}$ are (in our notation) special stratified spaces, where $k=0$ corresponds to smoothness, $k = 1$ to conical or edge singularities, especially smooth boundaries. Manifolds with singularities of order $k$ form a category $ \mathcal{M}_k.$ The stratification $s(M)=(s_0(M),s_1(M),\dots ,s_k(M))$  induces a principal symbolic hierarchy $$\sigma (A)=(\sigma _0(A),\sigma _1(A),\dots ,\sigma _k(A))$$ of operators $A$ over $s_0(M),$ degenerate in a typical way in the representation over the stretched version $\mathbb{M}$ of $M.$ The component $\sigma_0(A)$ is the standard homogeneous principal symbol on the main stratum $s_0(M)$; the component $\sigma_j(A),\,j>0,$ lives on $s_k(M))$ and is operator-valued. The symbolic hierarchy admits notions of ellipticity and the construction of parametrices within suitable algebras of degenerate pseudo-differential operators. We present some new developments in this field which has a long history through achievements of numerous Russian authors and other schools worldwide. Further progress is stimulated by the desire to reach new models of applications, see, for instance, \cite{Flad3}. Moreover, the tower of operator algebras with increasing $k$ still contains many new challenges. The methods of the author have been stimulated very much by the works \cite{Vivs2}, \cite{Vivs3}, \cite{Eski2}, since the case of manifolds with edge contains boundary value problems with and without the transmission property at the boundary.
+
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{Eski2} G.I. Eskin, \textit{Boundary value problems for elliptic pseudodifferential equations}, Transl. of Nauka, Moskva, 1973, Math. Monographs, Amer. Math. Soc. \textbf{52}, Providence, Rhode Island 1980.
+
+\bibitem{Flad3} H.-J. Flad, G. Harutyunyan, R. Schneider, and B.-W. Schulze, \textit{Explicit Green operators for quantum mechanical Hamiltonians.I. The hydrogen atom}, arXiv:1003.3150v1 [math.AP], 2010. manuscripta math. \textbf{135}(2011), 497-519.
+
+%\bibitem{Haru13} G. Harutjunjan and B.-W. Schulze, \textit{Elliptic mixed, transmission and singular crack problems}, European Mathematical Soc., Z\" urich, 2008.
+
+%\bibitem{Kond1} V.A. Kondratyev, \textit{Boundary value problems for elliptic equations in domains with conical points}, Trudy Mosk. Mat. Obshch. \textbf{16} (1967), 209-292.
+
+\bibitem{Schu75} B.-W. Schulze \textit{The iterative structure of the corner calculus}, Oper. Theory: Adv. Appl. \textbf{213}, Pseudo-Differential Operators: Analysis, Application and Computations (L. Rodino et al. eds.), Birkh\" auser Verlag, Basel, 2011, pp. 79-103.
+
+\bibitem{Vivs2} M.I. Vishik and G.I. Eskin, \textit{Convolution equations in a bounded region}, Uspekhi Mat. Nauk \textbf{20}, 3 (1965), 89-152.
+
+\bibitem{Vivs3} M.I. Vishik and G.I. Eskin, \textit{Convolution equations in bounded domains in spaces with weighted norms}, Mat. Sb. \textbf{69}, 1 (1966),65-110.
+
+%\bibitem[8]{Vivs4} M.I. Vishik and V.V. Grushin, \textit{On a class of degenerate elliptic equations of higher orders}, Mat. Sb. \textbf{79}, 1 (1969), 3-36.\\\end{thebibliography}\end{spacing}
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %schulze.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf On numerical methods and the study of the dynamics inside the attractor}
+
+\medskip
+
+%% Author 1:
+{\sc George Sell}
+
+%% Address:
+{\small\it University of Minnesota, Minneapolis MN 55455, USA}
+
+%% Email:
+{\small\rm sell@umn.edu}
+
+\end{center}
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf Control and mixing for 2D Navier--Stokes equations with space-time localised force}
+
+\medskip
+
+%% Author 1:
+{\sc Armen Shirikyan}
+
+%% Address:
+{\small\it University of Cergy--Pontoise, CNRS UMR 8088, 95302 Cergy--Pontoise, France}
+
+%% Email:
+{\small\rm Armen.Shirikyan@u-cergy.fr}
+\end{center}
+
+\medskip
+%% Abstract in English:
+We consider 2D Navie--Stokes equations in a bounded domain with smooth boundary and discuss the interconnection between controllability for the deterministic problem and mixing properties of the associated random dynamics. Namely, we first consider the problem of stabilisation of a given non-stationary solution, assuming that the control is localised in space and time and is finite-dimensional as a function of both variables. We next replace the control by a random force and prove that the resulting random dynamical system is exponentially mixing in the Kantorovich--Wasserstein distance. Some of the results of this talk are obtained in collaboration with V. Barbu and S. Rodrigues.
+
+\medskip
+\vfill
+\newpage %shirikyan.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf On the 2-point problem for the Lagrange-Euler equation}
+
+\medskip
+
+%% Author 1:
+{\sc Alexander Shnirelman}
+
+%% Address:
+{\small\it Concordia University, Montreal, Canada}
+
+%% Email:
+{\small\rm shnirel@mathstat.concordia.ca}
+
+\end{center}
+
+\medskip
+
+Consider the motion of ideal incompressible fluid in a bounded
+domain (or on a compact Riemannian manifold). The configuration space of
+the fluid is the group of volume preserving diffeomorphisms of the flow
+domain, and the flows are geodesics on this infinite-dimensional group
+where the metric is defined by the kinetic energy. The geodesic equation is
+the Lagrange-Euler equation. The problem usually studied is the initial
+value problem, where we look for a geodesic with given initial fluid
+configuration and initial velocity field. In this talk we consider a
+different problem: find a geodesic connecting two given fluid
+configurations. The main result is the following
+
+\smallskip
+
+\noindent{\bf Theorem:}
+{\it Suppose the flow domain is a 2-dimensional torus. Then for any two
+fluid configurations there exists a geodesic connecting them. This means
+that, given arbitrary fluid configuration (diffeomorphism), we can "push"
+the fluid along some initial velocity field, so that by time one the fluid,
+moving according to the Lagrange-Euler equation, assumes the given
+configuration.}
+
+\smallskip
+
+This theorem looks superficially like the Hopf-Rinow theorem for
+finite-dimensional Riemannian manifolds. In fact, these two theorems have
+almost nothing in common. In our case, unlike the Hopf-Rinow theorem, the
+geodesic is not, in general case, the shortest curve connecting the
+endpoints (fluid configurations). Moreover, the length minimizing curve can
+not exist at all, while the geodesic always exists.
+
+The proof is based on some ideas of global analysis (Fredholm quasilinear
+maps) and microlocal analysis of the Lagrange-Euler equation (which may be
+called a ``microglobal analysis'').
+
+\vfill
+\bigskip
+\begin{center}
+
+{\Large\bf Non-linear PDE of mKdV type with possibly unbounded coefficients at infinity}
+
+\medskip
+
+{\sc M. Shubin, P. Topalov}
+
+{\small\it Northeastern University, Boston, USA}
+
+{\small\rm m.shubin@neu.edu}
+
+\end{center}
+
+\medskip
+
+We discuss solving mKdV-type equations 
+in classes of temperate functions near infinity.
+Main ideas include generalized spectral decomposition
+of I.M.\,Gelfand, A.G.\,Kostyuchenko, and Yu.M.\,Berezanskii, 
+as well a special wave front micro-localization technique. 
+\vfill
+\newpage %shubin.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Bifurcations of solutions to the Navier--Stokes system}
+
+\medskip
+
+%% Author 1:
+{\sc Yakov Sinai}
+
+%% Address:
+{\small\it Princeton University, Princeton NJ 08544, USA}
+
+%% Email:
+{\small\rm sinai@math.princeton.edu}
+
+\end{center}
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf Eigenfunction of the Laplace operator in a tetrahedron}
+
+\medskip
+
+%% Author 1:
+{\sc Elena Sitnikova}
+
+%% Address:
+{\small\it Moscow State University of Civil Engineering, Moscow 129337, Russia}
+
+%% Email:
+{\small\rm 301064@mail.ru}
+
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+Let T be an open and regular triangular pyramid (tetrahedron) in the space $\R^3$ with a
+boundary $\p\Gamma$.
+Let $\alpha$, $\beta$, $\gamma$, $\sigma$
+are barycentric coordinates of a point $(x, y, z) \in \R^3$
+with respect to
+tetrahedron $T$ which can be expressed in the variables $x,\, y,\, z$.
+
+\medskip
+
+\noindent
+{\bf Theorem.}
+The function $w =\sin(\alpha\pi/2)\sin(\beta\pi/2)\sin(\gamma\pi/2)\sin(\sigma\pi/2)$
+is the eigenfunction of the
+Laplace operator $\Delta\equiv
+\frac{\p^2}{\p x^2}+\frac{\p^2}{\p y^2}+\frac{\p^2}{\p z^2}$
+in $T$.
+The function $w$ satisfies conditions: $w >0$ in $T$
+and $w=0$ on $\p T$.
+
+Let $\Pi$ be unlimited cylinder in the space $\R^4$
+which a cross-section with hyperplane is a
+quadrangular pyramid with edges of unit length (one-half of the octahedron). Let $L$ be a second
+order linear differential operator in divergence form which uniformly elliptic with bounded
+measurable coefficients and $\eta$ is its ellipticity constant. Let $u$ be a solution of he mixed boundary
+value problem in $\Pi$ for the equation $Lu=0$ ($u>0$) with homogeneous Dirichlet and Neumann data
+on the boundary of the cylinder. Our theorem allows us to continue this solution from the
+cylinder $\Pi$ to the whole space $\R^4$ with the same ellipticity constant $\eta$.
+
+This continuation allows us to prove a number of theorems about growth of the solution u in
+the cylinder $\Pi$.
+
+The idea of using barycentric coordinates is taken from paper of A.P.\,Brodnikov, where it is
+used for the finding of eigenfunction of the Laplace operator in the triangle.
+Eigenfunction of the Laplace operator in hypertetrahedron from $\R^4$ and in $n+1$-dimensional
+simplex from $\R^n$ ($n\ge 2$) were constructed by the author.
+
+
+\vfill
+\newpage %sitnikova.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Classical solutions of the Vlasov--Poisson equations in a half-space}
+
+\medskip
+
+%% Author 1:
+{\sc A.L. Skubachevskii}
+
+%% Address:
+%{\small\it Peoples' Friendship University of Russia, 117198, Moscow, Miklukho-Maklaya str. 6, Russia}
+{\small\it Peoples' Friendship University of Russia, Moscow 117198, Russia}
+
+%% Email:
+{\small\rm skub@lector.ru}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+We consider the Vlasov system of equations describing the evolution
+of distribution functions of the density for the charged particles
+in a rarefied plasma. We study the Vlasov system in
+$\R_+^3\times\R^3$ with initial conditions for distribution
+functions $f^\beta\big|_{t=0}=f_0^\beta(x,p)$, $\beta=\pm1$, and the
+Dirichlet or Neumann boundary conditions for the potential of an
+electric field for $x_1=0$, where $f_0^\beta(x,p)$ is the initial
+distribution function (for positively charged ions if $\beta=+1$ and
+for electrons if $\beta=-1$) at the point~$x$ with impulse~$p$,
+$\R_+^3=\{x\in\R^3\colon x_1>0\}$. Assume that initial distribution
+functions are sufficiently smooth and ${\rm supp}
+f_0^\beta\subset(\R_\delta^3 \cap B_\lambda(0))\times B_\rho(0)$,
+$\delta,\lambda,\rho>0$, and the magnetic field $H(x)$ is also
+sufficiently smooth and has a~special structure near the boundary
+$x_1=0$, where $\R_\delta^3=\{x\in\R^3\colon x_1>\delta\}$. Then we
+prove that for any $T>0$ there is a~unique classical solution of the
+Vlasov system in $\R_+^3\times\R^3$ for $0<t<T$ if
+$\|f_0^\beta\|<\varepsilon$, where
+$\varepsilon=\varepsilon(T,\delta,\rho,\|H\|)$ is sufficiently
+small.
+
+This work was supported by the RFBR (grant No.\,10-01-00395).
+
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf On free boundary problems of magnetohydrodynamics}
+
+\medskip
+
+%% Author 1:
+{\sc Vsevolod Solonnikov}
+
+%% Address:
+{\small\it Steklov Mathematical Institute, St.-Petersburg, Russia}
+
+%% Email:
+{\small\rm solonnik@pdmi.ras.ru}
+
+\end{center}
+
+\medskip
+
+We prove  local in time solvability of free boundary problem of
+magnetohydrodynamics of a viscous incompressible liquid assuming that
+the domain filled with the liquid can be multi-connected.
+Under some additional assumptions, the solution can be extended to the
+infinite time interval $t>0$.
+
+\vfill
+\newpage %solonnikov.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Homogenization of the elliptic Dirichlet problem: operator error estimates}
+
+\medskip
+
+%% Author 1:
+{\sc T.A.~Suslina}
+
+%% Address:
+{\small\it St.~Petersburg State University, St.~Petersburg, Russia}
+
+%% Email:
+{\small\rm suslina@list.ru}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+Let $\mathcal{O} \subset \mathbb{R}^d$ be a bounded domain of class $C^{1,1}$.
+In $L_2(\mathcal{O};\mathbb{C}^n)$, we consider a matrix elliptic differential
+operator $A_{\varepsilon}= b(\mathbf{D})^* g(\mathbf{x}/\varepsilon) b(\mathbf{D})$
+with the Dirichlet boundary condition. We assume that
+an $(m\times m)$-matrix-valued function $g(\mathbf{x})$
+is bounded, uniformly positive definite and periodic
+with respect to some lattice $\Gamma$. The elementary cell of $\Gamma$ is denoted by $\Omega$.
+Next, $b(\mathbf{D})=\sum_{j=1}^d b_j D_j$ is an $(m\times n)$-matrix first
+order differential operator ($b_j$ are constant
+matrices). It is assumed that $m \ge n$ and the symbol $b(\boldsymbol{\xi})= \sum_{j=1}^d b_j \xi_j$
+has maximal rank, i.~e., $\text{rank}\,b(\boldsymbol{\xi})= n$ for $0 \ne \boldsymbol{\xi} \in
+\mathbb{R}^d$. The simplest example is $A_{\varepsilon} = -\text{div}\,g(\mathbf{x}/\varepsilon)\nabla$.
+
+We study the behavior of the solution $\mathbf{u}_\varepsilon$ of the Dirichlet problem
+$A_{\varepsilon}\mathbf{u}_\varepsilon = \mathbf{F}$ in $\mathcal{O}$,
+$\mathbf{u}_\varepsilon\vert_{\partial \mathcal{O}} =0$,
+where $\mathbf{F} \in L_2(\mathcal{O};\mathbb{C}^n)$.
+It turns out that $\mathbf{u}_\varepsilon$ converges in $L_2(\mathcal{O};\mathbb{C}^n)$
+to $\mathbf{u}_0$, as $\varepsilon \to 0$. Here $\mathbf{u}_0$ is the solution of the "homogenized"\
+Dirichlet problem $A^0 \mathbf{u}_0=\mathbf{F}$ in $\mathcal{O}$,
+$\mathbf{u}_0\vert_{\partial \mathcal{O}} =0$. The \textit{effective operator}
+$A^0$ is given by the expression $A^0 = b(\mathbf{D})^* g^0 b(\mathbf{D})$
+with the Dirichlet boundary condition. The effective matrix $g^0$ is a constant positive $(m\times m)$-matrix
+defined as follows. Denote by $\Lambda(\mathbf{x})$ the $(n \times m)$-matrix-valued
+periodic solution of the equation
+$b(\mathbf{D})^* g(\mathbf{x}) (b(\mathbf{D})\Lambda(\mathbf{x}) + \mathbf{1}_m) =0$
+such that $\int_\Omega \Lambda(\mathbf{x})\, d\mathbf{x} =0$.
+Then $g^0 = |\Omega|^{-1} \int_\Omega g(\mathbf{x}) (b(\mathbf{D})\Lambda(\mathbf{x})
++ \mathbf{1}_m)\,d\mathbf{x}$.
+
+\smallskip
+\noindent\textbf{Theorem 1.} (see [2]) \textit{We have the following sharp order
+error estimate}:
+$$
+\| \mathbf{u}_\varepsilon - \mathbf{u}_0 \|_{L_2(\mathcal{O};\mathbb{C}^n)}
+\le C \varepsilon \| \mathbf{F}\|_{L_2(\mathcal{O};\mathbb{C}^n)}.
+$$
+
+
+Now we give approximation of $\mathbf{u}_\varepsilon$ in the Sobolev space
+$H^1(\mathcal{O};\mathbb{C}^n)$. For this, the first order corrector must be taken into account.
+
+\smallskip
+\noindent\textbf{Theorem 2.} (see [1]) 1) \textit{Let $\Lambda \in L_\infty$, and denote
+$\Lambda^\varepsilon(\mathbf{x}) = \Lambda(\varepsilon^{-1} \mathbf{x})$. Then}
+$$
+\| \mathbf{u}_\varepsilon - \mathbf{u}_0 - \varepsilon \Lambda^\varepsilon b(\mathbf{D})
+\mathbf{u}_0 \|_{H^1(\mathcal{O};\mathbb{C}^n)}
+\le C \varepsilon^{1/2} \| \mathbf{F}\|_{L_2(\mathcal{O};\mathbb{C}^n)}.
+$$
+
+\noindent 2) \textit{In the general case, we have}
+$$
+\| \mathbf{u}_\varepsilon - \mathbf{u}_0 - \varepsilon \Lambda^\varepsilon b(\mathbf{D})
+(S_\varepsilon \widetilde{\mathbf{u}}_0) \|_{H^1(\mathcal{O};\mathbb{C}^n)}
+\le C \varepsilon^{1/2} \| \mathbf{F}\|_{L_2(\mathcal{O};\mathbb{C}^n)}.
+$$
+\textit{Here $\widetilde{\mathbf{u}}_0 = P_{\mathcal{O}} \mathbf{u}_0$ and
+$P_{\mathcal{O}}: H^2(\mathcal{O};\mathbb{C}^n) \to H^2(\mathbb{R}^d;\mathbb{C}^n)$
+is a continuous extension operator, $S_\varepsilon$ is the smoothing operator
+$(S_\varepsilon \mathbf{u})(\mathbf{x}) = |\Omega|^{-1} \int_\Omega
+\mathbf{u}(\mathbf{x} - \varepsilon \mathbf{z})\,d\mathbf{z}$.}
+
+%\smallskip
+%We use the results of M.~Birman and T.~Suslina for homogenization problem in $\mathbb{R}^d$:
+%the analogs of estimates (2), (3) in $\mathbb{R}^d$ are of sharp order $\varepsilon$.
+%The problem is reduced to estimating of the discrepancy $\mathbf{w}_\varepsilon$,
+%which is the solution of the problem $A_\varepsilon \mathbf{w}_\varepsilon =0$ in $\mathcal{O}$,
+%$\mathbf{w}_\varepsilon\vert_{\partial \mathcal{O}} =
+%\varepsilon \Lambda^\varepsilon b(\mathbf{D})
+%(S_\varepsilon \widetilde{\mathbf{u}}_0)\vert_{\partial \mathcal{O}}$
+%(or $\mathbf{w}_\varepsilon\vert_{\partial \mathcal{O}} =
+%\varepsilon \Lambda^\varepsilon b(\mathbf{D}){\mathbf{u}}_0\vert_{\partial \mathcal{O}}$
+%in the case $\Lambda \in L_\infty$).
+%We show that the norm of $\mathbf{w}_\varepsilon$ in $H^1$ satisfies estimate
+%of order $\varepsilon^{1/2}$. This leads to (2), (3).
+%At the same time, the norm of $\mathbf{w}_\varepsilon$ in $L_2$ is of order $\varepsilon$,
+%this allows us to prove sharp order estimate (1).
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{pa-su-2012} M.~A.~Pakhnin, T.~A.~Suslina, \textit{Operator error estimates for homogenization of the
+Dirichlet problem in a bounded domain}, Preprint, 2012. Available at
+http://arxiv.org/abs/1201.2140.
+
+
+\bibitem{su-2012} T.~A.~Suslina, \textit{Homogenization of the elliptic Dirichlet problem:
+operator error estimates in $L_2$}, Preprint, 2012. Available at http://arxiv.org/abs/1201.2286.
+
+
+
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %suslina.tex
+
+\begin{center}
+
+%% Title in English:
+{\Large\bf Algebra of boundary value problems with small parameter}
+
+\medskip
+
+%% Author 1:
+{\sc Nikolai Tarkhanov}
+
+%% Address:
+{\small\it University of Potsdam, Germany}
+
+%% Email:
+{\small \rm tarkhanov@math.uni-potsdam.de}
+
+%%\medskip
+
+%% Author 2:
+%% {\sc Evgeniya Dyachenko}
+
+%% {\small\it University of Potsdam}
+
+%% {\small \rm dyachenk@uni-potsdam.de}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+In a singular perturbation problem one is concerned with a differential equation of the form
+$A (\varepsilon) u_\varepsilon = f_\varepsilon$
+with initial or boundary conditions
+$B (\varepsilon) u_\varepsilon = g_\varepsilon$,
+where $\varepsilon$ is a small parameter.
+The distinguishing feature of this problem is that the orders of
+$A (\varepsilon)$ and
+$B (\varepsilon)$
+for $\varepsilon \neq 0$ are higher than the orders of $A (0)$ and
+$B (0)$,
+respectively.
+%The differential problem in question is referred to as
+%   a perturbed problem when $\varepsilon \neq 0$ and
+%   a degenerate problem when $\varepsilon = 0$.
+%The singular perturbation problem consists of studying the behaviour of %solutions or eigenvalues as $\varepsilon \to 0$.
+%Such problems can also be considered with more than one parameter.
+%
+%Singular perturbation problems arise frequently in applied mathematics and have %been considered at least as far back in history as Lord Rayleigh's treatise
+%\cite{Rayl45}, first published in 1877.
+%Rayleigh considered the effect of a small amount of stiffness on the models of %vibration of a violin string.
+%A discussion of the role of singular perturbation phenomena in mathematical %physics can be found in \cite{Frie55}.
+%
+%Some difficulties are inherent in singular perturbation problems.
+%Solutions of the degenerate problem will not in general be as smooth as %solutions of the perturbed problem.
+%Moreover, solutions of the degenerate problem usually will not satisfy as many %initial or boundary conditions as do solutions of the perturbed problem.
+%Hence, if solutions of the perturbed problem are to converge to solutions of the %degenerate problem, the notion of convergence will probably have to be rather %weak.
+%Due to the ``loss'' of initial or boundary data it may also happen that %solutions of the perturbed problem converge in a stronger sense in the interior %of the underlying domain, than in the vicinity of the boundary.
+%This is known as the boundary layer phenomenon.
+There is by now a vast amount of literature on singular perturbation
+%problems for ordinary differential equations, both linear and non-linear.
+%An extensive bibliography of this literature is contained in \cite{Waso66}.
+%
+%There is also a considerable amount of literature on singular perturbation
+problems for partial differential equations.
+A comprehensive theory of such problems was initiated by the remarkable paper of
+Vishik and Lyusternik \cite{VishLyus57}.
+%They obtained asymptotic expressions for solutions of the perturbed problem for %linear equations using boundary layer techniques.
+%In this paper the main condition on the dependence of $A (\varepsilon)$ on a %small parameter was formulated and the asymptotics as $\varepsilon \to 0$ of the %solution of the Dirichlet problem was constructed.
+%\cite{VishLyus57} also contains a sizable bibliography.
+%
+%In \cite{Huet60}, Huet published several theorems on convergence in singular %perturbation problems for linear elliptic and parabolic partial differential %equations.
+%One particular feature distinguishes this paper from those previously mentioned.
+%This is that convergence theorems are first proven in a Hilbert space setting %and then applied to the differential problems as opposed to starting directly %with the differential equations.
+%In the elliptic vase, theorems on local convergence and convergence of %tangential derivatives at the boundary are also proven.
+%The work \cite{Huet60} is fundamental to the considerations in \cite{Gree68} %aimed at obtaining rate of convergence estimates for solutions of singular %perturbations of linear elliptic boundary value problems.
+%The problem can be described as follows.
+%Let $\mathcal{X}$ be a compact smooth manifold and let $\varepsilon$ be a %positive real parameter.
+%Consider two elliptic boundary value problems on $\mathcal{X}$,
+%   $(\varepsilon \mathcal{A}_1) + \mathcal{A}_0) u_\varepsilon = f$ and
+%   $\mathcal{A}_0 u = f$,
+%where the order of $\mathcal{A}_1$ is greater than the order of $\mathcal{A}_0$.
+%The problem is to determine in what sense $u_\varepsilon$ converges to $u$ on
+%$\mathcal{X}$ as $\varepsilon \to 0$ and to estimate the rate of convergence.
+%
+%Pseudodifferential problems with small parameter were studied in the 1970s by
+%G.~Eskin and A.~Demidov.
+%For boundary value problems of general type the theory of singular perturbations %was developed in the 1980s by Frank, see \cite{Fran90}.
+In \cite{Vole06}, Volevich completed the theory of differential boundary value problems with small parameter by formulating the Shapiro-Lopatinskii type ellipticity condition% and proving that it is equivalent to a priori estimates uniform in the parameter%
+.
+
+We contribute to the theory by constructing an algebra of pseudodifferential operators in which singularly perturbed boundary value problems can be treated.
+Given any $m, \mu \in \R$, denote by
+$\mathcal{S}^{m,\mu}$
+the space of all smooth functions $a (x,\xi,\varepsilon)$ on
+$T^\ast \R^n \times \R_{\geq 0}$,
+such that
+$
+|D^\alpha_x D^\beta_\xi a|
+\leq
+C_{\alpha,\beta}\, <\xi>^{\mu-|\beta|} <\varepsilon \xi>^{m-\mu}
+$
+for all multi-indices $\alpha$ and $\beta$, where
+$C_{\alpha,\beta}$ are constants independent of $x$, $\xi$ and $\varepsilon$.
+For any fixed $\varepsilon > 0$, a function $a \in \mathcal{S}^{m,\mu}$ is a symbol of order $m$ on $\R^n$ which obviously degenerates as $\varepsilon \to 0$.
+These symbols quantize to continuous operators
+$H^{r,s} \to H^{r-m,s-\mu}$
+in a scale of Sobolev spaces on $\R^n$ whose norms depend on $\varepsilon$ and are based on $L^2$ and weight functions
+$<\xi>^{s} <\varepsilon \xi>^{r-s}$.
+The family $\mathcal{S}^{m-j,\mu-j}$ with $j = 0, 1, \ldots$ is used as usual to define asymptotic sums of homogeneous symbols.
+By the homogeneity of degree $\mu$ is meant the property
+$
+a (x, \lambda \xi, \lambda^{-1} \varepsilon)
+= \lambda^\mu a (x, \xi, \varepsilon)
+$
+for all $\lambda > 0$.
+Let $\mathcal{S}^{m,\mu}_{\mathrm{phg}}$ stand for the subspace of
+$\mathcal{S}^{m,\mu}$
+consisting of all polyhomogeneous symbols, i.e., those admitting asymptotic expansions in homogeneous symbols.
+For any $a \in \mathcal{S}^{m,\mu}_{\mathrm{phg}}$ there is well-defined principal homogeneous symbol $\sigma^\mu (a)$ of degree $\mu$ whose invertibility away from the zero section of $T^\ast \R^n$ is said to be the interior ellipticity with small parameter.
+%
+Familiar techniques lead now to calculi of pseudodifferential operators with small parameter on diverse compactifications of smooth manifolds.
+Our results gain in interest if we realize that pseudodifferential operators with small parameter provide also adequate tools for studying Cauchy problems for elliptic equations.
+
+This is a joint paper with my PhD student Evgeniya Dyachenko who studies singular perturbation problems.
+
+%% If you use BIBTEX to create bibliography, please use amsalpha:
+%\bibliographystyle{amsalpha}
+%\bibliography{physics}%% (if your BIBTEX entries are in physics.bib)
+
+\begin{spacing}{0.1}\begin{thebibliography}{5}
+%
+%\bibitem[AV64]{AgraVish64}
+%M.~S. Agranovich and M.~I. Vishik,
+%  \emph{Elliptic problems with a parameter and parabolic problems of general
+%        type},
+%  Uspekhi Mat. Nauk \textbf{19} (1964), Issue 3, 53--161.
+%
+%\bibitem[BdM71]{Bout71}
+%L. Boutet de Monvel,
+%  \emph{Boundary problems for pseudo-differential operators},
+%  Acta Math. \textbf{126} (1971), no.~1--2, 11--51.
+%
+%\bibitem[Dem75]{Demi75}
+%A.~S. Demidov,
+%  \emph{Asymptotic behaviour of the solution of a boundary value problem for
+%        elliptic pseudodifferential equations with a small parameter multiplying
+%        the highest operator},
+%  Trans. Moscow Math. Soc. \textbf{32} (1975), 119--146.
+%
+%\bibitem[Fra90]{Fran90}
+%L. S. Frank,
+%  \emph{Spaces and Singular Perturbations on Manifolds without Boundary},
+%  North Holland, Amsterdam, 1990.
+%
+%\bibitem[Fri55]{Frie55}
+%K. Friedrichs,
+%  \emph{Asymptotic phenomena in mathematical physics},
+%  Bull. Amer. Math. Soc. \textbf{61} (1955), 485--504.
+%
+%\bibitem[Gre68]{Gree68}
+%W. M. Greenlee,
+%  \emph{Rate of convergence in singular perturbations},
+%   Ann. Inst. Fourier (Grenoble) {\bf 18} (1968), no. 2, 135--191.
+%
+%\bibitem[Hue60]{Huet60}
+%D. Huet,
+%  \emph{Ph\'{e}nom\`{e}nes de perturbation singuli\`{e}re dans les probl\`{e}mes
+%        aux limites},
+%   Ann. Inst. Fourier (Grenoble) {\bf 11} (1961), 385--475.
+%
+%\bibitem[Ray45]{Rayl45}
+%Lord Rayleigh,
+%  \emph{Theory of Sound},
+%  Vol. I and II, Dover, 1945.
+%
+\bibitem{VishLyus57}
+M.~I. Vishik and L.~A. Lyusternik,
+\emph{Regular degeneration and boundary layer for linear differential equations
+with small parameter},
+Uspekhi Mat. Nauk \textbf{12} (1957), Issue 5 (77), 3--122.
+
+\bibitem{Vole06}
+L.~R. Volevich,
+\emph{The Vishik-Lyusternik method in elliptic problems with small parameter},
+Trans. Moscow Math. Soc. \textbf{67} (2006), 87--125.
+%
+%\bibitem[Was66]{Waso66}
+%W. Wasow,
+%  \emph{Asymptotic expansions for ordinary differential equations},
+%  Wiley, 1966.
+%
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %tarkhanov.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Pattern formation: The oscillon equation}
+
+\medskip
+
+%% Author 1:
+{\sc Roger Temam}
+
+%% Address:
+{\small\it Indiana University, Bloomington, IN 47405, USA}
+
+%% Email:
+{\small\rm temam@indiana.edu}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+
+In this lecture, we will consider the (non autonomous) oscillon
+equation which is used in cosmology to model and  represent some transient
+persistent structures. We will discuss questions of existence and uniqueness
+of solutions and of long time behavior of solutions.
+
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf Global well-posedness of an inviscid three-dimensional pseudo-Hasegawa-Mima model}
+
+\medskip
+
+%% Author 1:
+{\sc Chongsheng Cao}
+
+%% Address:
+{\small\it Florida International University, Miami, FL 33199, USA}
+
+%% Email:
+{\small\rm caoc@fiu.edu}
+
+
+\medskip
+
+%% Author 2:
+{\sc Aseel Farhat}
+
+{\small\it UC -- Irvine, CA 92697, USA}
+
+{\small\rm  afarhat@math.uci.edu}
+
+\medskip
+
+%% Author 3:
+{\sc Edriss S. Titi}
+
+{\small\it UC -- Irvine, CA 92697, USA; Weizmann Institute of Science, Rehovot 76100, Israel}
+
+{\small\rm  etiti@math.uci.edu}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+The three-dimensional inviscid Hasegawa-Mima model is one of the fundamental models that describe plasma turbulence. The model also appears as a simplified reduced Rayleigh-B\'enard convection model. The mathematical analysis of the Hasegawa-Mima equation is challenging  due to the absence of any smoothing viscous terms, as well as to the presence of an analogue of the vortex stretching terms. In this talk, we introduce and study a model which is inspired by the inviscid Hasegawa-Mima model, which we call a pseudo-Hasegawa-Mima model. The introduced model is easier to investigate analytically than the original inviscid Hasegawa-Mima model, as it has a nicer mathematical structure. The resemblance between this model and the Euler equations of inviscid incompressible fluids inspired us to adapt the techniques and ideas introduced for the two-dimensional and the three-dimensional Euler equations to prove the global existence and uniqueness of solutions for our model. This is in addition to proving and implementing a new technical logarithmic inequality, generalizing the Brezis-Gallouet and the Berzis-Wainger inequalities. Moreover, we prove the continuous dependence on initial data of solutions for the pseudo-Hasegawa-Mima model. These are the first results on existence and uniqueness of solutions for a model that is related to the three-dimensional inviscid Hasegawa-Mima equations.
+
+
+
+
+\vfill
+\newpage %titi.tex
+
+\begin{center}
+
+{\Large\bf Weyl asymptotics for interior transmission eigenvalues}
+
+\medskip
+
+{\sc Boris Vainberg}
+
+{\small\it UNC -- Charlotte, Charlotte NC 28223, USA}
+
+{\small\rm brvainbe@uncc.edu}
+
+\end{center}
+
+
+\medskip
+
+%% Abstract in English:
+Interior transmission eigenvalues are defined by the problem
+
+\begin{equation*}
+-\Delta u - \lambda u =0, \quad x \in \mathcal O, \quad u\in H^2(\mathcal O),
+\end{equation*}
+\begin{equation*}
+-\nabla A \nabla v - \lambda   n(x)v =0, \quad x \in \mathcal O, \quad v\in H^2(\mathcal O),
+\end{equation*}
+\begin{equation*}
+\begin{array}{l}
+u-v=0, \quad x \in \partial \mathcal O, \\
+\frac{\partial u}{\partial \nu} - \frac{\partial v}{\partial \nu_A}=0, \quad x \in \partial \mathcal O,
+\end{array}
+\end{equation*}
+were $\mathcal O\subset R^d$ is a bounded domain with a smooth boundary, $H^{2}(\mathcal O), ~H^{s}(\partial \mathcal O)$ are Sobolev spaces, $A(x),~x\in \overline{\mathcal O}$, is a smooth symmetric elliptic ($A=A^t>0$) matrix with real valued entries, $n(x)$ is   a smooth function, $\nu$ is the outward unit normal vector and the co-normal derivative is defined as follows
+$$
+\frac{\partial } {\partial \nu_A}v =\nu \cdot A \nabla v.
+$$
+
+The importance of these eigenvalues is based on their relation to the scattering of plane waves by inhomoginuety defined by $A$ and $n$: a real $\lambda=k^2$ is an interior transmission eigenvalue if and only if the far-field operator has a non trivial kernel at the frequency $k$.
+
+The problem above is not symmetric. However we will show that under some conditions it has infinitely many real eigenvalues. We will obtain the Weyl type bound from below for the counting function of these eigenvelues as well as some estimates on the first egenvalues.
+
+These results are obtained together with E.\,Lakshtanov.
+\vfill
+\newpage %vainberg.tex
+
+
+\begin{center}
+
+{\Large\bf Example of equations with nonlinearity of type min[u,v]}
+\medskip
+
+{\sc N. Vvedenskaya}
+
+{\small\it Institute for Information Transmission Problems, Moscow, Russia}
+
+{\small\rm ndv@iitp.ru }
+
+\medskip
+
+{\sc Y.M. Suhov}
+
+{\small\it IITP, Cambridge University,  Universidade de Sao Paulo}%MULTIPLE
+
+{\small\rm yms@statslab.cam.ac.uk}
+
+\end{center}
+
+\medskip
+
+
+This paper considers   a boundary-value problem for a nonlinear
+system of equations that are derived from  a trading
+process model \cite{VSB}.
+\smallskip
+
+
+Let $u(x.t),v(x,t)$,\ $0<x<1$,\ $t>0$, satisfy a system
+\begin{equation}\label{vv-1}
+\begin{array}{cclc}
+\displaystyle{\frac{\partial u(x,t)}{\partial t
+}}&=&-a_u\displaystyle{\frac{\partial u(x,t)}{\partial
+x}}&-b_uu(x,t)-c\min[u(x,t), v(x,t)],
+\\&&\\
+\displaystyle{\frac{\partial v(x,t)}{\partial t }}&=&\ \ \
+a_v\displaystyle{\frac{\partial v(x,t)}{\partial
+x}}&-b_vv(x,t)-c\min[u(x,t), v(x,t)],
+\end{array}
+\end{equation}
+\begin{equation}\label{vv-2}
+\frac{\partial u(0,t)}{\partial t
+}=d_u-a_uu(0,t)-b_uu(0,t)-c\min[u(0,t),v(0,t)],
+\end{equation}
+\begin{equation}\label{vv-3}
+\frac{\partial v(1,t)}{\partial t
+}=d_v-a_vv(1,t)-b_vv(1,t)-c\min[u(1,t),v(1,t)],
+\end{equation}
+\begin{equation}\label{vv-4}
+u(x,0)=u_0(x)\geq 0,\ \ v(x,0)=v_0(x)\geq 0.
+\end{equation}
+
+Here $a_{u/v},\ b_{u/v},\ c,\ d_{u/v}$ are positive.
+
+
+
+\begin{theorem}\label{vv-thm1}
+For any  initial data $u_0(x),v_0(x)$  for all $t>0$ there exists a
+unique  solution  to (\rm{\ref{vv-1}})-(\rm{\ref{vv-4}}). \ \  As
+$t\to\infty$ a solution approaches a fixed point which is the unique
+solution to  a  system
+
+
+
+\begin{equation}\label{vv-5}
+\begin{array}{cl}
+-a_u\displaystyle{\frac{{\rm d} u(x,t)}{{\rm d}
+x}}&-b_uu(x,t)-c\min[u(x,t), v(x,t)]=0,
+\\
+a_v\displaystyle{\frac{{\rm d}v(x,t)}{{\rm d}
+x}}&-b_vv(x,t)-c\min[u(x,t), v(x,t)]=0,
+\end{array}
+\end{equation}
+\begin{equation}\label{vv-6}
+d_u-a_uu(0,t)-b_uu(0,t)-c\min[u(0,t),v(0,t)]=0,
+\end{equation}
+\begin{equation}\label{vv-7}
+d_v-a_vv(1,t)-b_vv(1,t)-c\min[u(1,t),v(1,t)]=0.
+\end{equation}
+\end{theorem}
+
+Remark that the type of boundary conditions  (\ref{vv-2}), (\ref{vv-3})
+and (\ref{vv-6}), (\ref{vv-7}) depends on  sign of $u-v$, that makes not
+evident the uniqueness of solution to (\ref{vv-5})-(\ref{vv-7}).
+
+\medskip
+
+The first author was supported by grant RFBR 11-01-00485a.
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{VSB} N.D.~Vvedenskaya, Y.~Suhov, V.~Belitsky, \emph{A non-linear model of
+limit order book dynamics},\ http://arXiv:1102.1104 (2011).
+
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %vvedenskaya.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf On the Gauss problem with Riesz  potential}
+
+\medskip
+
+%% Author 1:
+{\sc Wolfgang L. Wendland}
+
+%% Address:
+{\small\it Universit{\"a}t Stuttgart, Germany}
+
+%% Email:
+{\small\rm wendland@mathematik.uni-stuttgart.de}
+
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+This is a lecture on joint work with H.~Harbrecht (U. Basel,
+Switzerland), G.~Of (TU. Graz, Austria) and
+N.~Zorii (Nat. Academy Sci. Kiev, Ukraine).
+
+In $\mathbb R^n$, $n\geqslant 2$, we study the constructive and
+numerical solution of minimizing the energy relative to the Riesz
+kernel $|{\bf x}-{\bf y}|^{\alpha-n}$, where $1<\alpha<n$, for the
+Gauss variational problem, considered for finitely many compact,
+mutually disjoint, boundaryless $(n-1)$--dimensional
+Lipschitz manifolds $\Gamma_\ell$, $\ell\in L$, each $\Gamma_\ell$
+being charged with Borel measures with the sign $\alpha_\ell=\pm1$
+prescribed. We show that the Gauss variational problem over an
+affine cone of Borel measures can alternatively be formulated as a
+minimum problem over an affine cone of surface distributions
+belonging to the Sobolev--Slobodetski space
+$H^{-{\varepsilon}/{2}}(\Gamma)$, where $\varepsilon:=\alpha-1$ and
+$\Gamma:=\bigcup_{\ell\in L}\,\Gamma_\ell$. This allows the
+application of simple layer boundary integral operators on~$\Gamma$
+and, hence, a penalty approximation. A corresponding numerical
+method is based on the Galerkin--Bubnov discretization with
+piecewise constant boundary elements. For $n=3$ and  $\alpha=2$, multipole
+approximation and in the case  $1<\alpha<3=n$  wavelet matrix compression is
+applied to sparsify the system matrix.  Numerical results are
+presented to illustrate the approach.
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{=WZ}
+G.~Of, W.L.~Wendland and N.~Zorii:
+\textsl{On the numerical solution of minimal energy problems.}
+Complex Variables and Elliptic Equations \textbf{55} (2010)
+991--1012.
+
+\bibitem{HWZ}
+H.~Harbrecht, W.L.~~Wendland and N.~Zorii:
+\textsl{On Riesz minimal energy problems.}
+Preprint Series Stuttgart Research Centre for Simulation Technology
+(SRC Sim Tech) Issue No. 2010--80.
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %wendland.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf On a class of degenerate pseudodifferential operators and applications to mixed-type PDEs}
+
+\medskip
+
+%% Author 1:
+{\sc Ingo Witt}
+
+%% Address:
+{\small\it Universit{\"a}t G{\"o}ttingen, G{\"o}ttingen, Germany}
+
+%% Email:
+{\small\rm iwitt@uni-math.gwdg.de}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+In a series of papers in 1969/70, Vishik and Grushin \cite{VG69, VG70}
+introduced a class of degenerate pseudodifferential operators roughly
+being of the form
+\[
+|x|^{b-(l_\ast+1)m} P(x,y,|x|D_x,|x|^{l_\ast+1}D_y),
+\]
+where $m$ is the order of the operator and $b\in{\mathbb R}$ is a
+parameter ($b=m l_\ast$ in the work of Vishik and Grushin). Here,
+$l_\ast\in {\mathbb Q}$, $l_\ast>0$, $x\in{\mathbb R}^q$, $y\in
+{\mathbb R}^d$, and $P(x,y,\xi,\eta)$ is a pseudodifferential
+symbol. A basic example is the Tricomi operator $\partial_x^2 + x
+\Delta_y$, where $l_\ast=1/2$, $q=1$, $m=2$, and $b=1$.
+
+In this talk, we develop a pseudodifferential calculus for such
+operators including a full symbol calculus, discuss elliptic boundary
+problems \cite{W03} and the hyperbolic Cauchy problem \cite{DW02} in
+this class, and eventually present applications to 2D mixed
+elliptic-hyperbolic equations (where $q=d=1$) with variable
+coefficients. In the latter case, the problem is reduced to a
+cone-degenerate elliptic problem in the interface (which is an
+interval), where the equations under study change type.
+
+\begin{spacing}{0.1}\begin{thebibliography}{9}
+
+\bibitem{DW02} M.~Dreher and I.~Witt, \emph{Edge {S}obolev spaces and
+weakly hyperbolic equations}, Ann. Mat. Pura Appl. (4),
+\textbf{180} (2002), 451--482.
+
+\bibitem{VG69} M.I.~Vishik and V.V.~Grushin, \emph{A certain class of
+degenerate elliptic equations of higher orders}, Mat. Sb. (N.S.)
+\textbf{79}~(\textbf{121}) (1969), 3--36 (in Russian).
+
+\bibitem{VG70} M.I.~Vishik and V.V.~Grushin, \emph{Degenerate elliptic
+differential and pseudo\-differential operators}, Uspehi Mat. Nauk
+\textbf{25} (1970), 29--56 (in Russian).
+
+\bibitem{W03} I.~Witt, \emph{A calculus for a class of finitely
+degenerate pseudodifferential operators}. In: Evolution equations,
+volume 60 of Banach Center Publ., Polish Acad. Sci., 2003,
+pp.~161-189.
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %witt.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Equation of coagulation process of falling drops}
+
+\medskip
+
+%% Author 1:
+{\sc Hisao Fujita Yashima}
+
+%% Address:
+{\small\it Universit\'e 8 Mai 1945, Guelma, Alg\'erie}
+{\small\it and}
+{\small\it Universit\`a di Torino, Italy}
+
+%% Email:
+{\small\rm hisao.fujitayashima@unito.it}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+We consider coagulation process of water drops which 
+fall in the air. 
+This process is described by an integro-differential 
+equation for the density $\sigma (m,t,x)$ of the water 
+liquid contained in drops of mass $m$. 
+For the motion of drops we consider the their velocity 
+$u(m)$ determined by the mass $m$ and the velocity of the 
+air; on the other hand for the coagulation process we 
+consider a probability $\beta(m_1, m_2)$ of meeting 
+between a drop of mass $m_1$ and one of mass $m_2$ 
+(see for example \cite{[V84]}). 
+
+First we prove the existence of a stationay solution 
+with a constant horizontal wind \cite{[MBAH]}. 
+Secondly we prove the existence and uniqueness of the 
+global solution in the absence of the wind \cite{[BAH]}; 
+the convergence of the global solution to the stationary 
+solution is a corollary of this result. 
+
+%% Abstract in Russian (optional; could be shorter than English):
+
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{[BAH]} Belhireche, H., Aissaoui, M. Z., 
+Fujita Yashima, H.: Solution globale de l'\'equation de
+coagulation des gouttelettes en chute. {\it Quaderno 
+Dip. Mat. Univ. Torino, 2012}. 
+
+\bibitem{[MBAH]} Merad, M., Belhireche, H., Fujita Yashima, H.:
+Solution stationnaire de l'\'equation de coagulation de
+gouttelettes en chute avec le vent horizontal. To 
+appear on {\it Rend. Sem. Mat. Univ. Padova}. 
+
+\bibitem{[V84]} V.M. Voloshtchuk, \emph{Kinetic theory of coagulation}.
+Gidrometeoizdat, 1984.
+
+\end{thebibliography}\end{spacing}
+
+
+\vfill
+\bigskip
+\begin{center}
+
+%% Title in English:
+{\Large\bf Is free surface deep water hydrodynamics an integrable system?}
+
+\medskip
+
+%% Author 1:
+{\sc Vladimir Zakharov}
+
+%% Address:
+{\small\it University of Arizona, Lebedev Institute of Physics, Novosibirsk State University}
+
+%% Email:
+{\small\rm zakharov@math.arizona.edu}
+
+\end{center}
+
+\medskip
+
+\vfill
+\newpage %zakharov.tex
+\begin{center}
+
+%% Title in English:
+{\Large\bf Infinite energy solutions for damped Navier--Stokes equations in $\mathbb R^2$}
+
+\medskip
+
+%% Author 1:
+{\sc Sergey Zelik}
+
+%% Address:
+{\small\it  University of Surrey, Guildford, United Kingdom}
+
+%% Email:
+{\small\rm s.zelik@surrey.ac.uk}
+
+\end{center}
+
+\medskip
+
+%% Abstract in English:
+
+The so-called damped Navier--Stokes equations in the whole 2D space:
+%$$
+\begin{equation*}
+\begin{cases}
+{\partial_t}u+(u,{\nabla_x})u={\Delta_x} u-\alpha u+{\nabla_x} p+g,\\ {\operatorname{div}}
+u=0,\ \
+u\big|_{t=0}=u_0,
+\end{cases}
+\end{equation*}
+%$$
+where $\alpha$ is a positive parameter, will be considered and the results on
+the global well-posedness, dissipativity and further regularity of weak solutions of this problem
+in the uniformly-local spaces $L^2_b(\R^2)$ will be presented. These results are obtained 
+based on the further development of the weighted
+energy theory for the Navier--Stokes type problems. Note that any divergent free vector field
+$u_0\in L^\infty(\mathbb R^2)$ is allowed and no assumptions on the spatial decay of solutions as $|x|\to\infty$ are
+posed.
+\par
+In addition, the applications to the classical Navier--Stokes
+problem in $\mathbb R^2$ (which corresponds to $\alpha=0$) will be also considered. In particular, the improved estimate on the possible growth rate of spatially non-decaying solutions as time goes to infinity:
+$$
+\|u(t)\|_{L^2_b(\R^2)}\le C(t^5+1),
+$$ 
+where $C$ depends on $u_0$ and $g$, but is independent of $t$, will be presented. Note that the previous best known estimate was super-exponential in time:
+$$
+\|u(t)\|_{L^\infty(\R^2)}\le C_1e^{C_2 t^2},
+$$
+see \cite{ST07}.
+
+
+\begin{spacing}{0.1}\begin{thebibliography}{6}
+
+\bibitem{ST07} O. Sawada and Y. Taniuchi, \emph{A remark on $L^\infty$-solutions to the 2D Navier--Stokes equations}, J. Math. Fluid Mech., \textbf{9} (2007), 533--542.
+
+
+
+\end{thebibliography}\end{spacing}
+
+\vfill
+\newpage %zelik.tex
+
+
+\begin{center}
+
+{\it
+Научное издание
+}
+
+\vskip 2cm
+                       
+     DIFFERENTIAL EQUTATIONS AND APPLICATIONS
+
+\vskip 0.5cm
+
+{\it International Conference}
+
+\vskip 0.2cm
+
+              IN HONOUR OF MARK VISHIK
+
+\vskip 0.2cm
+
+{\it
+             On the occasion of his 90th birthday
+}
+
+\vskip 1cm
+
+                  Moscow, June 4-7, 2012
+
+
+\vskip 2cm
+
+Федеральное государственное 
+бюджетное учреждение науки
+
+Институт проблем передачи информации им А.А.\,Харкевича
+
+Российской Академии Наук
+
+\vskip 0.2cm
+
+127994, г. Москва, ГСП-4, Б.\,Каретный пер., д.\,19, стр.\,1
+
+\vskip 1cm
+            
+Московский государственный университет
+имени М.В.\,Ломоносова
+       
+\vskip 0.2cm
+
+119991, Российская Федерация,
+Москва, ГСП-1, Воробьёвы горы
+
+\vskip 1cm
+
+Подписано в печать 15.05.2012
+
+Формат 60x90/16 Гарнитура «Times»
+
+Бумага офсетная. Печ. л. 3,75
+
+Тираж 100 экз.
+
+Изготовлено ЗАО «Группа МОРЕ»
+
+\end{center}
+
+\end{document}
