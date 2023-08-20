@@ -1,0 +1,74 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[russian,english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Classical solutions of the Vlasov--Poisson equations in a half-space}
+
+\bigskip
+
+%% Author 1:
+{\sc A.L. Skubachevskii}
+
+%% Address:
+%{\small\it Peoples' Friendship University of Russia, 117198, Moscow, Miklukho-Maklaya str. 6, Russia}
+{\small\it Peoples' Friendship University of Russia, Moscow 117198, Russia}
+
+%% Email:
+{\small\rm skub@lector.ru}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+We consider the Vlasov system of equations describing the evolution
+of distribution functions of the density for the charged particles
+in a rarefied plasma. We study the Vlasov system in
+$\R_+^3\times\R^3$ with initial conditions for distribution
+functions $f^\beta\big|_{t=0}=f_0^\beta(x,p)$, $\beta=\pm1$, and the
+Dirichlet or Neumann boundary conditions for the potential of an
+electric field for $x_1=0$, where $f_0^\beta(x,p)$ is the initial
+distribution function (for positively charged ions if $\beta=+1$ and
+for electrons if $\beta=-1$) at the point~$x$ with impulse~$p$,
+$\R_+^3=\{x\in\R^3\colon x_1>0\}$. Assume that initial distribution
+functions are sufficiently smooth and ${\rm supp}
+f_0^\beta\subset(\R_\delta^3 \cap B_\lambda(0))\times B_\rho(0)$,
+$\delta,\lambda,\rho>0$, and the magnetic field $H(x)$ is also
+sufficiently smooth and has a~special structure near the boundary
+$x_1=0$, where $\R_\delta^3=\{x\in\R^3\colon x_1>\delta\}$. Then we
+prove that for any $T>0$ there is a~unique classical solution of the
+Vlasov system in $\R_+^3\times\R^3$ for $0<t<T$ if
+$\|f_0^\beta\|<\varepsilon$, where
+$\varepsilon=\varepsilon(T,\delta,\rho,\|H\|)$ is sufficiently
+small.
+
+This work was supported by the RFBR (grant No.\,10-01-00395).
+
+
+\end{document}

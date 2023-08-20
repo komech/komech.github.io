@@ -1,0 +1,93 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[russian,english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large On the Gauss problem with Riesz  potential}
+
+\bigskip
+
+%% Author 1:
+{\sc Wolfgang L. Wendland}
+
+%% Address:
+{\small\it Universit{\"a}t Stuttgart, Germany}
+
+%% Email:
+{\small\rm wendland@mathematik.uni-stuttgart.de}
+
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+
+This is a lecture on joint work with H.~Harbrecht (U. Basel,
+Switzerland), G.~Of (TU. Graz, Austria) and
+N.~Zorii (Nat. Academy Sci. Kiev, Ukraine).
+
+In $\mathbb R^n$, $n\geqslant 2$, we study the constructive and
+numerical solution of minimizing the energy relative to the Riesz
+kernel $|{\bf x}-{\bf y}|^{\alpha-n}$, where $1<\alpha<n$, for the
+Gauss variational problem, considered for finitely many compact,
+mutually disjoint, boundaryless $(n-1)$--dimensional
+Lipschitz manifolds $\Gamma_\ell$, $\ell\in L$, each $\Gamma_\ell$
+being charged with Borel measures with the sign $\alpha_\ell=\pm1$
+prescribed. We show that the Gauss variational problem over an
+affine cone of Borel measures can alternatively be formulated as a
+minimum problem over an affine cone of surface distributions
+belonging to the Sobolev--Slobodetski space
+$H^{-{\varepsilon}/{2}}(\Gamma)$, where $\varepsilon:=\alpha-1$ and
+$\Gamma:=\bigcup_{\ell\in L}\,\Gamma_\ell$. This allows the
+application of simple layer boundary integral operators on~$\Gamma$
+and, hence, a penalty approximation. A corresponding numerical
+method is based on the Galerkin--Bubnov discretization with
+piecewise constant boundary elements. For $n=3$ and  $\alpha=2$, multipole
+approximation and in the case  $1<\alpha<3=n$  wavelet matrix compression is
+applied to sparsify the system matrix.  Numerical results are
+presented to illustrate the approach.
+
+
+\begin{thebibliography}{6}
+
+\bibitem{=WZ}
+G.~Of, W.L.~Wendland and N.~Zorii:
+\textsl{On the numerical solution of minimal energy problems.}
+Complex Variables and Elliptic Equations \textbf{55} (2010)
+991--1012.
+
+\bibitem{HWZ}
+H.~Harbrecht, W.L.~~Wendland and N.~Zorii:
+\textsl{On Riesz minimal energy problems.}
+Preprint Series Stuttgart Research Centre for Simulation Technology
+(SRC Sim Tech) Issue No. 2010--80.
+
+\end{thebibliography}
+
+\end{document}

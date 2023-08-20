@@ -1,0 +1,116 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{graphicx,amsfonts,latexsym}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{amsmath,amsfonts,amssymb,amsmath}
+\newtheorem{theorem}{Theorem}
+\def\bbP{\mathbb P}
+\def\bbR{\mathbb R}
+\def\bbZ{\mathbb Z}
+\pagestyle{empty}
+
+\begin{document}
+
+
+\begin{center}
+
+{\Large Example of equations with nonlinearity of type min[u,v]}
+\bigskip
+
+{\sc N. Vvedenskaya}
+
+{\small\it Institute for Information Transmission Problems, Moscow, Russia}
+
+{\small\rm ndv@iitp.ru }
+
+\bigskip
+
+{\sc Y.M. Suhov}
+
+{\small\it IITP, Cambridge University,  Universidade de Sao Paulo}%MULTIPLE
+
+{\small\rm yms@statslab.cam.ac.uk}
+
+\end{center}
+
+\bigskip
+
+
+This paper considers   a boundary-value problem for a nonlinear
+system of equations that are derived from  a trading
+process model \cite{VSB}.
+\smallskip
+
+
+Let $u(x.t),v(x,t)$,\ $0<x<1$,\ $t>0$, satisfy a system
+\begin{equation}\label{vv-1}
+\begin{array}{cclc}
+\displaystyle{\frac{\partial u(x,t)}{\partial t
+}}&=&-a_u\displaystyle{\frac{\partial u(x,t)}{\partial
+x}}&-b_uu(x,t)-c\min[u(x,t), v(x,t)],
+\\&&\\
+\displaystyle{\frac{\partial v(x,t)}{\partial t }}&=&\ \ \
+a_v\displaystyle{\frac{\partial v(x,t)}{\partial
+x}}&-b_vv(x,t)-c\min[u(x,t), v(x,t)],
+\end{array}
+\end{equation}
+\begin{equation}\label{vv-2}
+\frac{\partial u(0,t)}{\partial t
+}=d_u-a_uu(0,t)-b_uu(0,t)-c\min[u(0,t),v(0,t)],
+\end{equation}
+\begin{equation}\label{vv-3}
+\frac{\partial v(1,t)}{\partial t
+}=d_v-a_vv(1,t)-b_vv(1,t)-c\min[u(1,t),v(1,t)],
+\end{equation}
+\begin{equation}\label{vv-4}
+u(x,0)=u_0(x)\geq 0,\ \ v(x,0)=v_0(x)\geq 0.
+\end{equation}
+
+Here $a_{u/v},\ b_{u/v},\ c,\ d_{u/v}$ are positive.
+
+
+
+\begin{theorem}\label{vv-thm1}
+For any  initial data $u_0(x),v_0(x)$  for all $t>0$ there exists a
+unique  solution  to (\rm{\ref{vv-1}})-(\rm{\ref{vv-4}}). \ \  As
+$t\to\infty$ a solution approaches a fixed point which is the unique
+solution to  a  system
+
+
+
+\begin{equation}\label{vv-5}
+\begin{array}{cl}
+-a_u\displaystyle{\frac{{\rm d} u(x,t)}{{\rm d}
+x}}&-b_uu(x,t)-c\min[u(x,t), v(x,t)]=0,
+\\
+a_v\displaystyle{\frac{{\rm d}v(x,t)}{{\rm d}
+x}}&-b_vv(x,t)-c\min[u(x,t), v(x,t)]=0,
+\end{array}
+\end{equation}
+\begin{equation}\label{vv-6}
+d_u-a_uu(0,t)-b_uu(0,t)-c\min[u(0,t),v(0,t)]=0,
+\end{equation}
+\begin{equation}\label{vv-7}
+d_v-a_vv(1,t)-b_vv(1,t)-c\min[u(1,t),v(1,t)]=0.
+\end{equation}
+\end{theorem}
+
+Remark that the type of boundary conditions  (\ref{vv-2}), (\ref{vv-3})
+and (\ref{vv-6}), (\ref{vv-7}) depends on  sign of $u-v$, that makes not
+evident the uniqueness of solution to (\ref{vv-5})-(\ref{vv-7}).
+
+\medskip
+
+The first author was supported by grant RFBR 11-01-00485a.
+
+
+\begin{thebibliography}{6}
+
+\bibitem{VSB} N.D.~Vvedenskaya, Y.~Suhov, V.~Belitsky, \emph{A non-linear model of
+limit order book dynamics},\ http://arXiv:1102.1104 (2011).
+
+
+\end{thebibliography}
+
+\end{document}

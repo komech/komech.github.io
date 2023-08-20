@@ -1,0 +1,229 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[english]{babel}
+
+%% Standard packages and definitions:
+
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+
+%% Title in English:
+{\Large Algebra of boundary value problems with small parameter}
+
+\bigskip
+
+%% Author 1:
+{\sc Nikolai Tarkhanov}
+
+%% Address:
+{\small\it University of Potsdam, Germany}
+
+%% Email:
+{\small \rm tarkhanov@math.uni-potsdam.de}
+
+%%\bigskip
+
+%% Author 2:
+%% {\sc Evgeniya Dyachenko}
+
+%% {\small\it University of Potsdam}
+
+%% {\small \rm dyachenk@uni-potsdam.de}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+
+In a singular perturbation problem one is concerned with a differential equation of the form
+$A (\varepsilon) u_\varepsilon = f_\varepsilon$
+with initial or boundary conditions
+$B (\varepsilon) u_\varepsilon = g_\varepsilon$,
+where $\varepsilon$ is a small parameter.
+The distinguishing feature of this problem is that the orders of
+$A (\varepsilon)$ and
+$B (\varepsilon)$
+for $\varepsilon \neq 0$ are higher than the orders of $A (0)$ and
+$B (0)$,
+respectively.
+%The differential problem in question is referred to as
+%   a perturbed problem when $\varepsilon \neq 0$ and
+%   a degenerate problem when $\varepsilon = 0$.
+%The singular perturbation problem consists of studying the behaviour of %solutions or eigenvalues as $\varepsilon \to 0$.
+%Such problems can also be considered with more than one parameter.
+%
+%Singular perturbation problems arise frequently in applied mathematics and have %been considered at least as far back in history as Lord Rayleigh's treatise
+%\cite{Rayl45}, first published in 1877.
+%Rayleigh considered the effect of a small amount of stiffness on the models of %vibration of a violin string.
+%A discussion of the role of singular perturbation phenomena in mathematical %physics can be found in \cite{Frie55}.
+%
+%Some difficulties are inherent in singular perturbation problems.
+%Solutions of the degenerate problem will not in general be as smooth as %solutions of the perturbed problem.
+%Moreover, solutions of the degenerate problem usually will not satisfy as many %initial or boundary conditions as do solutions of the perturbed problem.
+%Hence, if solutions of the perturbed problem are to converge to solutions of the %degenerate problem, the notion of convergence will probably have to be rather %weak.
+%Due to the ``loss'' of initial or boundary data it may also happen that %solutions of the perturbed problem converge in a stronger sense in the interior %of the underlying domain, than in the vicinity of the boundary.
+%This is known as the boundary layer phenomenon.
+There is by now a vast amount of literature on singular perturbation
+%problems for ordinary differential equations, both linear and non-linear.
+%An extensive bibliography of this literature is contained in \cite{Waso66}.
+%
+%There is also a considerable amount of literature on singular perturbation
+problems for partial differential equations.
+A comprehensive theory of such problems was initiated by the remarkable paper of
+Vishik and Lyusternik \cite{VishLyus57}.
+%They obtained asymptotic expressions for solutions of the perturbed problem for %linear equations using boundary layer techniques.
+%In this paper the main condition on the dependence of $A (\varepsilon)$ on a %small parameter was formulated and the asymptotics as $\varepsilon \to 0$ of the %solution of the Dirichlet problem was constructed.
+%\cite{VishLyus57} also contains a sizable bibliography.
+%
+%In \cite{Huet60}, Huet published several theorems on convergence in singular %perturbation problems for linear elliptic and parabolic partial differential %equations.
+%One particular feature distinguishes this paper from those previously mentioned.
+%This is that convergence theorems are first proven in a Hilbert space setting %and then applied to the differential problems as opposed to starting directly %with the differential equations.
+%In the elliptic vase, theorems on local convergence and convergence of %tangential derivatives at the boundary are also proven.
+%The work \cite{Huet60} is fundamental to the considerations in \cite{Gree68} %aimed at obtaining rate of convergence estimates for solutions of singular %perturbations of linear elliptic boundary value problems.
+%The problem can be described as follows.
+%Let $\mathcal{X}$ be a compact smooth manifold and let $\varepsilon$ be a %positive real parameter.
+%Consider two elliptic boundary value problems on $\mathcal{X}$,
+%   $(\varepsilon \mathcal{A}_1) + \mathcal{A}_0) u_\varepsilon = f$ and
+%   $\mathcal{A}_0 u = f$,
+%where the order of $\mathcal{A}_1$ is greater than the order of $\mathcal{A}_0$.
+%The problem is to determine in what sense $u_\varepsilon$ converges to $u$ on
+%$\mathcal{X}$ as $\varepsilon \to 0$ and to estimate the rate of convergence.
+%
+%Pseudodifferential problems with small parameter were studied in the 1970s by
+%G.~Eskin and A.~Demidov.
+%For boundary value problems of general type the theory of singular perturbations %was developed in the 1980s by Frank, see \cite{Fran90}.
+In \cite{Vole06}, Volevich completed the theory of differential boundary value problems with small parameter by formulating the Shapiro-Lopatinskii type ellipticity condition% and proving that it is equivalent to a priori estimates uniform in the parameter%
+.
+
+We contribute to the theory by constructing an algebra of pseudodifferential operators in which singularly perturbed boundary value problems can be treated.
+Given any $m, \mu \in \R$, denote by
+$\mathcal{S}^{m,\mu}$
+the space of all smooth functions $a (x,\xi,\varepsilon)$ on
+$T^\ast \R^n \times \R_{\geq 0}$,
+such that
+$
+|D^\alpha_x D^\beta_\xi a|
+\leq
+C_{\alpha,\beta}\, <\xi>^{\mu-|\beta|} <\varepsilon \xi>^{m-\mu}
+$
+for all multi-indices $\alpha$ and $\beta$, where
+$C_{\alpha,\beta}$ are constants independent of $x$, $\xi$ and $\varepsilon$.
+For any fixed $\varepsilon > 0$, a function $a \in \mathcal{S}^{m,\mu}$ is a symbol of order $m$ on $\R^n$ which obviously degenerates as $\varepsilon \to 0$.
+These symbols quantize to continuous operators
+$H^{r,s} \to H^{r-m,s-\mu}$
+in a scale of Sobolev spaces on $\R^n$ whose norms depend on $\varepsilon$ and are based on $L^2$ and weight functions
+$<\xi>^{s} <\varepsilon \xi>^{r-s}$.
+The family $\mathcal{S}^{m-j,\mu-j}$ with $j = 0, 1, \ldots$ is used as usual to define asymptotic sums of homogeneous symbols.
+By the homogeneity of degree $\mu$ is meant the property
+$
+a (x, \lambda \xi, \lambda^{-1} \varepsilon)
+= \lambda^\mu a (x, \xi, \varepsilon)
+$
+for all $\lambda > 0$.
+Let $\mathcal{S}^{m,\mu}_{\mathrm{phg}}$ stand for the subspace of
+$\mathcal{S}^{m,\mu}$
+consisting of all polyhomogeneous symbols, i.e., those admitting asymptotic expansions in homogeneous symbols.
+For any $a \in \mathcal{S}^{m,\mu}_{\mathrm{phg}}$ there is well-defined principal homogeneous symbol $\sigma^\mu (a)$ of degree $\mu$ whose invertibility away from the zero section of $T^\ast \R^n$ is said to be the interior ellipticity with small parameter.
+%
+Familiar techniques lead now to calculi of pseudodifferential operators with small parameter on diverse compactifications of smooth manifolds.
+Our results gain in interest if we realize that pseudodifferential operators with small parameter provide also adequate tools for studying Cauchy problems for elliptic equations.
+
+This is a joint paper with my PhD student Evgeniya Dyachenko who studies singular perturbation problems.
+
+%% If you use BIBTEX to create bibliography, please use amsalpha:
+%\bibliographystyle{amsalpha}
+%\bibliography{physics}%% (if your BIBTEX entries are in physics.bib)
+%\end{document}
+
+\begin{thebibliography}{5}
+%
+%\bibitem[AV64]{AgraVish64}
+%M.~S. Agranovich and M.~I. Vishik,
+%  \emph{Elliptic problems with a parameter and parabolic problems of general
+%        type},
+%  Uspekhi Mat. Nauk \textbf{19} (1964), Issue 3, 53--161.
+%
+%\bibitem[BdM71]{Bout71}
+%L. Boutet de Monvel,
+%  \emph{Boundary problems for pseudo-differential operators},
+%  Acta Math. \textbf{126} (1971), no.~1--2, 11--51.
+%
+%\bibitem[Dem75]{Demi75}
+%A.~S. Demidov,
+%  \emph{Asymptotic behaviour of the solution of a boundary value problem for
+%        elliptic pseudodifferential equations with a small parameter multiplying
+%        the highest operator},
+%  Trans. Moscow Math. Soc. \textbf{32} (1975), 119--146.
+%
+%\bibitem[Fra90]{Fran90}
+%L. S. Frank,
+%  \emph{Spaces and Singular Perturbations on Manifolds without Boundary},
+%  North Holland, Amsterdam, 1990.
+%
+%\bibitem[Fri55]{Frie55}
+%K. Friedrichs,
+%  \emph{Asymptotic phenomena in mathematical physics},
+%  Bull. Amer. Math. Soc. \textbf{61} (1955), 485--504.
+%
+%\bibitem[Gre68]{Gree68}
+%W. M. Greenlee,
+%  \emph{Rate of convergence in singular perturbations},
+%   Ann. Inst. Fourier (Grenoble) {\bf 18} (1968), no. 2, 135--191.
+%
+%\bibitem[Hue60]{Huet60}
+%D. Huet,
+%  \emph{Ph\'{e}nom\`{e}nes de perturbation singuli\`{e}re dans les probl\`{e}mes
+%        aux limites},
+%   Ann. Inst. Fourier (Grenoble) {\bf 11} (1961), 385--475.
+%
+%\bibitem[Ray45]{Rayl45}
+%Lord Rayleigh,
+%  \emph{Theory of Sound},
+%  Vol. I and II, Dover, 1945.
+%
+\bibitem{VishLyus57}
+M.~I. Vishik and L.~A. Lyusternik,
+\emph{Regular degeneration and boundary layer for linear differential equations
+with small parameter},
+Uspekhi Mat. Nauk \textbf{12} (1957), Issue 5 (77), 3--122.
+
+\bibitem{Vole06}
+L.~R. Volevich,
+\emph{The Vishik-Lyusternik method in elliptic problems with small parameter},
+Trans. Moscow Math. Soc. \textbf{67} (2006), 87--125.
+%
+%\bibitem[Was66]{Waso66}
+%W. Wasow,
+%  \emph{Asymptotic expansions for ordinary differential equations},
+%  Wiley, 1966.
+%
+\end{thebibliography}
+
+\end{document}

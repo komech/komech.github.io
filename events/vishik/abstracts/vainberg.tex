@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amscd,amsthm}
+\usepackage[cp1251]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage{pstricks}
+\usepackage{graphicx,psfrag}
+
+\usepackage[english,russian]{babel}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{note}[theorem]{Note}
+
+\newcommand{\thmref}[1]{Theorem~\ref{#1}}
+\newcommand{\propref}[1]{Proposition~\ref{#1}}
+\newcommand{\secref}[1]{\S\ref{#1}}
+\newcommand{\lemref}[1]{Lemma~\ref{#1}}
+\newcommand{\corref}[1]{Corollary~\ref{#1}}
+\newcommand{\remref}[1]{Remark~\ref{#1}}
+
+
+
+\setlength{\topmargin}{0mm} \setlength{\oddsidemargin}{0mm}
+\setlength{\textwidth}{160mm} \setlength{\textheight}{215mm}
+\font\bbc=msbm10 scaled 1200
+
+\newcommand{\E}{\mathbf{E}}
+\newcommand{\R}{\mbox {\bbc R}}
+\newcommand{\T}{\mbox {\bbc T}}
+\newcommand{\Z}{\mbox {\bbc Z}}
+
+
+\date{}
+
+\begin{document}
+
+\begin{center}
+
+{\Large Weyl asymptotics for interior transmission eigenvalues}
+
+\bigskip
+
+{\sc Boris Vainberg}
+
+{\small\it UNC -- Charlotte, Charlotte NC 28223, USA}
+
+{\small\rm brvainbe@uncc.edu}
+
+\end{center}
+
+
+\bigskip
+
+%% Abstract in English:
+Interior transmission eigenvalues are defined by the problem
+
+\begin{equation*}
+-\Delta u - \lambda u =0, \quad x \in \mathcal O, \quad u\in H^2(\mathcal O),
+\end{equation*}
+\begin{equation*}
+-\nabla A \nabla v - \lambda   n(x)v =0, \quad x \in \mathcal O, \quad v\in H^2(\mathcal O),
+\end{equation*}
+\begin{equation*}
+\begin{array}{l}
+u-v=0, \quad x \in \partial \mathcal O, \\
+\frac{\partial u}{\partial \nu} - \frac{\partial v}{\partial \nu_A}=0, \quad x \in \partial \mathcal O,
+\end{array}
+\end{equation*}
+were $\mathcal O\subset R^d$ is a bounded domain with a smooth boundary, $H^{2}(\mathcal O), ~H^{s}(\partial \mathcal O)$ are Sobolev spaces, $A(x),~x\in \overline{\mathcal O}$, is a smooth symmetric elliptic ($A=A^t>0$) matrix with real valued entries, $n(x)$ is   a smooth function, $\nu$ is the outward unit normal vector and the co-normal derivative is defined as follows
+$$
+\frac{\partial } {\partial \nu_A}v =\nu \cdot A \nabla v.
+$$
+
+The importance of these eigenvalues is based on their relation to the scattering of plane waves by inhomoginuety defined by $A$ and $n$: a real $\lambda=k^2$ is an interior transmission eigenvalue if and only if the far-field operator has a non trivial kernel at the frequency $k$.
+
+The problem above is not symmetric. However we will show that under some conditions it has infinitely many real eigenvalues. We will obtain the Weyl type bound from below for the counting function of these eigenvelues as well as some estimates on the first egenvalues.
+
+These results are obtained together with E.\,Lakshtanov.
+\end{document}

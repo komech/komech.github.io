@@ -1,0 +1,103 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[russian,english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Structure of the minimum-time damping of a physical pendulum}
+
+\bigskip
+
+%% Author 1:
+{\sc Alexander Ovseevich}
+
+%% Address:
+{\small\it Institute for Problems in Mechanics, Moscow 1119526, Russia}
+
+%% Email:
+{\small\rm ovseev@ipmnet.ru}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+We study the  minimum-time damping of a physical pendulum by means of a
+bounded control. In the similar problem for a linear oscillator each optimal trajectory possesses a
+finite number of control switchings from  the maximal to the minimal value. If one considers
+simultaneously all optimal trajectories with any initial state, the number of switchings can be
+arbitrary large. We show that for the nonlinear pendulum there is a uniform bound for the switching
+number for all optimal trajectories. We find asymptotics for this bound as the control amplitude
+goes to zero.
+
+\begin{otherlanguage}{russian}
+
+\bigskip
+
+\begin{center}
+%% Title in Russian (optional):
+{\Large Структура оптимального  быстродействия для физического маятника}
+\end{center}
+
+\smallskip
+
+%% Abstract in Russian (optional; could be shorter than English):
+Рассматривается задача  быстрейшего приведения физического маятника в состояние устойчивого
+равновесия с помощью ограниченного управления. В аналогичной задаче для линейного маятника на каждой
+оптимальной траектории имеется конечное число переключений управления с максимального на минимальное
+значение, если же рассматривать все оптимальные траектории с произвольным начальным состоянием, то
+соответствующее количество переключений может быть сколь угодно велико. Мы показываем, что для
+нелинейного маятника имеется общая верхняя граница для количества переключений на всех оптимальных
+траекториях.  Найдена асмптотика этого числа в ситуации, когда возможности управления малы.
+
+\bigskip
+\end{otherlanguage}
+
+\begin{thebibliography}{7}
+
+\bibitem{pont} {L.S. Pontryagin, V.G. Boltyanskii, and R. Gamkrelidze,}
+{\em Matematicheskaya teoriya optimalnykh protsessov},
+Nauka, Moscow, 1983.
+
+
+\bibitem{resh} {S.A. Reshmin},
+\emph{Bifurcation in the time-optimality problem for a second-order nonlinear system},
+Prikl. Mat. Mekh. \textbf{73} (2009), 562--572.
+
+\bibitem{flag} {\em Garcia Almuzara J.L., Fl\"ugge-Lots I.} Minimum time control of a nonlinear system. {\em J.
+Differential Equations.} 1968. Vol. 4, no. 1, pp. 12--39.
+
+
+\bibitem{akulenko}{Leonid Akulenko},
+\emph{Problems and methods of optimal control}, Nauka, Moscow, 1987; Kluwer, Dordrecht, 1994.
+
+\bibitem{akulenko2}{F.L. Chernousko, L.D. Akulenko, and B.N. Sokolov},
+\emph{Upravlenie kolebaniyami.} Nauka, Moscow, 1980.
+\end{thebibliography}
+
+\end{document}

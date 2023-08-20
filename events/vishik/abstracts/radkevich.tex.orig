@@ -1,0 +1,128 @@
+\documentclass[12pt]{article}
+\usepackage[russian]{babel}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage[dvips]{graphicx}
+
+
+
+\sloppy \textwidth18cm \textheight25cm \hoffset-2.5cm \voffset-3cm
+\parindent0cm
+\parskip2.5mm
+\unitlength1cm
+
+\def\grad{{\nabla}}
+\def\ve{{\varepsilon}}
+\def\pa{{\partial}}
+\def\supp{{\bf supp}}
+\newcommand{\dist}{\mathop{\rm dist}\nolimits}
+\newcommand{\const}{\mathop{\rm const}\nolimits}
+\newcommand{\str}{\mathop{\rm str}\nolimits}
+\newcommand{\as}{\mathop{\rm as}\nolimits}
+\newcommand{\an}{\mathop{\rm an}\nolimits}
+\newcommand{\sign}{\mathop{\rm sign}\nolimits}
+\renewcommand{\div}{\mathop{\rm div}\nolimits}
+\renewcommand{\Im}{\mathop{\rm Im}\nolimits}
+\renewcommand{\Re}{\mathop{\rm Re}\nolimits}
+\newcommand{\proof}{{\bf Доказательство.\quad}}
+\newtheorem{defi}{Определение}[section]
+\newtheorem{theo}{Теорема}[section]
+\newtheorem{lem}{Лемма}[section]
+\newtheorem{cond}{Условие}[section]
+\newtheorem{app}{Аррендикс}[section]
+\newtheorem{conc}{Заключение}[section]
+\newtheorem{comm}{Комментарий}
+\newtheorem{prop}{Предложение}[section]
+\newtheorem{cor}{Следствие}[section]
+\newtheorem{rem}{Замечание}[section]
+\newtheorem{exm}{Пример}[section]
+\newtheorem{prob}{Задача}[section]
+\newtheorem{design}{Обозначение}[section]
+
+
+%\def\{{\protect\lbrace}
+%\def\}{\protect\rbrace}
+\let\no\operatorname
+%\let\cal\mathcal
+\let\lm\limits
+%\let\<\langle
+%\let\>\rangle
+\let\ds\displaystyle
+%\def\S{$\mathchar"278$}
+
+\def\va{{\varphi}}
+\def\c{{\mbox{\bf c}}}
+
+\def\cK{{\cal K}}
+\def\R{{\bf R}}
+\def\cT{{\cal T}}
+\def\ot{{\overline{\theta}}}
+\def\oA{{\overline{A}}}
+\def\od{{\stackrel{\rm def} {=} }}
+\def\bS{{\bf S}}
+\def\Go{\Gamma(0)}
+\def\Ooj{\Omega_{0j}}
+\def\uj{^{j}}
+\def\dd{\partial}
+\def\Tr{{\bf Tr}}
+\def\zrho{\varrho_0}
+\def\ut{^{2}}
+\def\uo{^{1}}
+\def\hWj{\widehat{W}^{j}}
+\def\hFj{\widehat{F}^{j}}
+\def\dhrho{\delta\widehat{\varrho}}
+\def\hpsi{\widehat{\psi}}
+\def\uk{^\kappa}
+\def\tK{\tilde{K}}
+\def\tpsi{\tilde{\psi}}
+\def\J{{\cal J}}
+\def\S{{\cal S}}
+
+
+%\def\ch{{\no{ch}}}
+
+%\def\Const{{\rm Const}}\def\l{\left}
+%\def\r{\right}
+%\def\div{{\rm div}}
+\def\eq{{\no{eq}}}
+%\def\lin{{\no{lin}}}
+%\def\ext{{\no{ext}}}
+%\def\var{{\no{var}}}
+
+%\def\bG{{\bf G}}
+\def\cO{{\cal O}}
+
+\def\wh{\mathaccent"0362}
+
+\begin{document}
+\large
+
+\bigskip\bigskip\bigskip
+
+~~~~~~~~{\Large\bf О глобальных решениях задачи Коши}
+
+~~~~~~~~~{\Large\bf для дискретных кинетических уравнений.}
+\bigskip
+
+\centerline{Е.~В.~Радкевич(Москава, 2012)}
+\bigskip\bigskip\bigskip\bigskip
+
+Кинетическая теория рассматривает газ как совокупность громадного числа хаотически движущихся частиц тем или иным образом взаимодействующих между собой. В результате таких взаимодействий частицы обмениваются импульсами, энергией. Взаимодействие может осуществляться путем прямого столкновения частиц или при помощи тех или иных сил. Для пояснения математической схемы, описывающей подобные явления, в [1] рассматриваются так называемые дискретные модели кинетического уравнения Больцмана и приводится феноменологический вывод уравнения Больцмана для газовой модели с конечным числом различных скоростей частиц и конечным числом разных взаимодействий(модели типа Бродуэлла [2])
+\begin{gather}
+\pa_tn_j+(\omega_{ix}\pa_x+\omega_{iy}\pa_y+\omega_{iz}\pa_z)
+n_j=\sum_{k,l,j; k\ne i, l\ne i, j\ne  i}\sigma^{ij}_{kl}(n_kn_l-n_in_j),~~i=1,\dots,N\nonumber
+\end{gather}
+
+Для дискретных уравнений кинетики [3](размерности $d=1,2,3$) доказано существование глобального решения, получено разложение его по гладкости, исследовано влияние осцилляций, порождаемых оператором взаимодействия.
+
+1 {\em С.~К.~Годунов, У.~М.~Султангазин }
+О дискретных моделях кинетического уравнения Больцмана//
+Успехи МН(1971), т. XXVI, в. 3(159), стр. 3-51
+
+2 {\em T.~E.~Broadwell} Study of rarified shear flow by the discrete velocity method// J. of Fluid Mechanics 19:3(1964)
+
+3. {\em Е.В. Радкевич}, О существовании глобальных решений задачи Коши
+для дискретных кинетических уравнений// 
+Проблемы математического анализа, декабрь 2011, Выпуск 62, стр. 109-151
+(Journal of Mathematical Sciences, Vol. 181, No. 2, February, 2012, pp232-280)
+
+\end{document}

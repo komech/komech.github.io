@@ -1,0 +1,94 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\def\Dt{\partial_t}
+\def\Dx{\Delta_x}
+\def\Nx{\nabla_x}
+\def\divv{\operatorname{div}}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Infinite energy solutions for damped Navier--Stokes equations in $\mathbb R^2$}
+
+\bigskip
+
+%% Author 1:
+{\sc Sergey Zelik}
+
+%% Address:
+{\small\it  University of Surrey, Guildford, United Kingdom}
+
+%% Email:
+{\small\rm s.zelik@surrey.ac.uk}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+
+The so-called damped Navier--Stokes equations in the whole 2D space:
+%$$
+\begin{equation*}
+\begin{cases}
+{\partial_t}u+(u,{\nabla_x})u={\Delta_x} u-\alpha u+{\nabla_x} p+g,\\ {\operatorname{div}}
+u=0,\ \
+u\big|_{t=0}=u_0,
+\end{cases}
+\end{equation*}
+%$$
+where $\alpha$ is a positive parameter, will be considered and the results on
+the global well-posedness, dissipativity and further regularity of weak solutions of this problem
+in the uniformly-local spaces $L^2_b(\R^2)$ will be presented. These results are obtained 
+based on the further development of the weighted
+energy theory for the Navier--Stokes type problems. Note that any divergent free vector field
+$u_0\in L^\infty(\mathbb R^2)$ is allowed and no assumptions on the spatial decay of solutions as $|x|\to\infty$ are
+posed.
+\par
+In addition, the applications to the classical Navier--Stokes
+problem in $\mathbb R^2$ (which corresponds to $\alpha=0$) will be also considered. In particular, the improved estimate on the possible growth rate of spatially non-decaying solutions as time goes to infinity:
+$$
+\|u(t)\|_{L^2_b(\R^2)}\le C(t^5+1),
+$$ 
+where $C$ depends on $u_0$ and $g$, but is independent of $t$, will be presented. Note that the previous best known estimate was super-exponential in time:
+$$
+\|u(t)\|_{L^\infty(\R^2)}\le C_1e^{C_2 t^2},
+$$
+see \cite{ST07}.
+
+
+\begin{thebibliography}{6}
+
+\bibitem{ST07} O. Sawada and Y. Taniuchi, \emph{A remark on $L^\infty$-solutions to the 2D Navier--Stokes equations}, J. Math. Fluid Mech., \textbf{9} (2007), 533--542.
+
+
+
+\end{thebibliography}
+
+\end{document}

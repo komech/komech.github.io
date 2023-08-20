@@ -1,0 +1,51 @@
+\newcommand\notyet[1]{ }
+\setcounter{page}{0}
+\thispagestyle{empty}
+
+\begin{document}
+
+\vskip 0.5cm
+
+\begin{center}
+\mbox{
+\bf\LARGE
+\sc Differential Equations and Applications
+}
+\\~\\~\\~\\
+{\Large\it
+International Conference}
+\\~\\
+{\Large\sc
+In Honour of Mark Vishik}
+\\~\\
+{\Large\it
+On the Occasion of his 90th Birthday}
+\\~\\~\\~\\
+{\large IITP RAN, Moscow, June 4-7, 2012}
+
+\vskip 4cm
+
+{\LARGE\sc Collection of abstracts}
+\\~\\
+{\Large \version}
+
+\vskip 4cm
+
+\end{center}
+
+\vfill
+
+\hskip 2cm
+\begin{tabular}{l}
+{\large
+Chair of the Organizing Committee:
+Alexander Kuleshov}
+\\~\\
+{\large
+Chair of the Scientific Committee:
+Andrei Fursikov}
+\\~\\
+{\large\bf www.dynamics.iitp.ru/vishik}
+\end{tabular}
+
+\end{document}

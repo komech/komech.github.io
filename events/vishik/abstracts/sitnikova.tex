@@ -1,0 +1,89 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[russian,english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Eigenfunction of the Laplace operator in a tetrahedron}
+
+\bigskip
+
+%% Author 1:
+{\sc Elena Sitnikova}
+
+%% Address:
+{\small\it Moscow State University of Civil Engineering, Moscow 129337, Russia}
+
+%% Email:
+{\small\rm 301064@mail.ru}
+
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+
+Let T be an open and regular triangular pyramid (tetrahedron) in the space $\R^3$ with a
+boundary $\p\Gamma$.
+Let $\alpha$, $\beta$, $\gamma$, $\sigma$
+are barycentric coordinates of a point $(x, y, z) \in \R^3$
+with respect to
+tetrahedron $T$ which can be expressed in the variables $x,\, y,\, z$.
+
+\bigskip
+
+\noindent
+{\bf Theorem.}
+The function $w =\sin(\alpha\pi/2)\sin(\beta\pi/2)\sin(\gamma\pi/2)\sin(\sigma\pi/2)$
+is the eigenfunction of the
+Laplace operator $\Delta\equiv
+\frac{\p^2}{\p x^2}+\frac{\p^2}{\p y^2}+\frac{\p^2}{\p z^2}$
+in $T$.
+The function $w$ satisfies conditions: $w >0$ in $T$
+and $w=0$ on $\p T$.
+
+Let $\Pi$ be unlimited cylinder in the space $\R^4$
+which a cross-section with hyperplane is a
+quadrangular pyramid with edges of unit length (one-half of the octahedron). Let $L$ be a second
+order linear differential operator in divergence form which uniformly elliptic with bounded
+measurable coefficients and $\eta$ is its ellipticity constant. Let $u$ be a solution of he mixed boundary
+value problem in $\Pi$ for the equation $Lu=0$ ($u>0$) with homogeneous Dirichlet and Neumann data
+on the boundary of the cylinder. Our theorem allows us to continue this solution from the
+cylinder $\Pi$ to the whole space $\R^4$ with the same ellipticity constant $\eta$.
+
+This continuation allows us to prove a number of theorems about growth of the solution u in
+the cylinder $\Pi$.
+
+The idea of using barycentric coordinates is taken from paper of A.P.\,Brodnikov, where it is
+used for the finding of eigenfunction of the Laplace operator in the triangle.
+Eigenfunction of the Laplace operator in hypertetrahedron from $\R^4$ and in $n+1$-dimensional
+simplex from $\R^n$ ($n\ge 2$) were constructed by the author.
+
+
+\end{document}

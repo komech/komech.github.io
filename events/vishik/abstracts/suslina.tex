@@ -1,0 +1,146 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Homogenization of the elliptic Dirichlet problem: operator error estimates}
+
+\bigskip
+
+%% Author 1:
+{\sc T.A.~Suslina}
+
+%% Address:
+{\small\it St.~Petersburg State University, St.~Petersburg, Russia}
+
+%% Email:
+{\small\rm suslina@list.ru}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+Let $\mathcal{O} \subset \mathbb{R}^d$ be a bounded domain of class $C^{1,1}$.
+In $L_2(\mathcal{O};\mathbb{C}^n)$, we consider a matrix elliptic differential
+operator $A_{\varepsilon}= b(\mathbf{D})^* g(\mathbf{x}/\varepsilon) b(\mathbf{D})$
+with the Dirichlet boundary condition. We assume that
+an $(m\times m)$-matrix-valued function $g(\mathbf{x})$
+is bounded, uniformly positive definite and periodic
+with respect to some lattice $\Gamma$. The elementary cell of $\Gamma$ is denoted by $\Omega$.
+Next, $b(\mathbf{D})=\sum_{j=1}^d b_j D_j$ is an $(m\times n)$-matrix first
+order differential operator ($b_j$ are constant
+matrices). It is assumed that $m \ge n$ and the symbol $b(\boldsymbol{\xi})= \sum_{j=1}^d b_j \xi_j$
+has maximal rank, i.~e., $\text{rank}\,b(\boldsymbol{\xi})= n$ for $0 \ne \boldsymbol{\xi} \in
+\mathbb{R}^d$. The simplest example is $A_{\varepsilon} = -\text{div}\,g(\mathbf{x}/\varepsilon)\nabla$.
+
+We study the behavior of the solution $\mathbf{u}_\varepsilon$ of the Dirichlet problem
+$A_{\varepsilon}\mathbf{u}_\varepsilon = \mathbf{F}$ in $\mathcal{O}$,
+$\mathbf{u}_\varepsilon\vert_{\partial \mathcal{O}} =0$,
+where $\mathbf{F} \in L_2(\mathcal{O};\mathbb{C}^n)$.
+It turns out that $\mathbf{u}_\varepsilon$ converges in $L_2(\mathcal{O};\mathbb{C}^n)$
+to $\mathbf{u}_0$, as $\varepsilon \to 0$. Here $\mathbf{u}_0$ is the solution of the "homogenized"\
+Dirichlet problem $A^0 \mathbf{u}_0=\mathbf{F}$ in $\mathcal{O}$,
+$\mathbf{u}_0\vert_{\partial \mathcal{O}} =0$. The \textit{effective operator}
+$A^0$ is given by the expression $A^0 = b(\mathbf{D})^* g^0 b(\mathbf{D})$
+with the Dirichlet boundary condition. The effective matrix $g^0$ is a constant positive $(m\times m)$-matrix
+defined as follows. Denote by $\Lambda(\mathbf{x})$ the $(n \times m)$-matrix-valued
+periodic solution of the equation
+$b(\mathbf{D})^* g(\mathbf{x}) (b(\mathbf{D})\Lambda(\mathbf{x}) + \mathbf{1}_m) =0$
+such that $\int_\Omega \Lambda(\mathbf{x})\, d\mathbf{x} =0$.
+Then $g^0 = |\Omega|^{-1} \int_\Omega g(\mathbf{x}) (b(\mathbf{D})\Lambda(\mathbf{x})
++ \mathbf{1}_m)\,d\mathbf{x}$.
+
+\smallskip
+\noindent\textbf{Theorem 1.} (see [2]) \textit{We have the following sharp order
+error estimate}:
+$$
+\| \mathbf{u}_\varepsilon - \mathbf{u}_0 \|_{L_2(\mathcal{O};\mathbb{C}^n)}
+\le C \varepsilon \| \mathbf{F}\|_{L_2(\mathcal{O};\mathbb{C}^n)}.
+$$
+
+
+Now we give approximation of $\mathbf{u}_\varepsilon$ in the Sobolev space
+$H^1(\mathcal{O};\mathbb{C}^n)$. For this, the first order corrector must be taken into account.
+
+\smallskip
+\noindent\textbf{Theorem 2.} (see [1]) 1) \textit{Let $\Lambda \in L_\infty$, and denote
+$\Lambda^\varepsilon(\mathbf{x}) = \Lambda(\varepsilon^{-1} \mathbf{x})$. Then}
+$$
+\| \mathbf{u}_\varepsilon - \mathbf{u}_0 - \varepsilon \Lambda^\varepsilon b(\mathbf{D})
+\mathbf{u}_0 \|_{H^1(\mathcal{O};\mathbb{C}^n)}
+\le C \varepsilon^{1/2} \| \mathbf{F}\|_{L_2(\mathcal{O};\mathbb{C}^n)}.
+$$
+
+\noindent 2) \textit{In the general case, we have}
+$$
+\| \mathbf{u}_\varepsilon - \mathbf{u}_0 - \varepsilon \Lambda^\varepsilon b(\mathbf{D})
+(S_\varepsilon \widetilde{\mathbf{u}}_0) \|_{H^1(\mathcal{O};\mathbb{C}^n)}
+\le C \varepsilon^{1/2} \| \mathbf{F}\|_{L_2(\mathcal{O};\mathbb{C}^n)}.
+$$
+\textit{Here $\widetilde{\mathbf{u}}_0 = P_{\mathcal{O}} \mathbf{u}_0$ and
+$P_{\mathcal{O}}: H^2(\mathcal{O};\mathbb{C}^n) \to H^2(\mathbb{R}^d;\mathbb{C}^n)$
+is a continuous extension operator, $S_\varepsilon$ is the smoothing operator
+$(S_\varepsilon \mathbf{u})(\mathbf{x}) = |\Omega|^{-1} \int_\Omega
+\mathbf{u}(\mathbf{x} - \varepsilon \mathbf{z})\,d\mathbf{z}$.}
+
+%\smallskip
+%We use the results of M.~Birman and T.~Suslina for homogenization problem in $\mathbb{R}^d$:
+%the analogs of estimates (2), (3) in $\mathbb{R}^d$ are of sharp order $\varepsilon$.
+%The problem is reduced to estimating of the discrepancy $\mathbf{w}_\varepsilon$,
+%which is the solution of the problem $A_\varepsilon \mathbf{w}_\varepsilon =0$ in $\mathcal{O}$,
+%$\mathbf{w}_\varepsilon\vert_{\partial \mathcal{O}} =
+%\varepsilon \Lambda^\varepsilon b(\mathbf{D})
+%(S_\varepsilon \widetilde{\mathbf{u}}_0)\vert_{\partial \mathcal{O}}$
+%(or $\mathbf{w}_\varepsilon\vert_{\partial \mathcal{O}} =
+%\varepsilon \Lambda^\varepsilon b(\mathbf{D}){\mathbf{u}}_0\vert_{\partial \mathcal{O}}$
+%in the case $\Lambda \in L_\infty$).
+%We show that the norm of $\mathbf{w}_\varepsilon$ in $H^1$ satisfies estimate
+%of order $\varepsilon^{1/2}$. This leads to (2), (3).
+%At the same time, the norm of $\mathbf{w}_\varepsilon$ in $L_2$ is of order $\varepsilon$,
+%this allows us to prove sharp order estimate (1).
+
+
+\begin{thebibliography}{6}
+
+\bibitem{pa-su-2012} M.~A.~Pakhnin, T.~A.~Suslina, \textit{Operator error estimates for homogenization of the
+Dirichlet problem in a bounded domain}, Preprint, 2012. Available at
+http://arxiv.org/abs/1201.2140.
+
+
+\bibitem{su-2012} T.~A.~Suslina, \textit{Homogenization of the elliptic Dirichlet problem:
+operator error estimates in $L_2$}, Preprint, 2012. Available at http://arxiv.org/abs/1201.2286.
+
+
+
+
+\end{thebibliography}
+
+\end{document}

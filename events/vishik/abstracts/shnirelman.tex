@@ -1,0 +1,86 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\newtheorem{theorem}{Theorem}
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large On the 2-point problem for the Lagrange-Euler equation}
+
+\bigskip
+
+%% Author 1:
+{\sc Alexander Shnirelman}
+
+%% Address:
+{\small\it Concordia University, Montreal, Canada}
+
+%% Email:
+{\small\rm shnirel@mathstat.concordia.ca}
+
+\end{center}
+
+\bigskip
+
+Consider the motion of ideal incompressible fluid in a bounded
+domain (or on a compact Riemannian manifold). The configuration space of
+the fluid is the group of volume preserving diffeomorphisms of the flow
+domain, and the flows are geodesics on this infinite-dimensional group
+where the metric is defined by the kinetic energy. The geodesic equation is
+the Lagrange-Euler equation. The problem usually studied is the initial
+value problem, where we look for a geodesic with given initial fluid
+configuration and initial velocity field. In this talk we consider a
+different problem: find a geodesic connecting two given fluid
+configurations. The main result is the following
+
+\smallskip
+
+\noindent{\bf Theorem:}
+{\it Suppose the flow domain is a 2-dimensional torus. Then for any two
+fluid configurations there exists a geodesic connecting them. This means
+that, given arbitrary fluid configuration (diffeomorphism), we can "push"
+the fluid along some initial velocity field, so that by time one the fluid,
+moving according to the Lagrange-Euler equation, assumes the given
+configuration.}
+
+\smallskip
+
+This theorem looks superficially like the Hopf-Rinow theorem for
+finite-dimensional Riemannian manifolds. In fact, these two theorems have
+almost nothing in common. In our case, unlike the Hopf-Rinow theorem, the
+geodesic is not, in general case, the shortest curve connecting the
+endpoints (fluid configurations). Moreover, the length minimizing curve can
+not exist at all, while the geodesic always exists.
+
+The proof is based on some ideas of global analysis (Fredholm quasilinear
+maps) and microlocal analysis of the Lagrange-Euler equation (which may be
+called a ``microglobal analysis'').
+
+\end{document}

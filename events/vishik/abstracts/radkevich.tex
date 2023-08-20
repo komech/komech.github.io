@@ -1,0 +1,134 @@
+\documentclass[10pt]{article}
+%\usepackage[russian]{babel}
+\usepackage{amsfonts,amsmath,amssymb}
+%\usepackage[dvips]{graphicx}
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[russian,english]{babel}
+
+
+
+%\sloppy \textwidth18cm \textheight25cm \hoffset-2.5cm \voffset-3cm
+%\parindent0cm
+%\parskip2.5mm
+%\unitlength1cm
+
+\def\p{{\partial}}
+
+\def\va{{\varphi}}
+\def\c{{\mbox{\bf c}}}
+
+\def\cT{{\cal T}}
+\def\ot{{\overline{\theta}}}
+\def\oA{{\overline{A}}}
+\def\od{{\stackrel{\rm def} {=} }}
+\def\bS{{\bf S}}
+\def\Go{\Gamma(0)}
+\def\Ooj{\Omega_{0j}}
+\def\uj{^{j}}
+\def\dd{\partial}
+\def\Tr{{\bf Tr}}
+\def\zrho{\varrho_0}
+\def\ut{^{2}}
+\def\uo{^{1}}
+\def\hWj{\widehat{W}^{j}}
+\def\hFj{\widehat{F}^{j}}
+\def\dhrho{\delta\widehat{\varrho}}
+\def\hpsi{\widehat{\psi}}
+\def\uk{^\kappa}
+\def\tK{\tilde{K}}
+\def\tpsi{\tilde{\psi}}
+\def\J{{\cal J}}
+\def\S{{\cal S}}
+
+
+\pagestyle{empty}
+
+
+\begin{document}
+
+\begin{center}
+{\Large On global solutions to the Cauchy problem for discrete kinetic equations}
+
+\bigskip
+
+%% Author 1:
+{\sc Evreny Radkevich}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119991, Russia}
+
+%% Email:
+{\small\rm evrad07@gmail.com}
+\end{center}
+
+\bigskip
+
+The kinetic theory considers the gas as a collection of a huge number of randomly moving particles, in some way interacting with each other.
+As a result of these interactions the particles exchange momenta and energies.
+Interaction can be through direct collisions or by certain forces.
+To elucidate the mathematical scheme describing such phenomena,
+we consider \cite{radkevich1} the so-called discrete kinetic Boltsmann equations
+and give a phenomenological derivation of the Boltsmann equation
+for the model of gas with finitely many particle velocities
+and finitely many different interactions
+(Broadwell-type model \cite{radkevich2}):
+\[
+\p_tn_j+(\omega_{ix}\p_x+\omega_{iy}\p_y+\omega_{iz}\p_z)
+n_j=\sum_{k,l,j; k\ne i, l\ne i, j\ne  i}\sigma^{ij}_{kl}(n_kn_l-n_in_j),
+~~1\le i\le N.
+\]
+For the discrete kinetic equations \cite{radkevich3}
+(in dimensions $d=1,2,3$)
+we prove the existence of a global solution, its decomposition with respect to smoothness,
+and consider the influence of oscillations born by the interaction operator.
+
+\begin{otherlanguage}{russian}
+
+\bigskip
+
+\begin{center}
+%% Title in Russian (optional):
+{\Large О глобальных решениях задачи Коши для дискретных кинетических уравнений}
+\end{center}
+
+\smallskip
+
+%% Abstract in Russian (optional; could be shorter than English):
+Кинетическая теория рассматривает газ как совокупность громадного числа хаотически движущихся частиц тем или иным образом взаимодействующих между собой. В результате таких взаимодействий частицы обмениваются импульсами, энергией. Взаимодействие может осуществляться путем прямого столкновения частиц или при помощи тех или иных сил. Для пояснения математической схемы, описывающей подобные явления, в \cite{radkevich1} рассматриваются так называемые дискретные модели кинетического уравнения Больцмана и приводится феноменологический вывод уравнения Больцмана для газовой модели с конечным числом различных скоростей частиц и конечным числом разных взаимодействий (модели типа Бродуэлла \cite{radkevich2})
+\[
+\p_tn_j+(\omega_{ix}\p_x+\omega_{iy}\p_y+\omega_{iz}\p_z)
+n_j=\sum_{k,l,j; k\ne i, l\ne i, j\ne  i}\sigma^{ij}_{kl}(n_kn_l-n_in_j),
+~~1\le i\le N.
+\]
+Для дискретных уравнений кинетики \cite{radkevich3}
+(размерности $d=1,2,3$) доказано существование глобального решения, получено разложение его по гладкости, исследовано влияние осцилляций, порождаемых оператором взаимодействия.
+
+\bigskip
+
+\end{otherlanguage}
+
+\begin{thebibliography}{6}
+\bibitem[1]{radkevich1}
+S.K.\,Godunov and U.M.\,Sultangazin,
+\emph{Discrete models of the {B}oltzmann kinetic equation},
+Uspehi Mat. Nauk,
+{\bf 26} (1971), 3--51.
+
+
+\bibitem[2]{radkevich2}
+J.E.~Broadwell,
+\emph{Study of rarefied shear flow by the discrete velocity method},
+J. Fluid Mech. {\bf 19} (1964), 401--414.
+
+\bibitem[3]{radkevich3}
+E. Radkevich,
+\emph{On existence of global solutions
+to the Cauchy problem
+for discrete kinetic equations},
+Journal of Mathematical Sciences {\bf 181} (2012), 232--280.
+\end{thebibliography}
+
+\end{document}

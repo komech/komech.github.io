@@ -1,0 +1,17 @@
+\documentclass[10pt,a4paper]{article}
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{amssymb,latexsym,amsmath,url}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\newtheorem{theorem}{Theorem}
+\parindent 0pt
+

@@ -1,0 +1,88 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large A uniform Gronwall-type lemma with parameter and applications to nonlinear wave equations}
+
+\bigskip
+
+%% Author 1:
+{\sc Vittorino Pata}
+
+%% Address:
+{\small\it Politecnico di Milano, Milan 20133, Italy}
+
+%% Email:
+{\small\rm vittorino.pata@polimi.it}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+We discuss
+a uniform Gronwall-type lemma depending on a small parameter $\varepsilon>0$,
+based on an integral inequality that predicts blow up in finite time of the
+involved unknown function for any fixed
+$\varepsilon$.
+The result permits to establish uniform estimates
+even if the function itself
+depends on $\varepsilon$.
+
+\noindent
+As an application, we consider the asymptotics
+of the strongly damped nonlinear wave equation
+$$u_{tt}-\Delta u_t-\Delta u+f(u_t)+g(u)=h$$
+with Dirichlet boundary conditions, which serves as
+a model in the description of thermal evolution within the theory
+of type III heat conduction.
+In particular, the nonlinearity $f$ acting on $u_t$ is allowed
+to be nonmonotone and to exhibit a critical
+growth of polynomial order $5$.
+
+\begin{thebibliography}{9}
+
+\bibitem[1]{pa-2011}
+V. Pata,
+\emph{Uniform estimates of Gronwall type},
+Journal of Mathematical Analysis and Applications
+\textbf{373} (2011), 264--270.
+
+
+\bibitem[2]{de-pa-2011}
+F. Dell'Oro, V. Pata,
+\emph{Long-term analysis of strongly damped nonlinear wave equations},
+Nonlinearity \textbf{24} (2011), 3413--3435.
+
+
+\end{thebibliography}
+
+\end{document}

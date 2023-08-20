@@ -1,0 +1,98 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large On a class of degenerate pseudodifferential operators and applications to mixed-type PDEs}
+
+\bigskip
+
+%% Author 1:
+{\sc Ingo Witt}
+
+%% Address:
+{\small\it Universit{\"a}t G{\"o}ttingen, G{\"o}ttingen, Germany}
+
+%% Email:
+{\small\rm iwitt@uni-math.gwdg.de}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+In a series of papers in 1969/70, Vishik and Grushin \cite{VG69, VG70}
+introduced a class of degenerate pseudodifferential operators roughly
+being of the form
+\[
+|x|^{b-(l_\ast+1)m} P(x,y,|x|D_x,|x|^{l_\ast+1}D_y),
+\]
+where $m$ is the order of the operator and $b\in{\mathbb R}$ is a
+parameter ($b=m l_\ast$ in the work of Vishik and Grushin). Here,
+$l_\ast\in {\mathbb Q}$, $l_\ast>0$, $x\in{\mathbb R}^q$, $y\in
+{\mathbb R}^d$, and $P(x,y,\xi,\eta)$ is a pseudodifferential
+symbol. A basic example is the Tricomi operator $\partial_x^2 + x
+\Delta_y$, where $l_\ast=1/2$, $q=1$, $m=2$, and $b=1$.
+
+In this talk, we develop a pseudodifferential calculus for such
+operators including a full symbol calculus, discuss elliptic boundary
+problems \cite{W03} and the hyperbolic Cauchy problem \cite{DW02} in
+this class, and eventually present applications to 2D mixed
+elliptic-hyperbolic equations (where $q=d=1$) with variable
+coefficients. In the latter case, the problem is reduced to a
+cone-degenerate elliptic problem in the interface (which is an
+interval), where the equations under study change type.
+
+\begin{thebibliography}{9}
+
+\bibitem{DW02} M.~Dreher and I.~Witt, \emph{Edge {S}obolev spaces and
+weakly hyperbolic equations}, Ann. Mat. Pura Appl. (4),
+\textbf{180} (2002), 451--482.
+
+\bibitem{VG69} M.I.~Vishik and V.V.~Grushin, \emph{A certain class of
+degenerate elliptic equations of higher orders}, Mat. Sb. (N.S.)
+\textbf{79}~(\textbf{121}) (1969), 3--36 (in Russian).
+
+\bibitem{VG70} M.I.~Vishik and V.V.~Grushin, \emph{Degenerate elliptic
+differential and pseudo\-differential operators}, Uspehi Mat. Nauk
+\textbf{25} (1970), 29--56 (in Russian).
+
+\bibitem{W03} I.~Witt, \emph{A calculus for a class of finitely
+degenerate pseudodifferential operators}. In: Evolution equations,
+volume 60 of Banach Center Publ., Polish Acad. Sci., 2003,
+pp.~161-189.
+
+\end{thebibliography}
+
+\end{document}
