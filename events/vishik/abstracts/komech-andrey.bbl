@@ -1,0 +1,25 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{kg-discrete-arxiv}
+Andrew Comech, \emph{Weak attractor of the {K}lein-{G}ordon field in discrete
+  space-time interacting with a nonlinear oscillator}, ArXiv e-prints
+  \textbf{1203.3233} (2012).
+
+\bibitem{ubk-arma}
+Alexander~I. Komech and Andrew~A. Komech, \emph{Global attractor for a
+  nonlinear oscillator coupled to the {K}lein-{G}ordon field}, Arch. Ration.
+  Mech. Anal. \textbf{185} (2007), 105--142.
+
+\bibitem{titchmarsh-circle}
+\bysame, \emph{On the {T}itchmarsh convolution theorem for distributions on a
+  circle}, Funktsional. Anal. i Prilozhen. \textbf{46} (2012), to appear (see
+  arXiv:1108.2463).
+
+\end{thebibliography}

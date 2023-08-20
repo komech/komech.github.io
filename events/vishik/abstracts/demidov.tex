@@ -1,0 +1,124 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+\usepackage[english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Vishik--Lyusternik's method and the inverse problem for plasma equilibrium in a~tokamak}
+\bigskip
+
+%% Author 1:
+{\sc Alexandre Demidov}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119992, Russia}
+
+%% Email:
+{\small\rm alexandre.demidov@mtu-net.ru}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+
+Control over thermonuclear fusion reactions
+(including suppression of instabilities of the plasma discharge)
+depends essentially on how well the information about the current
+density through plasma is taken into account. In the case
+cylindrical approximation (when the tokamak (toroidal magnetic)
+chamber and the resulting plasma discharge are modeled in the form
+of infinite cylinders ${\mathcal S}\times\R$ and~$\omega\times\R$
+with simply connected cross-sections ${\mathcal S}\Subset\R^2$
+and~$\omega\Subset{\mathcal S}$), the required current
+distribution is given by the mapping
+$
+f_{u}:\omega\ni (x,y)\mapsto f\bigl(u(x,y)\bigl)\ge 0,
+$
+where the \textit{required} functions $u\in C^2(\omega)$ and~$f$
+are as follows:
+\begin{equation*}\label{0.2}
+\frac{\partial^2 u(x,y)}{\partial x^2}+\frac{\partial^2 u(x,y)}{\partial y^2}=f\bigl(u(x,y)\bigl)
+\quad \ {\rm in}\quad \omega\,,\quad \ {\rm and}\quad \ u=0\quad {\rm on}\quad
+\gamma=\partial\omega,
+\end{equation*}
+\begin{equation*}\label{0.3}
+\sup\limits_{P\in\gamma}\Bigl|\frac{\partial
+u}{\partial\nu}(P)-~\Phi(P)\Bigl|\le\lambda\sup\limits_{P\in\gamma}\Bigl|\Phi(P)\Bigl|
+\,,\qquad \int_{\gamma}\frac{\partial u}{\partial \nu}\,d\gamma=1
+=\mbox{the total current}\,.
+\end{equation*}
+Here, $\gamma=\overline{\omega}\setminus\omega$ is the boundary of
+the domain $\omega$, $\lambda\ge 0$ is small parameter, $\nu$ is
+the outward  unit normal to the curve~$\gamma=\partial\omega$
+(with respect to the domain~$\omega)$. Both the function~$\Phi$
+and the curve $\gamma=\partial\omega$ (and hence the
+domain~$\omega$) may be regarded as known: they are determinable
+from measurements of the magnetic field at the tokamak chamber
+$\partial {\mathcal S}.$
+
+Within the class of affine functions~$f: u\mapsto f(u)=au+b$,
+Vishik--\allowbreak Lyusternik's method is capable of showing that
+\begin{equation*}\label{uasymp}
+\left|\frac{{\partial } u}{{\partial
+}\nu}\biggl|_{s\in\gamma}-\left(\frac1{|\gamma|}-
+\frac{k(s)-|\gamma|^{-1}\int_\gamma k(s)\,ds}{2|\gamma|\sqrt{a}}\right)\right|\le
+\frac{C_{\gamma}(a)}{\sqrt{a}}\,,
+\ C_{\gamma}(a)\to 0\;\; \text{as}\;\;
+a\to\infty\,,
+\end{equation*}
+\begin{equation*}\label{Vasump}
+\left|\frac{d}{d a}\frac{{\partial } u}{{\partial
+}\nu}\biggl|_{s\in\gamma}-\; \frac{k(s)-|\gamma|^{-1}\int_\gamma
+k(s)\,ds}{4|\gamma|\,{a}^{3/2}}\right|\le
+\frac{C_{\gamma}(a)}{a^{3/2}}\,,\quad C_{\gamma}(a)\to 0\quad
+\text{as}\quad
+a\to\infty\,,
+\end{equation*}
+where $k(s)$ is the curvature of~$\gamma$ at~$s\in\gamma$. Using
+these asymptotic relations, it follows that there is only one
+affine distribution $f_u$ (for a~large class of domains~$\omega$)
+if $\lambda\overset{}{=}0$. However, for any arbitrarily small
+$\lambda>0$, there is an infinite number
+$\{f^j_u\}_{j\in\mathbb{N}}$ of distributions, for which
+$\|f^{j_1}_u\|\ll\|f^{j_2}_u\|$, $j_1\ne j_2$, where $\|f^j_u\|=
+\max\limits_{(x,y)\in\omega}\left|f^j_u(x,y)\right|\,.$
+It is shown that all these different distributions are necessarily
+members of a~sequence converging to the $\delta$-function
+supported on~$\gamma$ (the so-called skinned current). Hence these
+distributions are not essentially different from the physical
+standpoint.
+
+Two truly physically essentially different current distributions
+$f^1_{u}$ and $f^2_{u}$ are found in the class of polynomials~$f:
+u\mapsto f(u)=\sum_{m=0}^3a_mu^m$ of third degree (see
+Russian J.~Math.\ Physics, {\bf 17}~(1), 56--65 (2010) and
+Asymptotic Analysis, {\bf 74}~(1), 95--121  (2011)).
+
+
+
+\end{document}

@@ -1,0 +1,87 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+
+%% Standard packages and definitions:
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large On a compactness problem}
+
+\bigskip
+
+%% Author 1:
+{\sc Alain Haraux}
+
+%% Address:
+{\small\it Universit{\'e} Pierre et Marie Curie, Paris, France}
+
+%% Email:
+{\small\rm haraux@ann.jussieu.fr}
+
+
+
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+
+Let $V,  H $  be two real Hilbert spaces,  $V\subset H$ with compact and dense imbedding and let $A: V\rightarrow V' $ be bounded, self ajoint and coercive.  Under reasonable assumptions on $g$ , a  compactness property of the range is established for energy-bounded solutions of an abstract equation 
+$$ u'' + Au + g(u') = h(t), \quad t\ge 0$$ when $h$ is $S^1$-uniformly continuous with values in $H$. This property allows to deduce\,:\smallskip
+
+\noindent
+1) asymptotic almost-periodicity of all solutions of wave or plate equations in presence of an almost-periodic source term when the damping term is strong enough.
+\smallskip
+
+\noindent
+2) convergence to equilibrium of all solutions of some equations of the form 
+$$ u'' + Au + f(u) + g(u') = h(t), \quad t\ge 0$$ when f is the gradient of a potential satisfying the {\L}ojasiewicz gradient inequality, $g$ is sufficiently coercive globally and $h(t) \rightarrow 0$  sufficiently fast for $t$ tending to infinity. 
+
+\smallskip
+
+These results generalize, mainly to the case of non-local damping terms,  some previous works by the author and his colleagues and rely on methods developped during more than 30 years, cf. e.g. \cite{haraux1, haraux2, haraux3} for applications of type 1) and \cite{haraux4,haraux5} for applications of type 2). There are still challenging open problems in this direction which will be mentionned during the lecture.
+
+
+\begin{thebibliography}{7}
+\bibitem{haraux1} L. Amerio \& G. Prouse, \emph{Uniqueness and almost-periodicity theorems for a non linear wave equation}, Atti Accad. Naz. Lincei Rend. Cl. Sci. Fis. Mat. Natur. \textbf{8}, 46 (1969) 1--8.
+
+\bibitem{haraux2} M. Biroli, \& A. Haraux, \emph{Asymptotic behavior for an almost periodic, strongly dissipative wave equation}. J. Differential Equations \textbf{38}  (1980), no. 3, 422--440.
+
+\bibitem{haraux3}A. Haraux, \emph{Damping out of transient states for some semi-linear, quasi-autonomous systems
+of hyperbolic type}, Rc. Accad. Naz. Sci. dei 40 (Memorie di Matematica)  \textbf{101} 7, fasc.7 (1983), 89--136.
+
+\bibitem{haraux4}A. Haraux \& M.A. Jendoubi, \emph{Convergence of bounded weak solutions of the wave equation with dissipation and analytic nonlinearity.}
+Calc. Var. Partial Differential Equations \textbf{9} (1999), no. 2, 95--124.
+
+\bibitem{haraux5}
+I. Ben Hassen \& L.~Chergui, \emph{Convergence of global and bounded solutions of some nonautonomous second order evolution equations with nonlinear dissipation},  J. Dynam. Differential Equations \textbf{23}(2011), no. 2, 315--332.
+
+
+\end{thebibliography}
+
+\end{document}

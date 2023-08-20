@@ -1,0 +1,94 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Trajectory attractors for equations of mathematical physics}
+
+\bigskip
+
+%% Author 1:
+{\sc Vladimir Chepyzhov}
+
+%% Address:
+{\small\it Institute for Information Transmission Problems, Moscow 101447, Russia}
+
+%% Email:
+{\small\rm chep@iitp.ru}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+
+The report is based on joint works with M.I.Vishik.
+
+We describe the method of trajectory dynamical systems and
+trajectory attractors and we apply this approach to the study of
+the limiting asymptotic behaviour of solutions of non-linear
+evolution equations. This method is especially useful in the study
+of dissipative equations of mathematical physics for which the
+corresponding Cauchy initial-value problem has a global (weak)
+solution with respect to the time but the uniqueness of this
+solution either has not been established or does not hold. An
+important example of such an equation is the 3D Navier--Stokes
+system in a bounded domain  (see \cite{CVbook}). In such a
+situation one cannot use directly the classical scheme of
+construction of a dynamical system in the phase space of initial
+conditions of the Cauchy problem of a given equation and find a
+global attractor of this dynamical system. Nevertheless, for such
+equations it is possible to construct a trajectory dynamical system
+and investigate a trajectory attractor of the corresponding
+translation semigroup.
+
+This universal method is applied for various types of equations
+arising in mathematical physics: for general dissipative
+reaction-diffusion systems, for the 3D Navier--Stokes system, for
+dissipative wave equations, for non-linear elliptic equations in
+cylindrical domains, and for other equations and systems. Special
+attention is given to using the method of trajectory attractors in
+approximation and perturbation problems arising in complicated
+models of mathematical physics.
+
+The work partially supported by the Russian Foundation of Basic
+Researches (Projects no.\ 11-01-00339 and 10-01-00293).
+
+
+\begin{thebibliography}{99}
+
+
+\bibitem{CVbook}V.V. Chepyzhov, M.I. Vishik, \emph{Attractors for
+Equations of Mathematical Physics} Amer. Math. Soc. Colloq.
+Publ., \textbf{49}, Amer.Math. Soc., Providence, RI, 2002.
+
+\end{thebibliography}
+
+\end{document}

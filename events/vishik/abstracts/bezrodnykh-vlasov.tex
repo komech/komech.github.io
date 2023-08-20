@@ -1,0 +1,118 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[russian,english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large An asymptotic of a certain Riemann--Hilbert problem under singular deformation of a domain}
+
+\bigskip
+
+
+%% Author 1:
+{\sc Sergey Bezrodnykh}
+
+%% Address:
+{\small\it Dorodnicyn Computing Centre, Moscow 119333, Russia}
+
+%% Email:
+{\small\rm sergeyib@pochta.ru}
+
+
+\bigskip
+
+%% Author 2:
+{\sc Vladimir Vlasov}
+
+{\small\it Dorodnicyn Computing Centre, Moscow 119333, Russia}
+
+{\small\rm vlasov@ccas.ru}
+
+\end{center}
+
+\bigskip
+
+%The considered Riemann--Hilbert problem appears when moddeling 
+%the effect of magnetic field reconnection [1-4]. The statement of
+%the problem is as follows. Let domain $G$ on complex plane $z = x + i y$
+%be an exteriour of a system of cuts $\Gamma = \Gamma_0 \cup \Gamma^- \cup \Gamma^+$,
+%where 
+%$\Gamma^+ := \bigl\{z:\, z = R + r\, t\, e^{\,i \pi \alpha},\,\, t \in [0,\, 1]\bigr\}$
+
+The Riemann--Hilbert problem is considered in a decagonal domain $G$ on complex plane,
+which is an exteriour of a system $\Gamma$ of cuts $\Gamma_j$ with excluded
+infinity. The sought analytic function $\mathcal{F}$ satisfies 
+to the boundary condition ${\rm Re} (h\, \mathcal{F}\,) = c$\, on $\Gamma$,
+where $h$ and $c$ are prescribed piece--wise constant functions;
+$\mathcal{F}$ is continuous in $\overline{G} \setminus \{\infty\}$
+and satisfies to a certain growth condition
+at infinity. The solution $\mathcal{F}$ has been constructed in analytic form.
+Asymptotics for function $\mathcal{F}$ have been found for two limit
+cases of geometry of $\Gamma$; first case corresponds to $|\Gamma_j| \to \infty$,
+and second case to $|\Gamma_j| \to 0$ for some numbers $j$.
+The Riemann--Hilbert problem under consideration originates from magnetic 
+hydrodinamics, in model \cite{S06}--\cite{BVS11} of the effect of magnetic field reconnection 
+in Solar flares. The model includes a current layer and shock--waves attached to 
+its end--points. The constructed solution $\mathcal{F}$ and its 
+asymptotics possess clear physical meaning. For construction the asymptotics
+we used an approach \cite{VMS89}, \cite{V87} and asymptotics
+for Schwarz --- Christoffel integral parameters, that have been found in \cite{BV02}.
+
+This work is supported by the RFBR proj. No. 10-01-00837,
+Program No. 3 of the Division of Mathematical Sciences of the RAS
+and the ''Contemporary Problems of Theoretical Mathematics`` 
+Program of the RAS.
+
+\begin{thebibliography}{6}
+
+\bibitem{S06}
+B.V.Somov, \emph{Plasma Astrophysics. Part I.} New York. Springer Science, 2006. 
+
+\bibitem{VMS89}
+V.I.Vlasov, S.A.Markovskii, B.V.Somov,
+\emph{On an analytical nodel of the magnetic reconnection in plasma} 
+Dep. v VINITI Jan. 6, 1989, No. 769-V89 (1989). 
+
+\bibitem{BV02}
+S.I.Bezrodnykh, V.I.Vlasov,
+\emph{The Riemann--Hilbert problem in a complicated domain 
+for the model of magnetic reconnection in plasma}, Comp. Math. Math. Phys.
+\textbf{42} 3 (2002), 277--312. 
+
+\bibitem{BVS11}
+S.I.Bezrodnykh, V.I.Vlasov, B.V.Somov,
+\emph{Generalized analytical models of Syrovatskii's current sheet},
+Astronomy Letters. \textbf{37} 2 (2011), 133--150. 
+
+\bibitem{V87}
+V.I.Vlasov,
+\emph{Boundary value problems in domains with a curvilinear boundary},
+Moscow. Vych. Tsentr Akad. Nauk SSSR, 1987. 
+
+\end{thebibliography}
+
+\end{document}

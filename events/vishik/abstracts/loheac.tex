@@ -1,0 +1,127 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Critical manifold in the space of contours in Stokes-Leibenson problem for Hele-Shaw flow}
+
+\bigskip
+
+%% Author 1:
+{\sc A.S. Demidov}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119992, Russia}
+
+%% Email:
+{\small\rm alexandre.demidov@mtu-net.ru}
+
+\bigskip
+
+%% Author 2:
+{\sc J.-P. Loh\'eac}
+
+{\small\it \'Ecole centrale de Lyon, Institut Camille-Jordan}
+
+{\small\rm Jean-Pierre.Loheac@ec-lyon.fr}
+
+\bigskip
+
+%% Author 3:
+{\sc V. Runge}
+
+{\small\it \'Ecole centrale de Lyon, Institut Camille-Jordan}
+
+{\small\rm Vincent.Runge@ec-lyon.fr}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+
+We here deal with the Stokes-Leibenson problem for a
+punctual Hele-Shaw flow. By using a geometrical transformation
+inspired by Helmholtz-Kirchhoff method, we introduce an
+integro-differential problem which leads to the construction of
+a discrete model.
+We first give a short recall about the source-case: global in time
+existence and uniqueness result for an initial contour close to a
+circular one, investigation of the evolutionary structure of the solution.
+Our main subject concerns the development of a numerical model
+in order to get some qualitative properties of the motion.
+This model provides numerical experiments which confirm the
+existence of a critical manifold of codimension 1 in some space
+of contours.
+This manifold contains one attractive point in the source-case
+corresponding to a circular contour centered at the source-point.
+In the sink-case, every point of this manifold seems to be attractive.
+In particular, we present some numerical experiments linked to
+fingering effects.
+
+\begin{thebibliography}{7}
+
+\bibitem{Ga}
+{L.A. Galin,}
+\emph{Unsteady filtration with a free surface}.
+Dokl. Akad. Nauk SSSR {\bf 47} (1945), 250--253.
+
+\bibitem{Le}
+{L.S. Leibenson,}
+\emph{Oil producing mechanics, Part II}.
+Moscow, Neftizdat,  1934.
+
+\bibitem{OH}
+{J.R. Ockendon, S.D. Howison,}
+\emph{Kochina and Hele-Shaw in
+modern mathematics, natural science and industry}.
+J. Appl. Math. Mech. {\bf 66} (2002), No~3, 505--512.
+
+\bibitem{P1}
+{Y.Ya. Polubarinova-Kochina,}
+\emph{On the motion of the oil contour}.
+{Dokl. Akad. Nauk SSSR} {\bf 47} (1945), 254--257.
+
+\bibitem{P2}
+{P.Ya. Polubarinova-Kochina,}
+\emph{Concerning unsteady motions in the theory of filtration}.
+{Prik. Mat. Mech.} {\bf 9} (1945), 79--90.
+
+\bibitem{St}
+{G.G. Stokes,}
+\emph{Mathematical proof of the identily of the
+stream-lines obtained by means of viscous film with those of a
+perfect fluid moving in two dimensions}.
+{Brit. Ass. Rep.} \textbf{143} (1898) (Papers, V, 278).
+
+\end{thebibliography}
+
+\end{document}

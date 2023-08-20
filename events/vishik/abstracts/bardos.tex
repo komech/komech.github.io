@@ -1,0 +1,73 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+\usepackage[T1]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+\usepackage[english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large On the propagation of Monokinetic Measures with Rough Momentum Profile}
+
+\bigskip
+
+%% Author 1:
+{\sc Claude Bardos}
+
+%% Address:
+{\small\it Universit{\'e} Pierre et Marie Curie, Laboratoire Jacques Louis Lions, Paris, France}
+
+%% Email:
+{\small\rm claude.bardos@gmail.com}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+This is a report on a work in progress jointly with Francois Golse, Peter Markowich and Thierry Paul.
+
+The analysis of the global flow defined by the Hamiltonian system
+$$
+\begin{aligned}
+\dot X_t&=\nabla_\xi H(X_t,\Xi_t)\quad X_0(x,\Xi)= x\\
+\dot \Xi_t&= \nabla_x H(X_t,\Xi_t) \quad \Xi_0(x,\xi)=\nabla_x U(x) \end{aligned}
+$$
+is a standard tool in the WKB asymptotics.
+
+In the present contribution  it will be interpreted as the propagation of a monokinetic measure:
+The push forward by the Hamiltonian flow of a measure of the form:
+$$\mu(x,\xi)=\rho^{\mathrm{in}}(x)\delta_{U(x)}(\xi)$$
+evolving according to the Liouville equation:
+$$ \partial_t\mu +\{H,\mu\}=0\,.$$
+This approach leads us to an estimate of the number of folds of the Lagrangian Manifold even for rough initial data.
+We also provide informations on the structure of the push-forward $\rho(t,x)$
+measure under the canonical projection of the space $\R_x\times\R_\xi$ on $\R_x\,.$
+\bigskip
+
+
+\end{document}

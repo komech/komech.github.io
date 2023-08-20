@@ -1,0 +1,178 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\pagestyle{empty}
+ %\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{corollary}[theorem]{Corollary}
+%\theoremstyle{definition}
+%\newtheorem{definition}[theorem]{Definition}
+%\newtheorem{example}[theorem]{Example}
+%\theoremstyle{remark}
+%\newtheorem{remark}[theorem]{Remark}
+\def\grad{{\nabla }}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large The parabolic Harnack
+inequality for integro-differential
+operators}
+
+\bigskip
+
+%% Author 1:
+{\sc Svetlana Anulova} \footnote{The
+author is supported by RFBR grants
+10-01-00767 and 10-08-01068}
+
+%% Address:
+{\small\it Inst. Control Sci., Russian
+Acad. Sci., 65 Profsoyuznaya, Moscow,
+Russia}
+
+%% Email:
+{\small\rm anulovas@ipu.ru}
+
+
+\bigskip
+
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+We generalize the elliptic Harnack
+inequality proved in \cite{F}.
+Additionally we relax the assumptions
+of \cite{F}: the integral term measure
+in it is absolutely continuous with
+respect to the Lebesgue measure. The
+proof exploits the basic construction
+of Krylov-Safonov for elliptic
+operators and its modernization for the
+purpose of adding integral terms by R.
+Bass.
+
+Let $B(x,r)$ denote $\{y\in \mathbb
+R^d:\,|y-x|< r\}$,\; $Q$\; be the
+cylinder $\{t\in [0,2),\, |x|\in
+B(0,1)\}$, and $W$ be the space of
+Borel measurable bounded non-negative
+functions on $\mathbb R^{d+1}$ with
+restriction on $Q$ belonging to the
+Sobolev space $W^{1,2}(Q)$. And let
+$\mathcal L$ be an operator with Borel
+measurable coefficients, acting on
+$u\in W$
+ according to the formula
+\begin{eqnarray}%\label{def:op}
+{\mathcal L}
+u(t,x)&=&\frac{1}{2}\sum_{i,j=1}^d
+a_{ij}(t,x)\frac{\partial^2u(t,x)}{\partial
+x_i\partial x_j}+\sum_{i=1}^d
+b_i(t,x)\frac{\partial u(t,x)}{\partial
+x_i} \nonumber\\
+&+&\int_{{\mathbb
+R}^d\backslash\{0\}}[u(t,x+h)-u(t,x)-1_{(|h|\leq1)}h\cdot
+\nabla u(t,x)]\mu(t,x;dh).\nonumber
+\end{eqnarray}
+
+
+
+
+ASSUMPTIONS There exist positive
+constants $\lambda,K,k$ and $\beta$
+such that for all $t,x$:
+
+  1) $\lambda
+|y|^2 \leq y^T a(t,x)y, \, y\in
+{\mathbb R}^d;$
+
+ 2) $\|a(t,x)\|+|b(t,x)| + \int_{{\mathbb
+R}^d}(|h|^2\wedge 1)\mu(t,x;dh)\leq K;$
+
+ 3)~ for any $r\in(0,1]$, $y_1,\,y_2\in
+B(x,r/2)\cap B(0,1)$ and borel $A$ with
+$\mathop{\mathrm {dist}}\nolimits
+(x,A)\ge r$ holds $\mu(t,y_1;\{h:\,
+y_1+h\in A\})\leq
+kr^{-\beta}\mu(t,y_2;\{h:\, y_2+h\in
+A\})$.
+\begin{theorem}
+There exists a positive constant
+$C(d,\;\lambda,\;K,\;k,\; \beta)$ s.t.
+for every $u\in W$ satisfying
+\[\frac{\partial}{\partial t} + \mathcal
+Lu=0 \mbox{ a.e. in }(t,x)\] holds: for
+all $|x|\;\le\;\frac{1}{2}$
+\[u_{0,x}\;\ge\;Cu_{1,0}.\]
+\end{theorem}
+
+
+
+The crucial point of the proof is the
+extension of Prop. 3.9   \cite{F} to
+the cylinder. %It bases on the
+%representation of the compensator of
+%the jump into a set $A$ through/by
+%means $\mu(t,x_t;\{h: |x_t +h|\in
+%A_t\})$.
+
+
+
+
+
+
+
+
+
+\bigskip
+
+
+%% If you use BIBTEX to create bibliography, please use amsalpha:
+%\bibliographystyle{amsalpha}
+%\bibliography{physics}%% (if your BIBTEX entries are in physics.bib)
+%\end{document}
+%1
+%
+% 1
+%
+% 1
+%
+% 1
+\begin{thebibliography}{xx}
+\bibitem{F} Foondun, M. \emph{Harmonic functions for a
+class of integro-differential
+operators}. Potential Anal., 31, 2009,
+21-44.
+
+\end{thebibliography}
+
+\end{document}

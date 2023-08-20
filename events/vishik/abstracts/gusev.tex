@@ -1,0 +1,113 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Incompressible limit of the linearized Navier--Stokes equations}
+
+\bigskip
+
+%% Author 1:
+{\sc Nikolay Gusev}
+
+%% Address:
+{\small\it Moscow Institute of Physics and Technology, Dolgoprudny 141700, Russia}
+
+%% Email:
+{\small\rm n.a.gusev@gmail.com}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+We consider initial--boundary value problem for linearized equations of viscous
+barotropic fluid motion in a bounded domain. We briefly discuss results on
+existence, uniqueness and estimates of weak solutions to this problem
+(see \cite{IKM,MZ02,G11}).
+Then we focus on the asymptotic behaviour of the solutions as the 
+compressibility tends to zero, i.e. on the passage to so-called
+\emph{incompressible limit} (see \cite{LM98,FN07}).
+Briefly, we show that
+\begin{itemize}
+\item in general case the velocity field converges \emph{weakly} in $L^2(0,T;H_0^1)$;
+\item if the initial condition for the velocity is divergence-free
+then the velocity converges \emph{strongly} and the pressure
+converges $*$-\emph{weakly} in $L^\infty(0,T;L^2)$;
+\item if, in addition, the \emph{initial condition} for the pressure
+is compatible with the \emph{initial value} of the pressure
+in the incompressible problem then the convergence of
+the pressure is \emph{strong}. (A similar compatibility condition
+was obtained in \cite{Sh99} as a \emph{necessary condition} of strong
+convergence of the solutions.)
+\end{itemize}
+We also demonstrate the necessity of these sufficient conditions using
+explicit solutions which are available for simplified data.
+
+\begin{thebibliography}{6}
+
+\bibitem{IKM}
+Ikehata R., Koboyashi T. and Matsuyama T.,
+Remark on the $L_2$ Estimates of the Density for the Compressible
+Navier--Stokes Flow in $R^3$,
+Nonlinear Analysis, {\bf 47} (2001), pp. 2519--2526
+
+\bibitem{MZ02}
+Mucha P.B. and Zajaczkowski W.M.,
+On a $L_p$-estimate for the linearized compressible Navier--Stokes
+equations with the Dirichlet boundary conditions,
+J. Differential Equations, {\bf 186} (2002), pp. 377--393
+
+\bibitem{G11}
+Gusev N.A.,
+Asymptotic Properties of Linearized Equations of Low Compressible Fluid Motion,
+J. Math. Fluid Mech. (2011), DOI: 10.1007/s00021-011-0084-8
+
+\bibitem{LM98}
+{Lions P.-L. and Masmoudi N.},
+Incompressible limit for a viscous compressible fluid,
+J. Math. Pures Appl., {\bf 77(6)} (1998), pp. 585--627
+
+\bibitem{FN07}
+Feireisl E. and Novotn\'{y} A.,
+The Low Mach Number Limit for the Full Navier--Stokes--Fourier
+System,
+Arch. Rational Mech. Anal., {\bf 186} (2007), pp. 77--107
+
+\bibitem{Sh99}
+Shifrin E.G.,
+Unsteady Flows of Viscous Slightly Compressible Fluids: the
+Condition of Continuous Dependence on Compressibility,
+Doklady Physics, {\bf 44}, No. 3 (1999), pp. 189--192
+
+
+\end{thebibliography}
+
+\end{document}

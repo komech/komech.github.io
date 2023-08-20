@@ -1,0 +1,76 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+\usepackage[russian,english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large On the uniform attractors of finite-difference schemes}
+
+\bigskip
+
+%% Author 1:
+{\sc Valentina Ipatova}
+
+%% Address:
+{\small\it Moscow Institute of Physics and Technology, Dolgoprudny 141700, Russia}
+
+%% Email:
+{\small\rm ipatval@mail.ru} \end{center}
+
+\bigskip
+
+The theory of global uniform attractors of non-autonomous differential systems has been constructed in \cite{ipat1}. It is important in applications how close the attractors of discrete approximations to mathematical models are to their true attractors. For autonomous equations, this problem was studied in \cite{ipat2}, where a theorem on the semicontinuous dependence of attractors of
+a family of semidynamical systems on the parameter was proved. A similar result was obtained in \cite{ipat3} for uniform attractors of families of semiprocesses corresponding to non-autonomous evolution
+equations. It was assumed in \cite{ipat2,ipat3} that the considered families have a common time semigroup;
+therefore, when studying finite-difference, the grid increment was represented in the form $\tau =\tau_n=T_0/n$ where $T_0$ is some positive number and $n\in {\mathbb N}$.
+In this paper we prove a theorem on the upper semi-continuous dependence on the parameter of the uniform attractors of families of semiprocesses \cite{ipat4} which allows us to investigate the convergence of the attractors of the numerical schemes in which the discretization parameter is not subjected to any law and can tend to zero in an arbitrary manner.
+This result is applied to the study of the uniform attractor of the explicit finite-difference scheme for the Lorenz system with time-dependent coefficients \cite{ipat5}.
+
+The work was supported by the Federal Program "Scientific and Scientific-Educational Staff of Innovative Russia" for years 2009-2013.
+
+\smallskip
+
+\begin{thebibliography}{Sch26}
+
+\bibitem[1]{ipat1}
+V.V. Chepyshov and M.I. Vishik, \emph{Attractors of non-autonomous dynamical systems and their dimension}, J. Math. Pures Appl.   \textbf{73} (1994), 279--333.
+ 
+\bibitem[2]{ipat2}
+L.V. Kapitanskii and I.N. Kostin, \emph{Attractors of nonlinear evolution equations and their approximations}, Leningrad Math. J. \textbf{2} (1991),  No. 1, 97--117.
+
+\bibitem[3]{ipat3}
+V.M. Ipatova, \emph{Attractors of approximations to non-autonomous evolution equations},  Sbornik: Math.  \textbf{188} (1997),  No. 6,  843--852.
+
+\bibitem[4]{ipat4}
+V.M. Ipatova,  \emph{On uniform attractors of explicit approximations}, Differential Equations. \textbf{47} (2011), No. 4, 571--580.
+
+\bibitem[5]{ipat5}
+V.M. Ipatova,  \emph{Attractors of finite-difference schemes for the Lorenz system with time-dependent coefficients}, Procceedings of MIPT. \textbf{3} (2011), No. 1, 74--80.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,126 @@
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[english]{babel}
+%% Standard packages and definitions:
+
+
+\documentclass[10pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=Latex.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{LastRevised=Friday, March 09, 2012 15:28:01}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+
+\pagestyle{empty}
+
+\begin{document}
+
+
+\begin{center}
+%% Title in English:
+{\Large Negative eigenvalues of two-dimensional Schr\"{o}dinger operators}
+
+\bigskip
+
+%% Author 1:
+{\sc Alexander Grigoryan}
+
+%% Address:
+{\small\it University of Bielefeld, 33501 Bielefeld, Germany}
+
+%% Email:
+{\small\rm grigor@math.uni-bielefeld.de}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+Given a non-negative $L_{loc}^{1}$ function $V\left( x\right) $ on $\mathbb{R%
+}^{n}$, consider the Schr\"{o}dinger operator
+$
+H_{V}=-\Delta -V
+$
+where $\Delta =\sum_{k=1}^{n}\frac{\partial ^{2}}{\partial x_{k}^{2}}$ is
+the Laplace operator. More precisely, $H_{V}$ is defined as a form sum of $%
+-\Delta $ and $-V$, so that, under certain assumptions about $V$, the
+operator $H_{V}$ is self-adjoint in $L^{2}\left( \mathbb{R}^{n}\right) $.
+
+Denote by $\mathrm{Neg}\left( V\right) $ the number of non-positive
+eigenvalues of $H_{V}$ (counted with multiplicity), assuming that its
+spectrum in $(-\infty ,0]$ is discrete. For example, the latter is the case
+when $V\left( x\right) \rightarrow 0$ as $x\rightarrow \infty $. We are are
+interested in obtaining estimates of $\mathrm{Neg}\left( V\right) $ in terms
+of the potential $V$ in the case $n=2.$
+
+For the operator $H_{V}$ in $\mathbb{R}^{n}$ with $n\geq 3$ a celebrated
+inequality of Cwikel-Lieb-Rozenblum says that%
+\begin{equation}
+\mathrm{Neg}\left( V\right) \leq C_{n}\int_{\mathbb{R}^{n}}V\left( x\right)
+^{n/2}dx.  \label{CLR}
+\end{equation}%
+For $n=2$ this inequality is not valid. Moreover, no weighted $L^{1}$-norm
+of $V$ can provide an upper bound for $\mathrm{Neg}\left( V\right) .$ In fact,
+in the case $n=2$ instead of the upper bounds, the lower bound in (\ref{CLR}%
+) is true.
+
+The main result is the estimate (\ref{NegIn}) below that was obtained
+jointly with N.Nadira\-shvili. For any $n\in \mathbb{Z}$, set 
+\[
+U_{n} =
+\left\{
+\begin{array}{l}
+\{e^{2^{n-1}}<\left\vert x\right\vert <e^{2^{n}}\},\ \ n>0, \\
+\{e^{-1}<\left\vert x\right\vert <e\}, \ \ n=0,
+\\
+\{e^{-2^{\left\vert n\right\vert }}<\left\vert x\right\vert
+<e^{-2^{\left\vert n\right\vert -1}}\},\ \ n<0.
+\end{array}
+\right.
+\]
+Define for any $n\in \mathbb{Z}$ the following quantities:%
+\begin{equation*}
+A_{n}=\int\limits_{U_{n}}V\left( x\right) \left( 1+\left\vert \ln \left\vert
+x\right\vert \right\vert \right) dx\ ,\ \ \text{ }\ B_{n}=\Big(
+\int\limits_{\left\{ e^{n}<\left\vert x\right\vert <e^{n+1}\right\}
+}V^{p}\left( x\right) \left\vert x\right\vert ^{2\left( p-1\right)
+}dx\Big) ^{1/p},
+\end{equation*}%
+where $p>1$ is fixed. Then the following estimate holds%
+\begin{equation}
+\mathrm{Neg}\left( V\right) \leq 1+C\sum_{\left\{ n\in \mathbb{Z}%
+:A_{n}>c\right\} }\sqrt{A_{n}}+C\sum_{\left\{ n\in \mathbb{Z}%
+:B_{n}>c\right\} }B_{n},  \label{NegIn}
+\end{equation}%
+where $C,c$ are positive constants depending only on $p$.
+
+For example, (\ref{NegIn}) implies the finiteness of $\mathrm{Neg}\left(
+V\right) $ provided $V$ is locally bounded and 
+%\begin{equation*}
+$
+V\left( x\right) =o\Big( \frac{1}{\left\vert x\right\vert ^{2}\ln
+^{2}\left\vert x\right\vert }\Big) \ \ \text{as }x\rightarrow \infty ,
+$
+%\end{equation*}%
+which cannot be seen by any previously known method. 
+
+\end{document}

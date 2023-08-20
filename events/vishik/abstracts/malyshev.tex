@@ -1,0 +1,100 @@
+%% LyX 2.0.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[10pt,a4paper,english]{article}
+\usepackage[T2A]{fontenc}
+\pagestyle{empty}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\special{papersize=\the\paperwidth,\the\paperheight}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[koi8-r]{inputenc}
+\usepackage[english]{babel}
+
+
+%% Standard packages and definitions:
+\usepackage{latexsym}\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\begin{center}
+%% Title in English:
+{\Large New phenomena in large systems of ODE and classical models of DC} 
+
+\bigskip
+
+%% Author 1:
+{\sc Vadim Malyshev}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119992, Russia}
+
+%% Email:
+{\small\rm malyshev2@yahoo.com}
+
+\end{center}
+
+\bigskip
+
+
+%% Abstract in English:
+
+
+\vspace*{3mm}
+We consider the system
+\[
+M\frac{d^{2}x_{i}}{dt^{2}}=-\frac{\partial U}{\partial x_{i}}+F(x_{i})-A\frac{dx_{i}}{dt},i=1,...,N
+\]
+of $N$ ordinary differential equations describing Newtonian dynamics
+of $N$ particles (electrons), initially at the points 
+\[
+x_{1}(0)<x_{2}(0)<...<x_{N}(0),
+\]
+on the interval $[0,L)\in R$ with periodic boundary conditions, that
+is on the circle of length $L$. Here $M>0,A\geq0$ are the parameters,
+$F(x)$ is the external force, and 
+\[
+U(x_{1},...,x_{N})=\sum_{i=1}^{N}\frac{\alpha}{|x_{i+1}-x_{1}|}.\alpha>0,
+\]
+(where of course $x_{N+1}\equiv x_{1}$) is the Coulomb repulsive
+interaction between nearest neighbors.
+
+We review new results concerning this system: fixed points, quasi-homogeneous
+regime (Ohm's law) and very fast propagation of the ``effective''
+external field, which is initially zero on the most part of the circle.
+
+All these phenomena are closely related to many problems with DC (direct
+electric current), that the statistical physics was unable to understand.
+The following is a picturesque description of one of DC enigmas in
+the famous Feynman lectures, v. 6, pp. 33-34: ``The force pushes
+the electrons along the wire. But why does this move the galvanometer,
+whis is so far from the force? Because when the electrons which feel
+the magnetic force try to move, they push - by electric repulsion
+- the electrons a little farther down the wire; they, in turn, repel
+the electrons a little farther on, and so on for a long distance.
+An amazing thing. It was so amazing to Gauss and Weber - who first
+built a galvanometer - that they tried to see how far the forces in
+the wire would go. They strung the wire all the way across the city.''
+\end{document}

@@ -1,0 +1,120 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[russian,english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\pagestyle{empty}
+\newtheorem{theorem}{Тheorem}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Inertial manifolds for strongly damped wave equations}
+
+\bigskip
+
+%% Author 1:
+{\sc Natalya Chalkina}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119991, Russia}
+
+%% Email:
+{\small\rm chalkinan@mail.ru}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+
+Consider the boundary value problem for a semilinear strongly damped wave equation in a bounded
+domain~$\Omega$:
+\begin{align}\label{eq_sdwe}
+&u_{tt}-2\gamma\Delta u_t=\Delta u+f(u),\quad u\big|_{\partial\Omega}=0,\\
+\label{un_sdwe} &u\big|_{t=0}=u_0(x)\in H_0^1(\Omega),\quad u_t\big|_{t=0}=p_0 (x)\in L_2(\Omega).
+\end{align}
+Here $\gamma>0$ is a coefficient of strong dissipation, and the nonlinearity $f(u)$ satisfies the
+global Lipschitz condition:
+$$|f(v_1)-f(v_2)|\leqslant L\,|v_1-v_2|\qquad \forall v_1, v_2 \in \R.$$
+
+The following theorem gives sufficient condition for the existence of an inertial manifold for
+equation (1).
+
+\begin{theorem}\label{theorem}
+Let $\lambda_k$, $0<\lambda_1<\lambda_2\leqslant\dots\to+\infty$, be eigenvalues of the operator
+$-\Delta$ in the domain $\Omega$ under the Dirichlet boundary conditions. Suppose that there is an
+N such that the following inequalities hold
+$$
+\lambda_N < \lambda_{N+1} < 
+%AC\frac{1}{2\gamma^2}, \eqno(3)
+1/(2\gamma^2), \eqno(3)
+$$
+$$
+2L<\sup_{\gamma\lambda_N\leqslant\Phi<\gamma\lambda_{N+1}}\{(\gamma\lambda_{N+1}-\Phi)
+\min\{\varkappa_1(\Phi),\varkappa_N(\Phi),\varkappa_{N+1}(\gamma\lambda_{N+1})\}\}, \eqno(4)
+$$
+where we have used the notation
+$$
+\varkappa_k (\Phi)=\Phi-\gamma\lambda_k+\sqrt{\Phi^2-2\gamma\lambda_k\Phi+\lambda_k}.
+$$
+Then, in the phase space $H_0^1(\Omega)\times L_2(\Omega)$, there exists a $2N$-dimensional
+inertial manifold that exponentially attracts $($as $t\to+\infty)$ all the solutions of
+problem~\textup{(1), (2)}.
+\end{theorem}
+
+The proof is based on the construction of a new inner product in the phase space in which gap
+property holds and thus an inertial manifold exists (the corresponding general theorem for an
+abstract differential equation in a Hilbert space one can find,
+e.g., in \cite{gc-2005}).
+
+Remark. If $\gamma$, $\lambda_N$ and $\lambda_{N+1}$ are fixed and they satisfy (3), then we state
+the existence of an inetial manifold for sufficiently small $L$.
+
+%\begin{otherlanguage}
+%\bigskip
+%В теории нелинейных эволюционных уравнений с частными производными большое внимание уделяется
+%методам построения инерциальных многообразий, т.е. таких конечномерных липшицевых инвариантных
+%многообразий, которые притягивают любые решения этих уравнений при $t\rightarrow +\infty$ с
+%экспоненциальной скоростью (см., например, [1]).
+%\bigskip
+%\end{otherlanguage}
+
+\begin{thebibliography}{p9}
+
+\bibitem{gc-2005}
+A.\,Yu. Goritskii and V.\,V. Chepyzhov,
+\emph{The Dichotomy Property of Solutions of Quasilinear Equations
+in Problems on Inertial Manifolds}, Mat. Sb. \textbf{196} (2005), no. 4, 23--50.
+
+\bibitem{chalkina1}
+N.\,A. Chalkina,
+\emph{Sufficient Condition for the Existence
+of an Inertial Manifold for a Hyperbolic
+Equation with Weak and Strong Dissipation},
+Russ. J. Math. Phys. \textbf{19} (2012), 11--20.
+
+\end{thebibliography}
+
+\end{document}

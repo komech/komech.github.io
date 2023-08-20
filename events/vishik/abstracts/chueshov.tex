@@ -1,0 +1,113 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[russian,english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Quantum dissipative Zakharov model in a bounded domain}
+
+\bigskip
+
+
+%% Author 1:
+{\sc Igor Chueshov}
+
+%% Address:
+{\small\it Kharkov National University, Kharkov 61022, Ukraine}
+
+%% Email:
+{\small\rm  chueshov@univer.kharkov.ua}
+
+
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+We consider an initial boundary value problem for  a
+quantum version (introduced in  \cite{GHGO-2005}) of the  Zakharov system
+arising in plasma physics:
+\begin{equation*}
+\left\{\begin{array}{l}
+n_{tt}-\Delta\left(n+|E|^2\right)+h^2\Delta^2 n+\alpha n_t  =f(x),
+\quad x\in\Omega,\; t>0,
+\\ \\
+i E_t+\Delta E- h^2\Delta^2E  +i\gamma E - n E=g(x),\quad x\in\Omega,\; t>0.
+\end{array}\right.
+\end{equation*}
+Here $\Omega \subset \R^d$ is a bounded domain, $d\le 3$,
+$E(x,t)$ is a complex function
+and $n(x,t)$ is a real one, $h>0$,  $\alpha\ge 0$
+and $\gamma\ge 0$ are  parameters and $f(x)$, $g(x)$ are given
+(real and complex) functions. We also impose some boundary and initial conditions
+on $E$ and $n$.
+\par
+We prove the global well-posedness
+of this problem in some Sobolev type classes and study properties of
+solutions.  This result confirms the conclusion
+recently made in physical literature concerning
+the absence of collapse in the quantum Langmuir waves.
+(see a discussion in \cite{SSS-2009}). 
+In the dissipative case the existence of a
+finite dimensional global attractor
+is  established and regularity properties
+of this attractor are studied. For this we use the recently
+developed method of  quasi-stability estimates (see \cite{ChuLas,cl-book}).
+In the case when external loads are
+$C^\infty$ functions we show that every trajectory  from the attractor
+is $C^\infty$ both in time and spatial variables.
+This can be interpret as the absence of sharp coherent
+structures in the limiting dynamics.  For some details we refer to 
+\cite{Chu11}.
+
+
+\begin{thebibliography}{6}
+
+
+
+\bibitem{GHGO-2005}
+L. G. Garcia, F. Haas, J. Goedert and L. P. L. Oliveira,
+\emph{Modified Zakharov equations for plasmas with a quantum
+correction},  Phys. Plasmas {\bf 12} (2005), 012302. 
+
+\bibitem{SSS-2009}
+G. Simpson, C. Sulem, and P. L. Sulem,
+\emph{Arrest of Langmuir wave collapse by quantum effects},
+Phys. Review  {\bf 80} (2009),  056405. 
+\bibitem{ChuLas} I.
+Chueshov and I. Lasiecka, \textit{Long-Time Behavior of Second Order
+Evolution Equations with Nonlinear Damping}, Memoirs of AMS 912, AMS,
+Providence, 2008.
+\bibitem{cl-book}
+I. Chueshov and I. Lasiecka, {\it Von Karman  Evolution Equations},
+Sprin\-ger, New York, 2010.  
+\bibitem{Chu11}I. Chueshov, \emph{Quantum Zakharov model in a bounded domain},
+Preprint   arXiv:1110.1814v1,  9 October 2011.
+\end{thebibliography}
+
+\end{document}

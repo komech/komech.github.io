@@ -1,0 +1,110 @@
+\documentclass[10pt,a4paper]{article}
+\nonstopmode
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[russian,english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Weak attractor for the Klein-Gordon equation with a nonlinear oscillator in discrete space-time}
+
+\bigskip
+
+
+\bigskip
+
+%% Author 1:
+{\sc Andrey Komech}
+
+%% Address:
+{\small\it IITP, Moscow, Russia}
+{\small\it and}
+{\small\it Texas A\&M University, College Station, TX, USA}
+
+%% Email:
+{\small\rm andrey.komech@gmail.com}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+
+We consider the Klein-Gordon equation
+in the discrete space-time
+interacting with a nonlinear oscillator.
+In \cite{kg-discrete-arxiv},
+we prove that the weak attractor of all
+finite energy solutions
+coincides with the set of all
+multifrequency solitary waves,
+\[
+\sum\sb{j=1}\sp{N}\phi\sb j(x)e^{-i\omega\sb j t},
+\qquad
+(x,\,t)\in\Z^n\times\Z,
+\quad
+\phi\sb j\in l\sp 2(\Z^n),
+\quad
+\omega\sb j\in\R\mod 2\pi.
+\]
+More precisely, we show that
+there are only one-, two-, and four-frequency solitary waves.
+In the continuous limit,
+only the one-frequency solitary waves survive.
+The convergence to the attractor takes place weakly
+(on finite subsets or in the weighted norms).
+The proof is based on a version
+of the Titchmarsh convolution
+theorem proved for distributions
+supported on a circle \cite{titchmarsh-circle}.
+
+The result generalizes an earlier
+result for the Klein-Gordon equation
+in the continuous space-time \cite{ubk-arma}.
+
+%\bibliographystyle{amsplain}
+%\bibliography{comech}
+%\end{document}
+
+\begin{thebibliography}{6}
+
+\bibitem{kg-discrete-arxiv}
+Andrew Comech, \emph{Weak attractor of the {K}lein-{G}ordon field in discrete
+  space-time interacting with a nonlinear oscillator}, ArXiv e-prints
+  \textbf{1203.3233} (2012).
+
+\bibitem{ubk-arma}
+Alexander~I. Komech and Andrew~A. Komech, \emph{Global attractor for a
+  nonlinear oscillator coupled to the {K}lein-{G}ordon field}, Arch. Ration.
+  Mech. Anal. \textbf{185} (2007), 105--142.
+
+\bibitem{titchmarsh-circle}
+Alexander~I. Komech and Andrew~A. Komech, \emph{On the {T}itchmarsh convolution theorem for distributions on a
+  circle}, Funktsional. Anal. i Prilozhen. \textbf{46} (2012), to appear (see
+  arXiv:1108.2463).
+
+\end{thebibliography}
+
+\end{document}

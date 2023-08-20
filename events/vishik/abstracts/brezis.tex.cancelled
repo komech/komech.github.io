@@ -1,0 +1,58 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Nonlinear elliptic equations with measure data}
+
+\bigskip
+
+%% Author 1:
+{\sc Haim Brezis}
+
+%% Address:
+{\small\it Paris 6, Rutgers and Technion}%MULTIPLE
+
+%% Email:
+{\small\rm brezis@math.rutgers.edu}
+
+\end{center}
+
+\bigskip
+
+
+Some nonlinear  elliptic problems have been solved by M. Visik in a
+well-known paper from the 60's. Similar questions become extremely
+delicate when the data are measures. We introduce a general approach
+to handle such problems and discuss some examples. A useful concept
+of ``Reduced measures'' will be explained.
+
+
+\end{document}

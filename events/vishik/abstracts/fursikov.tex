@@ -1,0 +1,68 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[russian,english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Normal parabolic equation corresponding to 3D Navier--Stokes system}
+
+\bigskip
+
+%% Author 1:
+{\sc Andrei Fursikov}
+
+%% Address:
+{\small\it Moscow State University, Moscow 119991, Russia}
+
+%% Email:
+{\small\rm fursikov@mtu-net.ru}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+Energy estimate is very important tool to study 3D Navier--Stokes system.
+Absents of such bound in phase space $H^1$ is very serious obstacle to prove 
+nonlocal existence of smooth solutions.  
+
+Semilinear parabolic equation is called equation of normal type if its nonlinear term $B$
+satisfies the condition: vector $B(v)$ is collinear to vector $v$ for each $v$. Since the property
+$B(v)\perp v$ implies energy estimate, equation of normal type does not satisfies energy estimate 
+"`in the most degree"'. That is why we hope that investigation of normal parabolic equations should make
+more clear a number problems connected with existence of nonlocal smooth solutions to 3D Navier--Stokes equations.
+
+In the talk we will start from Helmholtz equations that is analog of 3D Navier--Stokes system in which the curl
+of fluid velocity is unknown function. We will derive normal parabolic equations (NPE) corresponding to Helmholtz equations and will prove that there exists explicit formula for solution to NPE with periodic boundary conditions.
+This helped us to investigate more less completely the structure of dynamical flow corresponding to NPE.
+Its phase space $V$ can be decomposed on the set of stability $M_-(\alpha ),\; \alpha >0$ (solutions with initial condition $\omega_0 \in M_-(\alpha )$ tends to zero with prescribed rate $e^{-\alpha t}$ as time $t\to \infty $), set of explosions $M_+$ (solutions with initial condition $\omega_0 \in M_+$ blow up during finite time),
+and intermediate set $M_I(\alpha )=V\setminus (M_-(\alpha)\cup M_+)$. The exact description of all these sets
+will be given.  
+
+
+
+\end{document}

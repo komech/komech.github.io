@@ -1,0 +1,141 @@
+\documentclass[10pt,a4paper]{article}
+
+%% Title/abstract template for the conference in honour of Mark Vishik
+%% The original is at http://www.dynamics.iitp.ru/vishik/abstract.tex
+%%
+%% Instructions:
+%% 1. Title and abstract should be in English
+%% 2. You are welcome to include the Russian translation (optional).
+%%    Russian abstract could be shorter than English.
+%% 3. Please make sure that your input, including References, is on one page
+
+%% Enabling Cyrillic input with koi8-r encoding:
+%\usepackage[T2A]{fontenc}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[english]{babel}
+
+%% Standard packages and definitions:
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\p{\partial}
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+
+%% Title in English:
+{\Large Sharp two-term Sobolev inequality and applications to the Lieb--Thirring estimates}
+
+\bigskip
+
+%% Author 1:
+{\sc Alexei Ilyin}
+
+%% Address:
+{\small\it Keldysh Institute of Applied Mathematics, Moscow 125047, Russia}
+
+%% Email:
+{\small\rm ilyin@keldysh.ru}
+
+\end{center}
+
+\bigskip
+
+%% Abstract in English:
+
+For a function $\varphi\in H^1(\mathbb{R})$ the following inequality
+is  well known
+$$
+\|\varphi\|_\infty^2\le \|\varphi\|\|\varphi'\|,
+$$
+where the norms on the right-hand side are the $L_2$-norms.
+The constant $1$ in the  inequality is  sharp
+and the unique extremal unction is
+$
+\varphi^*(x)=e^{-|x|}
+$.
+The same inequality clearly holds on a finite interval,
+that is, for $\varphi\in H^1_0(0,L)$. However, since
+$\varphi^*(x)>0$, no extremal functions exist.
+The following result provides a sharp correction term
+for this inequality (the correction term in the periodic case
+was found in \cite{Zelik}).
+
+\medskip
+\noindent
+{\bf Theorem 1.}
+{\it Let $f\in H^1_0(0,L)$. Then
+$
+\ \|\varphi\|^2_\infty\le\|\varphi\|\|\varphi'\|\bigl(1-2e^{-\frac{L\|\varphi'\|}{\|\varphi\|}}\bigr).
+$
+
+\noindent
+The  coefficients of the two terms on the right-hand side
+are sharp and no extremal functions exist.}
+\medskip
+
+
+
+As in the periodic case considered in~\cite{JST}, this theorem makes
+it possible to obtain a simultaneous bound for the negative
+trace and the number of negative eigenvalues for the
+1D Schr\"odinger eigenvalue problem on $(0,L)$
+\begin{equation}
+\label{Sch}
+-y''_j-Vy_j=\nu_jy_j
+\end{equation}
+with Dirichlet boundary conditions $y(0)=y(L)=0$
+and potential $V(x)\ge0$.
+
+\medskip
+\noindent
+{\bf Theorem 2.}
+{\it Suppose that there exist $N$ negative eigenvalues $\nu_j\le0$, %$\nu_j\ge0$,
+$j=1,\dots,N$ of the operator~\eqref{Sch}. Then
+both the negative trace and the number $N$ of negative
+eigenvalues satisfy for any $\varepsilon\ge0$
+$$
+\sum_{j=1}^N|\nu_j|+N\cdot\frac{\pi^2}{L^2}
+\biggl(\frac{c(\varepsilon)}{1+\varepsilon}\biggr)^{2}\le
+\frac{2}{3\sqrt{3}}\cdot
+(1+\varepsilon)\int_0^{L}V(x)^{3/2}dx,
+$$
+where
+$
+c(\varepsilon)=\min_{x\ge1}\bigl(\varepsilon x+2xe^{-\pi x}\bigr)
+$.
+}
+
+\medskip
+\noindent
+{\it Remark.} We have  $c(\varepsilon)\ge\varepsilon$, and the optimal
+$\varepsilon$ for the
+bound involving only the number of negative eigenvalues $N$
+is $\varepsilon=2$.
+
+
+
+
+\begin{thebibliography}{7}
+
+
+
+\bibitem{Zelik}M.V.\,Bartuccelli, J.\,Deane, and
+S.V.\,Zelik, \emph{Asymptotic expansions and extremals for
+the critical Sobolev and Gagliardo-Nirenberg inequalities on a
+torus.} arXiv:1012.2061 (2010).
+
+\bibitem{JST} A.A.Ilyin,
+\emph{Lieb--Thirring inequalities on some manifolds}, Journal
+of Spectral Theory
+\textbf{2}:1 (2012), 1--22.
+
+\end{thebibliography}
+
+\end{document}
